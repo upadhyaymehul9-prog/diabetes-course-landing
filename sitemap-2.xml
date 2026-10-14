@@ -168,4 +168,28 @@
           <changefreq>weekly</changefreq>
           <priority>0.8</priority>
     </url>
+    <url>
+          <loc>https://course.accredready.in/newly-diagnosed.html</loc>
+          <lastmod>2026-10-14</lastmod>
+          <changefreq>weekly</changefreq>
+          <priority>0.8</priority>
+    </url>
+    <url>
+          <loc>https://course.accredready.in/diabetes-alcohol.html</loc>
+          <lastmod>2026-10-14</lastmod>
+          <changefreq>weekly</changefreq>
+          <priority>0.8</priority>
+    </url>
+    <url>
+          <loc>https://course.accredready.in/young-onset.html</loc>
+          <lastmod>2026-10-14</lastmod>
+          <changefreq>weekly</changefreq>
+          <priority>0.8</priority>
+    </url>
+    <url>
+          <loc>https://course.accredready.in/diabetes-travel.html</loc>
+          <lastmod>2026-10-14</lastmod>
+          <changefreq>weekly</changefreq>
+          <priority>0.8</priority>
+    </url>
 </urlset>
