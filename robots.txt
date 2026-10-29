@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://course.accredready.in/sitemap.xml
-Sitemap: https://course.accredready.in/sitemap-2.xml
