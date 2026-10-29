@@ -8,7 +8,22 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:image" content="https://course.accredready.in/logo-512.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme-teal.css">
+<style>
+.then-now{display:grid;grid-template-columns:1fr 1fr;gap:1.3rem;margin-top:1.8rem;}
+@media(max-width:760px){.then-now{grid-template-columns:1fr;}}
+.then-now .col{border-radius:var(--radius-md);padding:1.4rem 1.6rem;}
+.then-now .then{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);}
+.then-now .now{background:rgba(94,234,212,.08);border:1px solid rgba(94,234,212,.25);}
+.then-now h4{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;font-weight:800;margin-bottom:.6rem;}
+.then-now .then h4{color:#fca5a5;}
+.then-now .now h4{color:#5eead4;}
+.then-now p{font-size:.86rem;color:#cdd9e5;line-height:1.55;}
+.module-card{background:#fff;border:1px solid var(--card-border);border-radius:var(--radius-md);padding:1.3rem 1.5rem;box-shadow:var(--shadow-sm);}
+.module-card b{display:block;color:var(--slate-900);font-size:.98rem;margin-bottom:.35rem;}
+.module-card p{font-size:.86rem;color:var(--slate-600);line-height:1.5;margin:0;}
+.module-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.1rem;}
+</style>
 </head>
 <body>
 <nav class="site-nav">
@@ -18,94 +33,116 @@
     <a href="what-to-eat.html">What to Eat</a>
     <a href="movement.html">How Much Exercise?</a>
     <a href="busy-professional.html">Busy Professionals</a>
-    <a href="tracking-system.html" class="active">Tracking Your Numbers</a>
+    <a href="tracking-system.html">Tracking Your Numbers</a>
     <a href="myths.html">Common Myths</a>
+  </div>
+</nav>
+
+<nav class="page-nav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Type 2 Diabetes Remission Protocol<small>Dr. Mehul Upadhyay</small></a>
+    <div class="nav-links">
+      <a href="#method">The Method</a>
+      <a href="#tracker">Free Tracker</a>
+      <a href="#modules">Modules</a>
+      <a href="#faqs">FAQs</a>
+    </div>
+    <a class="nav-cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course &rarr;</a>
   </div>
 </nav>
 
 <header class="hero">
   <div class="wrap">
-    <span class="eyebrow">FOR PEOPLE WHO CHECK NUMBERS BUT FEEL LOST</span>
-    <h1>You're checking your numbers. But what are they actually telling you?</h1>
-    <p class="sub">A glucose reading on its own is a data point, not a diagnosis. This course shows you how to organise scattered readings into a simple system that reveals real patterns.</p>
-    <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy →</a>
-    <div class="cta-sub">12-week structured plan · Lifetime access · Certificate of completion</div>
+    <span class="badge-pill">For People Who Check Numbers but Feel Lost</span>
+    <h1 class="hero-title">You're checking your numbers. But what are they actually telling you?</h1>
+    <p class="hero-subtitle">A glucose reading on its own is a data point, not a diagnosis. This course shows you how to organise scattered readings into a simple system that reveals real patterns.</p>
+    <a class="cta-btn" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy &rarr;</a>
+    <div class="hero-meta">12-week structured plan &middot; Lifetime access &middot; Certificate of completion</div>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <h2>Sound familiar?</h2>
-    <ul class="pain-list">
-      <li>You have glucose readings, but you don't know which patterns actually matter</li>
-      <li>One unusual number can derail your entire day emotionally</li>
-      <li>You record readings but rarely connect them to food, activity or sleep</li>
-      <li>You want better information to bring to your clinician, not just a list of numbers</li>
-    </ul>
+    <div class="section-header"><span class="section-tag">Sound familiar?</span><h2 class="section-title">Numbers without a system to make sense of them</h2></div>
+    <div class="frustration-grid">
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You have glucose readings, but you don't know which patterns actually matter</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>One unusual number can derail your entire day emotionally</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You record readings but rarely connect them to food, activity or sleep</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You want better information to bring to your clinician, not just a list of numbers</p></div>
+    </div>
   </div>
 </section>
 
-<section class="alt">
+<section id="method">
   <div class="wrap">
-    <h2>Turn scattered readings into useful information</h2>
-    <ul class="check-list">
-      <li>A simple logging method that takes under two minutes a day</li>
-      <li>A way to connect glucose readings to food, sleep, stress and movement, not just stare at a number</li>
-      <li>A plain-English guide to which patterns actually matter, and which are just noise</li>
-      <li>A one-page summary format to bring to appointments instead of raw numbers</li>
-      <li>The context to know when a reading needs a call to your doctor, and when it doesn't</li>
-    </ul>
+    <div class="section-header"><span class="section-tag">Turn Scattered Readings</span><h2 class="section-title">Into useful information</h2></div>
+    <div class="check-grid">
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>A simple logging method that takes under two minutes a day</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>A way to connect glucose readings to food, sleep, stress and movement, not just stare at a number</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>A plain-English guide to which patterns actually matter, and which are just noise</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>A one-page summary format to bring to appointments instead of raw numbers</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>The context to know when a reading needs a call to your doctor, and when it doesn't</p></div>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>Modules inside the course</h2>
-    <div class="grid">
-      <div class="module"><b>Understanding Your Numbers</b><br>What HbA1c measures versus a single glucose reading, and why both matter differently</div>
-      <div class="module"><b>The Science of Remission</b><br>How tracking was used in the DiRECT trial to measure real, verifiable progress</div>
-      <div class="module"><b>Nutrition Protocol</b><br>What to log about food so your tracking actually explains your numbers</div>
-      <div class="module"><b>Movement, Sleep & Stress</b><br>How to track these three without turning your day into a lab experiment</div>
-      <div class="module"><b>Tracking System</b><br>The exact simple format used throughout the course, from week one onward</div>
-      <div class="module"><b>Working With Your Doctor</b><br>Turning weeks of scattered numbers into one clear page for your appointment</div>
-    </div>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <h2>Why this course?</h2>
-    <div class="instructor">
-      <div>
-        <p><b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management, where turning raw data into decisions that actually get acted on is the entire job. This course applies that same discipline to the numbers you're already collecting at home.</p>
-        <span class="badge">15+ Years Healthcare Ops</span>
-        <span class="badge">International Hospital Experience</span>
+    <div class="dark-panel">
+      <div class="section-header"><span class="section-tag" style="color:#5eead4;">What Actually Changes</span><h2 class="section-title light">Scattered numbers vs. one connected record</h2></div>
+      <div class="then-now">
+        <div class="col then"><h4>Scattered readings</h4><p>Glucose checks live in one app, weight on a bathroom scale, blood pressure somewhere else — no connection between any of them, and no way to spot a pattern.</p></div>
+        <div class="col now"><h4>One connected system</h4><p>Glucose, weight, blood pressure, stress, sleep, walks and plate-model adherence logged in one place, so the pattern behind your numbers actually becomes visible.</p></div>
       </div>
+      <p class="panel-note" style="margin-top:1.4rem;">Important: home tracking provides useful information, but it does not replace clinical testing or diagnosis. Diabetes remission is not guaranteed and depends on many factors beyond tracking alone.</p>
     </div>
-    <div class="evidence" style="margin-top:20px;">
-      <b>Important:</b> Home tracking provides useful information, but it does not replace clinical testing or diagnosis. Diabetes remission is not guaranteed and depends on many factors beyond tracking alone.
+  </div>
+</section>
+
+<section id="tracker">
+  <div class="wrap">
+    <div class="tracker-card">
+      <div class="tracker-copy">
+        <h3>The exact tracking system, free to use</h3>
+        <p>The free tracker at dmremission.accredready.in logs fasting and post-meal glucose, weight, blood pressure, stress, walks, plate-model adherence, sleep, and resistance training — tied week by week to this course's modules. No account cost, no course purchase required.</p>
+      </div>
+      <a class="cta-btn outline" href="https://dmremission.accredready.in/">Open the Free Tracker &rarr;</a>
     </div>
+  </div>
+</section>
+
+<section id="modules">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Inside the Course</span><h2 class="section-title">Modules inside the course</h2></div>
+    <div class="module-grid">
+      <div class="module-card"><b>Understanding Your Numbers</b><p>What HbA1c measures versus a single glucose reading, and why both matter differently</p></div>
+      <div class="module-card"><b>The Science of Remission</b><p>How tracking was used in the DiRECT trial to measure real, verifiable progress</p></div>
+      <div class="module-card"><b>Nutrition Protocol</b><p>What to log about food so your tracking actually explains your numbers</p></div>
+      <div class="module-card"><b>Movement, Sleep &amp; Stress</b><p>How to track these three without turning your day into a lab experiment</p></div>
+      <div class="module-card"><b>Tracking System</b><p>The exact simple format used throughout the course, from week one onward</p></div>
+      <div class="module-card"><b>Working With Your Doctor</b><p>Turning weeks of scattered numbers into one clear page for your appointment</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faqs">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Before You Start</span><h2 class="section-title">Frequently asked questions</h2></div>
+    <details class="faq-item"><summary>Do I need to test constantly?</summary><p>No. Testing frequency depends on your clinical situation and treatment — follow your clinician's instructions. This course focuses on making the readings you already take more useful.</p></details>
+    <details class="faq-item"><summary>Will tracking diagnose a problem on its own?</summary><p>No. Home data provides useful information, but diagnosis and treatment decisions belong with qualified healthcare professionals.</p></details>
+    <details class="faq-item"><summary>Can I stop medication if my readings improve?</summary><p>No. Any medication changes must be made together with your prescribing clinician — never based on home tracking alone.</p></details>
   </div>
 </section>
 
 <section>
-  <div class="wrap faq">
-    <h2>Before you start</h2>
-    <details><summary>Do I need to test constantly?</summary><p>No. Testing frequency depends on your clinical situation and treatment — follow your clinician's instructions. This course focuses on making the readings you already take more useful.</p></details>
-    <details><summary>Will tracking diagnose a problem on its own?</summary><p>No. Home data provides useful information, but diagnosis and treatment decisions belong with qualified healthcare professionals.</p></details>
-    <details><summary>Can I stop medication if my readings improve?</summary><p>No. Any medication changes must be made together with your prescribing clinician — never based on home tracking alone.</p></details>
-  </div>
-</section>
-
-<section class="alt">
   <div class="wrap">
     <div class="final-cta">
-      <h2>Turn scattered readings into useful information</h2>
-      <p>12-week plan · Lifetime access · Learn at your own pace</p>
-      <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy →</a>
+      <h2>Turn scattered readings into useful information.</h2>
+      <p>12-week plan &middot; Lifetime access &middot; Learn at your own pace</p>
+      <a class="cta-btn" style="background:#fff;color:var(--primary-dark);" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy &rarr;</a>
     </div>
     <div class="disclaimer">
-      This course is educational content and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for professional medical care. Always consult your doctor before changing medication, diet, or exercise.
+      This course is educational content and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for professional medical care. Always consult your doctor before making changes to your medication, diet, or exercise routine.
     </div>
   </div>
 </section>

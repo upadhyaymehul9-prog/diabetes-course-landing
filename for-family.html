@@ -8,7 +8,18 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:image" content="https://course.accredready.in/logo-512.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme-teal.css">
+<style>
+.then-now{display:grid;grid-template-columns:1fr 1fr;gap:1.3rem;margin-top:1.8rem;}
+@media(max-width:760px){.then-now{grid-template-columns:1fr;}}
+.then-now .col{border-radius:var(--radius-md);padding:1.4rem 1.6rem;}
+.then-now .then{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);}
+.then-now .now{background:rgba(94,234,212,.08);border:1px solid rgba(94,234,212,.25);}
+.then-now h4{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;font-weight:800;margin-bottom:.6rem;}
+.then-now .then h4{color:#fca5a5;}
+.then-now .now h4{color:#5eead4;}
+.then-now p{font-size:.86rem;color:#cdd9e5;line-height:1.55;}
+</style>
 </head>
 <body>
 <nav class="site-nav">
@@ -23,86 +34,86 @@
   </div>
 </nav>
 
-<header class="hero">
-  <div class="wrap">
-    <span class="eyebrow">FOR FAMILY, HELPING FROM A DISTANCE</span>
-    <h1>Worried about a parent's diabetes, but not sure how to actually help?</h1>
-    <p class="sub">Forwarding articles and reminding them to "eat better" only goes so far. This gives them an actual structured plan to follow — the kind of system hospitals use, adapted for home.</p>
-    <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy →</a>
-    <div class="cta-sub">12-week structured plan · Lifetime access · Certificate of completion</div>
+<nav class="page-nav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Type 2 Diabetes Remission Protocol<small>Dr. Mehul Upadhyay</small></a>
+    <div class="nav-links">
+      <a href="#plan">What You Get</a>
+      <a href="#modules">Modules</a>
+      <a href="#why">Why This</a>
+      <a href="#faqs">FAQs</a>
+    </div>
+    <a class="nav-cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course &rarr;</a>
   </div>
-</header>
+</nav>
 
 <section>
   <div class="wrap">
-    <h2>Sound familiar?</h2>
-    <ul class="pain-list">
-      <li>You're not there every day to check what they're eating or whether they're tracking anything</li>
-      <li>They got a prescription from the doctor, and that's it — no follow-up structure</li>
-      <li>Every time you bring it up, it turns into an argument, not a plan</li>
-      <li>You've sent them articles and videos, but nothing actually sticks</li>
-    </ul>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <h2>What this actually gives them</h2>
-    <ul class="check-list">
-      <li>A structured 12-week plan they can follow on their own time, at their own pace</li>
-      <li>A simple tracking system, so progress is visible instead of a guessing game between you</li>
-      <li>Plain-language explanations of their numbers — no confusing medical jargon</li>
-      <li>Scripts to help them have better, more confident conversations with their own doctor</li>
-      <li>Something concrete to point to, instead of "just eat better"</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>What's inside</h2>
-    <div class="grid">
-      <div class="module"><b>Understanding Their Numbers</b><br>A plain-English breakdown of HbA1c and why it matters</div>
-      <div class="module"><b>The Science of Remission</b><br>What's realistically possible, backed by published clinical research</div>
-      <div class="module"><b>Nutrition Protocol</b><br>A structured, sustainable approach — not a diet they'll quit in a month</div>
-      <div class="module"><b>Movement, Sleep & Stress</b><br>Practical changes that fit into daily life, not a gym routine</div>
-      <div class="module"><b>Tracking System</b><br>So progress becomes visible to them — and to you</div>
-      <div class="module"><b>Working With Their Doctor</b><br>How to walk into an appointment prepared, not overwhelmed</div>
+    <div class="section-header"><span class="section-tag">Sound familiar?</span><h2 class="section-title">Helping from a distance is harder than it looks</h2></div>
+    <div class="frustration-grid">
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You're not there every day to check what they're eating or whether they're tracking anything</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>They got a prescription from the doctor, and that's it &mdash; no follow-up structure</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>Every time you bring it up, it turns into an argument, not a plan</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You've sent them articles and videos, but nothing actually sticks</p></div>
     </div>
   </div>
 </section>
 
-<section class="alt">
+<section id="plan">
   <div class="wrap">
-    <h2>Who's behind this course</h2>
-    <div class="instructor">
-      <div>
-        <p><b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management — including time in the New Zealand healthcare system. His day job is building the kind of checklists and structured systems hospitals rely on. This course brings that same discipline into something families are usually left to manage alone at home.</p>
-        <span class="badge">15+ Years Healthcare Ops</span>
-        <span class="badge">International Hospital Experience</span>
+    <div class="section-header"><span class="section-tag">What This Gives Them</span><h2 class="section-title">What this actually gives them</h2></div>
+    <div class="check-grid">
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>A structured 12-week plan they can follow on their own time, at their own pace</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>A simple tracking system, so progress is visible instead of a guessing game between you</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>Plain-language explanations of their numbers &mdash; no confusing medical jargon</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>Scripts to help them have better, more confident conversations with their own doctor</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>Something concrete to point to, instead of “just eat better”</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="modules">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">What's Inside</span><h2 class="section-title">What's inside</h2></div>
+    <div class="info-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="info-card"><b>Understanding Their Numbers</b><p style="margin-top:.4rem;">A plain-English breakdown of HbA1c and why it matters</p></div>
+      <div class="info-card"><b>The Science of Remission</b><p style="margin-top:.4rem;">What's realistically possible, backed by published clinical research</p></div>
+      <div class="info-card"><b>Nutrition Protocol</b><p style="margin-top:.4rem;">A structured, sustainable approach &mdash; not a diet they'll quit in a month</p></div>
+      <div class="info-card"><b>Movement, Sleep &amp; Stress</b><p style="margin-top:.4rem;">Practical changes that fit into daily life, not a gym routine</p></div>
+      <div class="info-card"><b>Tracking System</b><p style="margin-top:.4rem;">So progress becomes visible to them &mdash; and to you</p></div>
+      <div class="info-card"><b>Working With Their Doctor</b><p style="margin-top:.4rem;">How to walk into an appointment prepared, not overwhelmed</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="dark-panel">
+      <div class="section-header"><span class="section-tag" style="color:#5eead4;">Who's Behind This Course</span><h2 class="section-title light">More than another article to forward them</h2></div>
+      <div class="then-now">
+        <div class="col then"><h4>What you've tried</h4><p>Forwarding articles, reminding them to “eat better,” and a prescription from the doctor with no follow-up structure.</p></div>
+        <div class="col now"><h4>What this gives them</h4><p>An actual structured 12-week plan &mdash; the kind of system hospitals use, adapted for home, with tracking and scripts for their own doctor.</p></div>
       </div>
+      <p class="panel-note" style="margin-top:1.4rem;"><b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management &mdash; including time in the New Zealand healthcare system. His day job is building the kind of checklists and structured systems hospitals rely on. This course brings that same discipline into something families are usually left to manage alone at home. The UK's DiRECT trial found that structured weight loss and lifestyle changes put a meaningful number of people with Type 2 diabetes into remission &mdash; not a guarantee, not everyone, but a real, evidence-backed shot, with the right structure behind it.</p>
     </div>
-    <div class="evidence" style="margin-top:20px;">
-      <b>The evidence:</b> The UK's DiRECT trial found that structured weight loss and lifestyle changes put a meaningful number of people with Type 2 diabetes into remission. Not a guarantee, not everyone — but a real, evidence-backed shot, with the right structure behind it.
-    </div>
+  </div>
+</section>
+
+<section id="faqs">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Before You Gift This</span><h2 class="section-title">Frequently asked questions</h2></div>
+    <details class="faq-item"><summary>Will they need to be tech-savvy to use it?</summary><p>No. It's video-based, self-paced, and works on a phone, tablet, or computer &mdash; they watch and follow along at their own speed.</p></details>
+    <details class="faq-item"><summary>Does this replace their doctor?</summary><p>No. It gives them structure and better questions to bring to their doctor &mdash; it's never a substitute for medical advice, diagnosis, or treatment.</p></details>
+    <details class="faq-item"><summary>What if they've had diabetes for years already?</summary><p>The course works for anyone wanting a real structure &mdash; newly diagnosed or years in. The tracking system and nutrition protocol apply either way.</p></details>
   </div>
 </section>
 
 <section>
-  <div class="wrap faq">
-    <h2>Before you gift this</h2>
-    <details><summary>Will they need to be tech-savvy to use it?</summary><p>No. It's video-based, self-paced, and works on a phone, tablet, or computer — they watch and follow along at their own speed.</p></details>
-    <details><summary>Does this replace their doctor?</summary><p>No. It gives them structure and better questions to bring to their doctor — it's never a substitute for medical advice, diagnosis, or treatment.</p></details>
-    <details><summary>What if they've had diabetes for years already?</summary><p>The course works for anyone wanting a real structure — newly diagnosed or years in. The tracking system and nutrition protocol apply either way.</p></details>
-  </div>
-</section>
-
-<section class="alt">
   <div class="wrap">
     <div class="final-cta">
       <h2>Give them a real plan, not just another reminder</h2>
-      <p>12-week plan · Lifetime access · They learn at their own pace</p>
-      <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Get the Course on Udemy →</a>
+      <p>12-week plan &middot; Lifetime access &middot; They learn at their own pace</p>
+      <a class="cta-btn" style="background:#fff;color:var(--primary-dark);" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Get the Course on Udemy &rarr;</a>
     </div>
     <div class="disclaimer">
       This course is educational content and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for professional medical care. Always consult a doctor before making changes to medication, diet, or exercise routine.
@@ -113,7 +124,7 @@
 <footer>
 <div class="wrap">
   <span class="footer-label">More on diabetes &amp; weight loss</span>
-  <div class="footer-links"><a href="index.html">Home</a><span class="sep">&middot;</span><a href="12-week-plan.html">The 12-Week Plan</a><span class="sep">&middot;</span><a href="weight-loss.html">Weight Loss & Diabetes Link</a><span class="sep">&middot;</span><a href="belly-fat.html">Belly Fat & Diabetes</a><span class="sep">&middot;</span><a href="busy-professional.html">Busy Professionals</a><span class="sep">&middot;</span><a href="newly-diagnosed.html">Newly Diagnosed</a><span class="sep">&middot;</span><a href="prediabetes.html">Prediabetes / Borderline</a><span class="sep">&middot;</span><a href="young-onset.html">Diagnosed in Your 20s-30s</a><span class="sep">&middot;</span><a href="seniors.html">Diabetes After 60</a><span class="sep">&middot;</span><a href="pcos-insulin-resistance.html">PCOS & Insulin Resistance</a><span class="sep">&middot;</span><a href="what-to-eat.html">What to Eat</a><span class="sep">&middot;</span><a href="indian-diet.html">Indian Diet</a><span class="sep">&middot;</span><a href="vegetarian-diet.html">Vegetarian Diet</a><span class="sep">&middot;</span><a href="food-order.html">Does Food Order Matter?</a><span class="sep">&middot;</span><a href="sugar-cravings.html">Sugar Cravings</a><span class="sep">&middot;</span><a href="movement.html">How Much Exercise?</a><span class="sep">&middot;</span><a href="post-meal-walk.html">Post-Meal Walks</a><span class="sep">&middot;</span><a href="tracking-system.html">Tracking Your Numbers</a><span class="sep">&middot;</span><a href="hba1c-numbers.html">Understanding HbA1c</a><span class="sep">&middot;</span><a href="stress-sleep-blood-sugar.html">Stress, Sleep & Sugar</a><span class="sep">&middot;</span><a href="diabetes-fatigue.html">Why Diabetes Causes Fatigue</a><span class="sep">&middot;</span><a href="complications.html">Diabetes Complications</a><span class="sep">&middot;</span><a href="diabetes-blood-pressure.html">Diabetes & Blood Pressure</a><span class="sep">&middot;</span><a href="fatty-liver.html">Fatty Liver & Diabetes</a><span class="sep">&middot;</span><a href="without-medicine.html">Control Without Medicine?</a><span class="sep">&middot;</span><a href="still-struggling.html">Still Struggling?</a><span class="sep">&middot;</span><a href="is-reversal-real.html">Is Reversal Real?</a><span class="sep">&middot;</span><a href="realistic-results.html">Realistic Results</a><span class="sep">&middot;</span><a href="long-term-maintenance.html">Long-Term Maintenance</a><span class="sep">&middot;</span><a href="diabetes-travel.html">Traveling With Diabetes</a><span class="sep">&middot;</span><a href="myths.html">Common Myths</a><span class="sep">&middot;</span><a href="is-it-worth-it.html">Why Pay For This?</a><span class="sep">&middot;</span><a href="intermittent-fasting.html">Intermittent Fasting — Is It Safe?</a><span class="sep">&middot;</span><a href="diet-chart.html">Diabetes Diet Chart (Plate Model)</a><span class="sep">&middot;</span><a href="metformin.html">On Metformin? Read This</a><span class="sep">&middot;</span><a href="fasting-vs-post-meal.html">Fasting vs After-Meal Sugar</a><span class="sep">&middot;</span><a href="foot-care.html">Foot Care Before You Start Walking</a><span class="sep">&middot;</span><a href="glp1-vs-lifestyle.html">GLP-1 Drugs vs Lifestyle-First</a></div>
+  <div class="footer-links"><a href="index.html">Home</a><span class="sep">&middot;</span><a href="12-week-plan.html">The 12-Week Plan</a><span class="sep">&middot;</span><a href="weight-loss.html">Weight Loss &amp; Diabetes Link</a><span class="sep">&middot;</span><a href="belly-fat.html">Belly Fat &amp; Diabetes</a><span class="sep">&middot;</span><a href="busy-professional.html">Busy Professionals</a><span class="sep">&middot;</span><a href="newly-diagnosed.html">Newly Diagnosed</a><span class="sep">&middot;</span><a href="prediabetes.html">Prediabetes / Borderline</a><span class="sep">&middot;</span><a href="young-onset.html">Diagnosed in Your 20s-30s</a><span class="sep">&middot;</span><a href="seniors.html">Diabetes After 60</a><span class="sep">&middot;</span><a href="pcos-insulin-resistance.html">PCOS &amp; Insulin Resistance</a><span class="sep">&middot;</span><a href="what-to-eat.html">What to Eat</a><span class="sep">&middot;</span><a href="indian-diet.html">Indian Diet</a><span class="sep">&middot;</span><a href="vegetarian-diet.html">Vegetarian Diet</a><span class="sep">&middot;</span><a href="food-order.html">Does Food Order Matter?</a><span class="sep">&middot;</span><a href="sugar-cravings.html">Sugar Cravings</a><span class="sep">&middot;</span><a href="movement.html">How Much Exercise?</a><span class="sep">&middot;</span><a href="post-meal-walk.html">Post-Meal Walks</a><span class="sep">&middot;</span><a href="tracking-system.html">Tracking Your Numbers</a><span class="sep">&middot;</span><a href="hba1c-numbers.html">Understanding HbA1c</a><span class="sep">&middot;</span><a href="stress-sleep-blood-sugar.html">Stress, Sleep &amp; Sugar</a><span class="sep">&middot;</span><a href="diabetes-fatigue.html">Why Diabetes Causes Fatigue</a><span class="sep">&middot;</span><a href="complications.html">Diabetes Complications</a><span class="sep">&middot;</span><a href="diabetes-blood-pressure.html">Diabetes &amp; Blood Pressure</a><span class="sep">&middot;</span><a href="fatty-liver.html">Fatty Liver &amp; Diabetes</a><span class="sep">&middot;</span><a href="without-medicine.html">Control Without Medicine?</a><span class="sep">&middot;</span><a href="still-struggling.html">Still Struggling?</a><span class="sep">&middot;</span><a href="is-reversal-real.html">Is Reversal Real?</a><span class="sep">&middot;</span><a href="realistic-results.html">Realistic Results</a><span class="sep">&middot;</span><a href="long-term-maintenance.html">Long-Term Maintenance</a><span class="sep">&middot;</span><a href="diabetes-travel.html">Traveling With Diabetes</a><span class="sep">&middot;</span><a href="myths.html">Common Myths</a><span class="sep">&middot;</span><a href="is-it-worth-it.html">Why Pay For This?</a><span class="sep">&middot;</span><a href="intermittent-fasting.html">Intermittent Fasting &mdash; Is It Safe?</a><span class="sep">&middot;</span><a href="diet-chart.html">Diabetes Diet Chart (Plate Model)</a><span class="sep">&middot;</span><a href="metformin.html">On Metformin? Read This</a><span class="sep">&middot;</span><a href="fasting-vs-post-meal.html">Fasting vs After-Meal Sugar</a><span class="sep">&middot;</span><a href="foot-care.html">Foot Care Before You Start Walking</a><span class="sep">&middot;</span><a href="glp1-vs-lifestyle.html">GLP-1 Drugs vs Lifestyle-First</a></div>
   <p>Type 2 Diabetes Remission Protocol (12-Week System) &middot; Built by Dr. Mehul Upadhyay</p>
 </div>
 </footer>

@@ -8,7 +8,11 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:image" content="https://course.accredready.in/logo-512.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme-teal.css">
+<style>
+.info-grid.quad{grid-template-columns:1fr 1fr;}
+@media(max-width:700px){.info-grid.quad{grid-template-columns:1fr;}}
+</style>
 </head>
 <body>
 <nav class="site-nav">
@@ -23,86 +27,104 @@
   </div>
 </nav>
 
+<nav class="page-nav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Type 2 Diabetes Remission Protocol<small>Dr. Mehul Upadhyay</small></a>
+    <div class="nav-links">
+      <a href="#connection">The Connection</a>
+      <a href="#modules">Modules</a>
+      <a href="#tracker">Tracker</a>
+      <a href="#faqs">FAQs</a>
+    </div>
+    <a class="nav-cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course &rarr;</a>
+  </div>
+</nav>
+
 <header class="hero">
   <div class="wrap">
-    <span class="eyebrow">FATTY LIVER & DIABETES</span>
-    <h1>Found out you have fatty liver too? It's more connected to your sugar than you think.</h1>
-    <p class="sub">India now has one of the highest rates of fatty liver disease in the world, and it's closely linked to insulin resistance and Type 2 diabetes. The good news: the same structured weight loss that helps your blood sugar is also the main treatment for fatty liver.</p>
-    <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy →</a>
-    <div class="cta-sub">12-week structured plan · Lifetime access · Certificate of completion</div>
+    <span class="badge-pill">Fatty Liver &amp; Diabetes</span>
+    <h1 class="hero-title">Found Out You Have Fatty Liver Too? It's More Connected to Your Sugar Than You Think.</h1>
+    <p class="hero-subtitle">India now has one of the highest rates of fatty liver disease in the world, and it's closely linked to insulin resistance and Type 2 diabetes. The good news: the same structured weight loss that helps your blood sugar is also the main treatment for fatty liver.</p>
+    <a class="cta-btn" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy &rarr;</a>
+    <div class="hero-meta">12-week structured plan &middot; Lifetime access &middot; Certificate of completion</div>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <h2>Sound familiar?</h2>
-    <ul class="pain-list">
-      <li>An ultrasound or blood test flagged fatty liver, and now you're worried about what that means long-term</li>
-      <li>No one explained the connection between fatty liver, insulin resistance, and your diabetes risk</li>
-      <li>You've been told to "lose weight" for your liver, with no actual plan for how</li>
-      <li>You don't know if fixing your diabetes risk and your liver health require two different approaches, or one</li>
-    </ul>
+    <div class="section-header"><span class="section-tag">Sound familiar?</span><h2 class="section-title">"Lose weight" isn't a plan for your liver</h2></div>
+    <div class="frustration-grid">
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>An ultrasound or blood test flagged fatty liver, and now you're worried about what that means long-term</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>No one explained the connection between fatty liver, insulin resistance, and your diabetes risk</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You've been told to "lose weight" for your liver, with no actual plan for how</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You don't know if fixing your diabetes risk and your liver health require two different approaches, or one</p></div>
+    </div>
   </div>
 </section>
 
-<section class="alt">
+<section id="connection">
   <div class="wrap">
-    <h2>One structured plan, two outcomes</h2>
-    <ul class="check-list">
-      <li>A plain-English explanation of how fatty liver, insulin resistance, and Type 2 diabetes are connected</li>
-      <li>A structured nutrition approach built around the weight loss shown to reduce liver fat, not a generic "eat healthy" suggestion</li>
-      <li>Movement guidance suited to improving insulin sensitivity, which is central to liver fat reduction too</li>
-      <li>A tracking system so you can see weight and blood sugar move together over the 12 weeks</li>
-      <li>Guidance on what to ask your doctor about monitoring your liver alongside your diabetes risk</li>
-    </ul>
+    <div class="section-header"><span class="section-tag">One Structured Plan, Two Outcomes</span><h2 class="section-title">What you get instead of a generic "eat healthy" note</h2></div>
+    <div class="check-grid">
+      <div class="check-card"><span class="icon-check">&check;</span><p>A plain-English explanation of how fatty liver, insulin resistance, and Type 2 diabetes are connected</p></div>
+      <div class="check-card"><span class="icon-check">&check;</span><p>A structured nutrition approach built around the weight loss shown to reduce liver fat, not a generic "eat healthy" suggestion</p></div>
+      <div class="check-card"><span class="icon-check">&check;</span><p>Movement guidance suited to improving insulin sensitivity, which is central to liver fat reduction too</p></div>
+      <div class="check-card"><span class="icon-check">&check;</span><p>A tracking system so you can see weight and blood sugar move together over the 12 weeks</p></div>
+      <div class="check-card"><span class="icon-check">&check;</span><p>Guidance on what to ask your doctor about monitoring your liver alongside your diabetes risk</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="modules">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Inside the Course</span><h2 class="section-title">Modules built around the shared cause</h2></div>
+    <div class="info-grid quad">
+      <div class="info-card"><b>Understanding Your Numbers</b><p style="margin-top:.4rem;">What HbA1c and insulin resistance actually mean, and why they drive every decision going forward.</p></div>
+      <div class="info-card"><b>The Science of Remission</b><p style="margin-top:.4rem;">What the evidence shows about weight loss reducing both liver fat and diabetes risk.</p></div>
+      <div class="info-card"><b>Nutrition Protocol</b><p style="margin-top:.4rem;">A structured, sustainable eating approach built around the weight loss that actually helps liver fat.</p></div>
+      <div class="info-card"><b>Movement, Sleep &amp; Stress</b><p style="margin-top:.4rem;">Why movement and sleep matter for liver health, not just the scale.</p></div>
+      <div class="info-card"><b>Tracking System</b><p style="margin-top:.4rem;">Watch weight and blood sugar move together using one simple log.</p></div>
+      <div class="info-card"><b>Working With Your Doctor</b><p style="margin-top:.4rem;">What to ask about monitoring your liver alongside your diabetes care.</p></div>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>Modules inside the course</h2>
-    <div class="grid">
-      <div class="module"><b>Understanding Your Numbers</b><br>What HbA1c and insulin resistance actually mean, and why they drive every decision going forward</div>
-      <div class="module"><b>The Science of Remission</b><br>What the evidence shows about weight loss reducing both liver fat and diabetes risk</div>
-      <div class="module"><b>Nutrition Protocol</b><br>A structured, sustainable eating approach built around the weight loss that actually helps liver fat</div>
-      <div class="module"><b>Movement, Sleep & Stress</b><br>Why movement and sleep matter for liver health, not just the scale</div>
-      <div class="module"><b>Tracking System</b><br>Watch weight and blood sugar move together using one simple log</div>
-      <div class="module"><b>Working With Your Doctor</b><br>What to ask about monitoring your liver alongside your diabetes care</div>
+    <div class="dark-panel">
+      <div class="section-header"><span class="section-tag" style="color:#5eead4;">The Evidence</span><h2 class="section-title light">One shared root cause, not two separate diets</h2></div>
+      <p class="panel-note" style="margin-top:1.2rem;">Fatty liver disease and Type 2 diabetes share insulin resistance as a common root cause, and structured weight loss is the primary evidence-based approach recommended for both — there's no separate "liver diet" required on top of it.</p>
     </div>
   </div>
 </section>
 
-<section class="alt">
+<section id="tracker">
   <div class="wrap">
-    <h2>Why this, and not just a generic "liver detox" plan</h2>
-    <div class="instructor">
-      <div>
-        <p><b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management — including time in the New Zealand healthcare system. This course applies that same structured, evidence-based thinking to the fatty liver–diabetes connection, instead of the detox-tea content that dominates search results on this topic.</p>
-        <span class="badge">15+ Years Healthcare Ops</span>
-        <span class="badge">International Hospital Experience</span>
+    <div class="tracker-card">
+      <div class="tracker-copy">
+        <h3>Watch weight and blood sugar move together</h3>
+        <p>The free tracker at dmremission.accredready.in logs your weight and blood sugar side by side over the 12 weeks, so the connection shows up in your own numbers instead of staying theoretical. No account cost, no course purchase required.</p>
       </div>
+      <a class="cta-btn outline" href="https://dmremission.accredready.in/">Open the Free Tracker &rarr;</a>
     </div>
-    <div class="evidence" style="margin-top:20px;">
-      <b>The evidence:</b> Fatty liver disease and Type 2 diabetes share insulin resistance as a common root cause, and structured weight loss is the primary evidence-based approach recommended for both — there's no separate "liver diet" required on top of it.
-    </div>
+  </div>
+</section>
+
+<section id="faqs">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Before You Ask</span><h2 class="section-title">Frequently asked questions</h2></div>
+    <details class="faq-item"><summary>Is this a liver detox program?</summary><p>No — and detox teas and supplements aren't a substitute for the weight loss and insulin-sensitivity improvements that actually help fatty liver. This course focuses on what the evidence actually supports.</p></details>
+    <details class="faq-item"><summary>Do I need a special "liver diet" separate from a diabetes diet?</summary><p>Generally no — the same structured, sustainable weight-loss approach helps both conditions, since they share the same underlying driver.</p></details>
+    <details class="faq-item"><summary>Is this a replacement for my doctor?</summary><p>No. This is structure and knowledge to have better conversations with your doctor — never a replacement for medical advice, especially for monitoring your liver.</p></details>
   </div>
 </section>
 
 <section>
-  <div class="wrap faq">
-    <h2>Before you ask</h2>
-    <details><summary>Is this a liver detox program?</summary><p>No — and detox teas and supplements aren't a substitute for the weight loss and insulin-sensitivity improvements that actually help fatty liver. This course focuses on what the evidence actually supports.</p></details>
-    <details><summary>Do I need a special "liver diet" separate from a diabetes diet?</summary><p>Generally no — the same structured, sustainable weight-loss approach helps both conditions, since they share the same underlying driver.</p></details>
-    <details><summary>Is this a replacement for my doctor?</summary><p>No. This is structure and knowledge to have better conversations with your doctor — never a replacement for medical advice, especially for monitoring your liver.</p></details>
-  </div>
-</section>
-
-<section class="alt">
   <div class="wrap">
     <div class="final-cta">
       <h2>One plan for your liver and your blood sugar</h2>
-      <p>12-week plan · Lifetime access · Learn at your own pace</p>
-      <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy →</a>
+      <p>12-week plan &middot; Lifetime access &middot; Learn at your own pace</p>
+      <a class="cta-btn" style="background:#fff;color:var(--primary-dark);" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy &rarr;</a>
     </div>
     <div class="disclaimer">
       This course is educational content and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for professional medical care, including monitoring of liver health. Always consult your doctor before making changes to your medication, diet, or exercise routine.

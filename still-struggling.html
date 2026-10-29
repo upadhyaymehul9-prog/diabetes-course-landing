@@ -8,7 +8,22 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:image" content="https://course.accredready.in/logo-512.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme-teal.css">
+<style>
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);border:1px solid var(--card-border);}
+@media(max-width:760px){.compare-grid{grid-template-columns:1fr;}}
+.compare-col{padding:1.8rem 1.6rem;}
+.compare-col.a{background:#fff;}
+.compare-col.b{background:var(--primary-dark);color:#fff;}
+.compare-col h3{font-size:1.05rem;font-weight:800;margin-bottom:1rem;}
+.compare-col.a h3{color:var(--slate-900);}
+.compare-col.b h3{color:#fff;}
+.compare-col ul{list-style:none;}
+.compare-col li{padding:.55rem 0;font-size:.88rem;line-height:1.5;border-bottom:1px solid rgba(0,0,0,.06);}
+.compare-col.b li{border-bottom:1px solid rgba(255,255,255,.12);color:#d7f4ef;}
+.compare-col.a li{color:var(--slate-700);}
+.compare-col li:last-child{border-bottom:none;}
+</style>
 </head>
 <body>
 <nav class="site-nav">
@@ -23,87 +38,114 @@
   </div>
 </nav>
 
-<header class="hero">
-  <div class="wrap">
-    <span class="eyebrow">FOR THE FRUSTRATED AND PLATEAUED</span>
-    <h1>Doing everything right, but your numbers won't move?</h1>
-    <p class="sub">More medication isn't always the answer. If you don't understand what's driving your blood sugar day to day, no dose increase fixes that. This course gives you the structure to actually see what's working.</p>
-    <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy →</a>
-    <div class="cta-sub">12-week structured plan · Lifetime access · Certificate of completion</div>
+<nav class="page-nav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Type 2 Diabetes Remission Protocol<small>Dr. Mehul Upadhyay</small></a>
+    <div class="nav-links">
+      <a href="#plan">What's Missing</a>
+      <a href="#modules">Modules</a>
+      <a href="#why">Why This</a>
+      <a href="#tracker">Tracker</a>
+      <a href="#faqs">FAQs</a>
+    </div>
+    <a class="nav-cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course &rarr;</a>
   </div>
-</header>
+</nav>
 
 <section>
   <div class="wrap">
-    <h2>Sound familiar?</h2>
-    <ul class="pain-list">
-      <li>Your doctor keeps increasing your dose, but your HbA1c barely moves</li>
-      <li>You've tried diets before — they worked for a few weeks, then nothing changed</li>
-      <li>You don't actually know which of your habits are helping and which aren't</li>
-      <li>Every appointment feels like starting over, with no clear picture of your own progress</li>
-    </ul>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <h2>What's usually missing</h2>
-    <p style="font-size:16px;color:var(--muted);max-width:640px;">If you understand diabetes — really understand it — your medicine works better. If you don't, you can keep increasing the dose and still struggle. That gap is what this course closes: not more medication, but the structure and tracking that makes the medication actually work.</p>
-    <ul class="check-list">
-      <li>A tracking system that shows you real progress, not guesswork</li>
-      <li>A clear explanation of HbA1c and what actually moves it</li>
-      <li>A nutrition and movement protocol built to work with your treatment, not against it</li>
-      <li>What to do specifically when your progress plateaus — a dedicated module for it</li>
-      <li>Scripts to bring real data into your next doctor's appointment</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Modules inside the course</h2>
-    <div class="grid">
-      <div class="module"><b>Understanding Your Numbers</b><br>What HbA1c actually reflects, and why hitting a plateau doesn't mean you've failed</div>
-      <div class="module"><b>The Science of Remission</b><br>What's clinically possible, backed by the DiRECT trial and other published research</div>
-      <div class="module"><b>Nutrition Protocol</b><br>A structured approach, not another diet you'll abandon in three weeks</div>
-      <div class="module"><b>Movement, Sleep & Stress</b><br>The levers most treatment plans never touch</div>
-      <div class="module"><b>Tracking System</b><br>See exactly what's working and what isn't — in your own data</div>
-      <div class="module"><b>When Progress Plateaus</b><br>A dedicated module for exactly the situation you're in right now</div>
+    <div class="section-header"><span class="section-tag">Sound familiar?</span><h2 class="section-title">Doing everything right, but your numbers won't move?</h2></div>
+    <div class="frustration-grid">
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>Your doctor keeps increasing your dose, but your HbA1c barely moves</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You've tried diets before &mdash; they worked for a few weeks, then nothing changed</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You don't actually know which of your habits are helping and which aren't</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>Every appointment feels like starting over, with no clear picture of your own progress</p></div>
     </div>
   </div>
 </section>
 
-<section class="alt">
+<section id="plan">
   <div class="wrap">
-    <h2>Why this, and not just another YouTube video</h2>
-    <div class="instructor">
-      <div>
-        <p><b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management — including time in the New Zealand healthcare system. His day job is making sure hospitals follow strict, evidence-based standards, not guesswork. This course applies that same structured thinking to the gap most patients hit after the first few months: the plateau.</p>
-        <span class="badge">15+ Years Healthcare Ops</span>
-        <span class="badge">International Hospital Experience</span>
+    <div class="section-header"><span class="section-tag">What's Usually Missing</span><h2 class="section-title">What's usually missing</h2><p class="section-sub">If you understand diabetes &mdash; really understand it &mdash; your medicine works better. If you don't, you can keep increasing the dose and still struggle. That gap is what this course closes: not more medication, but the structure and tracking that makes the medication actually work.</p></div>
+    <div class="check-grid">
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>A tracking system that shows you real progress, not guesswork</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>A clear explanation of HbA1c and what actually moves it</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>A nutrition and movement protocol built to work with your treatment, not against it</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>What to do specifically when your progress plateaus &mdash; a dedicated module for it</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>Scripts to bring real data into your next doctor's appointment</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="modules">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">What's Inside</span><h2 class="section-title">Modules inside the course</h2></div>
+    <div class="info-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="info-card"><b>Understanding Your Numbers</b><p style="margin-top:.4rem;">What HbA1c actually reflects, and why hitting a plateau doesn't mean you've failed</p></div>
+      <div class="info-card"><b>The Science of Remission</b><p style="margin-top:.4rem;">What's clinically possible, backed by the DiRECT trial and other published research</p></div>
+      <div class="info-card"><b>Nutrition Protocol</b><p style="margin-top:.4rem;">A structured approach, not another diet you'll abandon in three weeks</p></div>
+      <div class="info-card"><b>Movement, Sleep &amp; Stress</b><p style="margin-top:.4rem;">The levers most treatment plans never touch</p></div>
+      <div class="info-card"><b>Tracking System</b><p style="margin-top:.4rem;">See exactly what's working and what isn't &mdash; in your own data</p></div>
+      <div class="info-card"><b>When Progress Plateaus</b><p style="margin-top:.4rem;">A dedicated module for exactly the situation you're in right now</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Not More Medication &mdash; More Structure</span><h2 class="section-title">Why the dose increase isn't the whole answer</h2></div>
+    <div class="compare-grid">
+      <div class="compare-col a">
+        <h3>More medication alone</h3>
+        <ul>
+          <li>Treats the number, not what's driving it day to day</li>
+          <li>No tracking system showing what's actually working</li>
+          <li>Each appointment feels like starting over</li>
+        </ul>
+      </div>
+      <div class="compare-col b">
+        <h3>Structure + tracking, alongside treatment</h3>
+        <ul>
+          <li>A nutrition and movement protocol built to work with your treatment</li>
+          <li>A tracking system so plateaus become visible and fixable</li>
+          <li>Real data to bring into your next doctor's appointment</li>
+        </ul>
       </div>
     </div>
-    <div class="evidence" style="margin-top:20px;">
-      <b>The evidence:</b> The UK's DiRECT trial found that structured weight loss and lifestyle changes — not medication alone — put a meaningful number of people with Type 2 diabetes into remission. Structure, tracked consistently, is what moved the number. Not everyone gets there, but it's worth trying seriously.
+    <div class="info-card" style="max-width:720px;margin:1.6rem auto 0;">
+      <p><b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management &mdash; including time in the New Zealand healthcare system. His day job is making sure hospitals follow strict, evidence-based standards, not guesswork. This course applies that same structured thinking to the gap most patients hit after the first few months: the plateau.</p>
+      <p style="margin-top:14px;"><b>The evidence:</b> The UK's DiRECT trial found that structured weight loss and lifestyle changes &mdash; not medication alone &mdash; put a meaningful number of people with Type 2 diabetes into remission. Structure, tracked consistently, is what moved the number. Not everyone gets there, but it's worth trying seriously.</p>
     </div>
   </div>
 </section>
 
-<section>
-  <div class="wrap faq">
-    <h2>Before you ask</h2>
-    <details><summary>Will this replace my medication?</summary><p>No, and it's not designed to. This course gives you structure and tracking alongside your treatment — never stop or change medication without talking to your doctor first.</p></details>
-    <details><summary>I've tried structured plans before and given up. Why is this different?</summary><p>Most plans fail because there's no tracking system showing you what's actually working. This course builds that in from week one, so plateaus become visible and fixable instead of invisible and discouraging.</p></details>
-    <details><summary>How long until I see a difference?</summary><p>This is a 12-week structured plan. Some weeks will feel great, some will feel frustrating — that's normal and covered directly in the course, not glossed over.</p></details>
+<section id="tracker">
+  <div class="wrap">
+    <div class="tracker-card">
+      <div class="tracker-copy">
+        <h3>See what's actually happening with your numbers</h3>
+        <p>The free tracker at dmremission.accredready.in logs your fasting and post-meal glucose, weight, and habits week by week &mdash; so a plateau becomes something you can see and troubleshoot, instead of a mystery you bring up at your next appointment with no real data.</p>
+      </div>
+      <a class="cta-btn outline" href="https://dmremission.accredready.in/">Open the Free Tracker &rarr;</a>
+    </div>
   </div>
 </section>
 
-<section class="alt">
+<section id="faqs">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Before You Ask</span><h2 class="section-title">Frequently asked questions</h2></div>
+    <details class="faq-item"><summary>Will this replace my medication?</summary><p>No, and it's not designed to. This course gives you structure and tracking alongside your treatment &mdash; never stop or change medication without talking to your doctor first.</p></details>
+    <details class="faq-item"><summary>I've tried structured plans before and given up. Why is this different?</summary><p>Most plans fail because there's no tracking system showing you what's actually working. This course builds that in from week one, so plateaus become visible and fixable instead of invisible and discouraging.</p></details>
+    <details class="faq-item"><summary>How long until I see a difference?</summary><p>This is a 12-week structured plan. Some weeks will feel great, some will feel frustrating &mdash; that's normal and covered directly in the course, not glossed over.</p></details>
+  </div>
+</section>
+
+<section>
   <div class="wrap">
     <div class="final-cta">
       <h2>Stop guessing why your numbers won't move</h2>
-      <p>12-week plan · Lifetime access · Learn at your own pace</p>
-      <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy →</a>
+      <p>12-week plan &middot; Lifetime access &middot; Learn at your own pace</p>
+      <a class="cta-btn" style="background:#fff;color:var(--primary-dark);" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy &rarr;</a>
     </div>
     <div class="disclaimer">
       This course is educational content and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for professional medical care. Always consult your doctor before making changes to your medication, diet, or exercise routine.
@@ -114,7 +156,7 @@
 <footer>
 <div class="wrap">
   <span class="footer-label">More on diabetes &amp; weight loss</span>
-  <div class="footer-links"><a href="index.html">Home</a><span class="sep">&middot;</span><a href="12-week-plan.html">The 12-Week Plan</a><span class="sep">&middot;</span><a href="weight-loss.html">Weight Loss & Diabetes Link</a><span class="sep">&middot;</span><a href="belly-fat.html">Belly Fat & Diabetes</a><span class="sep">&middot;</span><a href="busy-professional.html">Busy Professionals</a><span class="sep">&middot;</span><a href="for-family.html">Helping a Parent</a><span class="sep">&middot;</span><a href="newly-diagnosed.html">Newly Diagnosed</a><span class="sep">&middot;</span><a href="prediabetes.html">Prediabetes / Borderline</a><span class="sep">&middot;</span><a href="young-onset.html">Diagnosed in Your 20s-30s</a><span class="sep">&middot;</span><a href="seniors.html">Diabetes After 60</a><span class="sep">&middot;</span><a href="pcos-insulin-resistance.html">PCOS & Insulin Resistance</a><span class="sep">&middot;</span><a href="what-to-eat.html">What to Eat</a><span class="sep">&middot;</span><a href="indian-diet.html">Indian Diet</a><span class="sep">&middot;</span><a href="vegetarian-diet.html">Vegetarian Diet</a><span class="sep">&middot;</span><a href="food-order.html">Does Food Order Matter?</a><span class="sep">&middot;</span><a href="sugar-cravings.html">Sugar Cravings</a><span class="sep">&middot;</span><a href="movement.html">How Much Exercise?</a><span class="sep">&middot;</span><a href="post-meal-walk.html">Post-Meal Walks</a><span class="sep">&middot;</span><a href="tracking-system.html">Tracking Your Numbers</a><span class="sep">&middot;</span><a href="hba1c-numbers.html">Understanding HbA1c</a><span class="sep">&middot;</span><a href="stress-sleep-blood-sugar.html">Stress, Sleep & Sugar</a><span class="sep">&middot;</span><a href="diabetes-fatigue.html">Why Diabetes Causes Fatigue</a><span class="sep">&middot;</span><a href="complications.html">Diabetes Complications</a><span class="sep">&middot;</span><a href="diabetes-blood-pressure.html">Diabetes & Blood Pressure</a><span class="sep">&middot;</span><a href="fatty-liver.html">Fatty Liver & Diabetes</a><span class="sep">&middot;</span><a href="without-medicine.html">Control Without Medicine?</a><span class="sep">&middot;</span><a href="is-reversal-real.html">Is Reversal Real?</a><span class="sep">&middot;</span><a href="realistic-results.html">Realistic Results</a><span class="sep">&middot;</span><a href="long-term-maintenance.html">Long-Term Maintenance</a><span class="sep">&middot;</span><a href="diabetes-travel.html">Traveling With Diabetes</a><span class="sep">&middot;</span><a href="myths.html">Common Myths</a><span class="sep">&middot;</span><a href="is-it-worth-it.html">Why Pay For This?</a><span class="sep">&middot;</span><a href="intermittent-fasting.html">Intermittent Fasting — Is It Safe?</a><span class="sep">&middot;</span><a href="diet-chart.html">Diabetes Diet Chart (Plate Model)</a><span class="sep">&middot;</span><a href="metformin.html">On Metformin? Read This</a><span class="sep">&middot;</span><a href="fasting-vs-post-meal.html">Fasting vs After-Meal Sugar</a><span class="sep">&middot;</span><a href="foot-care.html">Foot Care Before You Start Walking</a><span class="sep">&middot;</span><a href="glp1-vs-lifestyle.html">GLP-1 Drugs vs Lifestyle-First</a></div>
+  <div class="footer-links"><a href="index.html">Home</a><span class="sep">&middot;</span><a href="12-week-plan.html">The 12-Week Plan</a><span class="sep">&middot;</span><a href="weight-loss.html">Weight Loss &amp; Diabetes Link</a><span class="sep">&middot;</span><a href="belly-fat.html">Belly Fat &amp; Diabetes</a><span class="sep">&middot;</span><a href="busy-professional.html">Busy Professionals</a><span class="sep">&middot;</span><a href="for-family.html">Helping a Parent</a><span class="sep">&middot;</span><a href="newly-diagnosed.html">Newly Diagnosed</a><span class="sep">&middot;</span><a href="prediabetes.html">Prediabetes / Borderline</a><span class="sep">&middot;</span><a href="young-onset.html">Diagnosed in Your 20s-30s</a><span class="sep">&middot;</span><a href="seniors.html">Diabetes After 60</a><span class="sep">&middot;</span><a href="pcos-insulin-resistance.html">PCOS &amp; Insulin Resistance</a><span class="sep">&middot;</span><a href="what-to-eat.html">What to Eat</a><span class="sep">&middot;</span><a href="indian-diet.html">Indian Diet</a><span class="sep">&middot;</span><a href="vegetarian-diet.html">Vegetarian Diet</a><span class="sep">&middot;</span><a href="food-order.html">Does Food Order Matter?</a><span class="sep">&middot;</span><a href="sugar-cravings.html">Sugar Cravings</a><span class="sep">&middot;</span><a href="movement.html">How Much Exercise?</a><span class="sep">&middot;</span><a href="post-meal-walk.html">Post-Meal Walks</a><span class="sep">&middot;</span><a href="tracking-system.html">Tracking Your Numbers</a><span class="sep">&middot;</span><a href="hba1c-numbers.html">Understanding HbA1c</a><span class="sep">&middot;</span><a href="stress-sleep-blood-sugar.html">Stress, Sleep &amp; Sugar</a><span class="sep">&middot;</span><a href="diabetes-fatigue.html">Why Diabetes Causes Fatigue</a><span class="sep">&middot;</span><a href="complications.html">Diabetes Complications</a><span class="sep">&middot;</span><a href="diabetes-blood-pressure.html">Diabetes &amp; Blood Pressure</a><span class="sep">&middot;</span><a href="fatty-liver.html">Fatty Liver &amp; Diabetes</a><span class="sep">&middot;</span><a href="without-medicine.html">Control Without Medicine?</a><span class="sep">&middot;</span><a href="is-reversal-real.html">Is Reversal Real?</a><span class="sep">&middot;</span><a href="realistic-results.html">Realistic Results</a><span class="sep">&middot;</span><a href="long-term-maintenance.html">Long-Term Maintenance</a><span class="sep">&middot;</span><a href="diabetes-travel.html">Traveling With Diabetes</a><span class="sep">&middot;</span><a href="myths.html">Common Myths</a><span class="sep">&middot;</span><a href="is-it-worth-it.html">Why Pay For This?</a><span class="sep">&middot;</span><a href="intermittent-fasting.html">Intermittent Fasting &mdash; Is It Safe?</a><span class="sep">&middot;</span><a href="diet-chart.html">Diabetes Diet Chart (Plate Model)</a><span class="sep">&middot;</span><a href="metformin.html">On Metformin? Read This</a><span class="sep">&middot;</span><a href="fasting-vs-post-meal.html">Fasting vs After-Meal Sugar</a><span class="sep">&middot;</span><a href="foot-care.html">Foot Care Before You Start Walking</a><span class="sep">&middot;</span><a href="glp1-vs-lifestyle.html">GLP-1 Drugs vs Lifestyle-First</a></div>
   <p>Type 2 Diabetes Remission Protocol (12-Week System) &middot; Built by Dr. Mehul Upadhyay</p>
 </div>
 </footer>

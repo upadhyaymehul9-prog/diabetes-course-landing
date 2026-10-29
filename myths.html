@@ -8,7 +8,18 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:image" content="https://course.accredready.in/logo-512.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme-teal.css">
+<style>
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.3rem;}
+.myth-card{background:#fff;border:1px solid var(--card-border);border-radius:var(--radius-lg);box-shadow:var(--shadow-md);padding:1.5rem 1.6rem;}
+.myth-claim{font-size:.92rem;font-style:italic;color:var(--slate-700);line-height:1.5;margin-bottom:.9rem;padding-left:1rem;border-left:3px solid var(--slate-200);}
+.verdict-tag{display:inline-block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;padding:4px 11px;border-radius:999px;margin-bottom:.7rem;}
+.verdict-tag.myth{background:#fee2e2;color:#b91c1c;}
+.verdict-tag.mostly{background:#fef3c7;color:#92400e;}
+.verdict-tag.true{background:var(--primary-light);color:var(--primary-dark);}
+.myth-card h4{font-size:1rem;font-weight:800;color:var(--slate-900);margin-bottom:.4rem;}
+.myth-card p.body{font-size:.88rem;color:var(--slate-600);line-height:1.55;}
+</style>
 </head>
 <body>
 <nav class="site-nav">
@@ -19,60 +30,91 @@
     <a href="movement.html">How Much Exercise?</a>
     <a href="busy-professional.html">Busy Professionals</a>
     <a href="tracking-system.html">Tracking Your Numbers</a>
-    <a href="myths.html" class="active">Common Myths</a>
+    <a href="myths.html">Common Myths</a>
+  </div>
+</nav>
+
+<nav class="page-nav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Type 2 Diabetes Remission Protocol<small>Dr. Mehul Upadhyay</small></a>
+    <div class="nav-links">
+      <a href="#verdicts">Myth vs Reality</a>
+      <a href="#evidence">Why Myths Spread</a>
+      <a href="#faqs">FAQs</a>
+    </div>
+    <a class="nav-cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course &rarr;</a>
   </div>
 </nav>
 
 <header class="hero">
   <div class="wrap">
-    <span class="eyebrow">MYTHS VS EVIDENCE</span>
-    <h1>Does karela juice really cure diabetes?</h1>
-    <p class="sub">Every family has a home remedy for diabetes. Some have a grain of truth. Most don't. Here's what's actually backed by evidence, and what's just something that got repeated enough times to sound true.</p>
-    <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy →</a>
-    <div class="cta-sub">12-week structured plan · Lifetime access · Certificate of completion</div>
+    <span class="badge-pill">Myths vs Evidence</span>
+    <h1 class="hero-title">Does Karela Juice Really Cure Diabetes?</h1>
+    <p class="hero-subtitle">Every family has a home remedy for diabetes. Some have a grain of truth. Most don't. Here's what's actually backed by evidence, and what's just something that got repeated enough times to sound true.</p>
+    <a class="cta-btn" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy &rarr;</a>
+    <div class="hero-meta">12-week structured plan &middot; Lifetime access &middot; Certificate of completion</div>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <h2>Common myths we hear constantly</h2>
-    <ul class="pain-list">
-      <li>"Karela (bitter gourd) juice every morning will cure your diabetes"</li>
-      <li>"If you eat sweets even once, your sugar is ruined forever"</li>
-      <li>"Diabetes means you can never eat rice or mangoes again"</li>
-      <li>"Walking 10 minutes after any meal fixes everything"</li>
-      <li>"Ayurvedic or herbal medicine can replace your prescribed treatment"</li>
-    </ul>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <h2>What's actually true, and what isn't</h2>
-    <div class="grid">
-      <div class="module"><b>Karela juice</b><br>May have a mild, short-term effect on blood sugar for some people, but it is not a treatment and won't replace medication or lifestyle change.</div>
-      <div class="module"><b>One sweet "ruins" your sugar</b><br>Myth. A single food doesn't undo weeks of good management — but consistent daily patterns do matter.</div>
-      <div class="module"><b>Total rice/mango ban</b><br>Myth, usually. Portion and timing matter far more than total elimination for most people — this course covers exactly how.</div>
-      <div class="module"><b>Post-meal walking</b><br>True, and genuinely useful — a short walk after eating does measurably help blood sugar. One of the few myths that holds up.</div>
+    <div class="section-header"><span class="section-tag">Sound familiar?</span><h2 class="section-title">Common myths we hear constantly</h2></div>
+    <div class="frustration-grid">
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>"Karela (bitter gourd) juice every morning will cure your diabetes"</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>"If you eat sweets even once, your sugar is ruined forever"</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>"Diabetes means you can never eat rice or mangoes again"</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>"Walking 10 minutes after any meal fixes everything"</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>"Ayurvedic or herbal medicine can replace your prescribed treatment"</p></div>
     </div>
   </div>
 </section>
 
-<section>
+<section id="verdicts">
   <div class="wrap">
-    <h2>Why myths spread so easily</h2>
-    <p style="font-size:16px;color:var(--muted);max-width:640px;">Diabetes management is genuinely confusing, and a 10-minute doctor's visit rarely has time to explain the "why" behind any instruction. That gap gets filled with WhatsApp forwards and well-meaning advice from relatives — some of it harmless, some of it actively counterproductive.</p>
-    <div class="evidence">
-      <b>The evidence standard this course uses:</b> Every claim here is checked against published clinical research, including trials like the UK's DiRECT study on structured lifestyle change — not family folklore, not social media trends.
+    <div class="section-header"><span class="section-tag">Checked Against Evidence</span><h2 class="section-title">What's actually true, and what isn't</h2></div>
+    <div class="myth-grid">
+      <div class="myth-card">
+        <span class="verdict-tag mostly">Partly True</span>
+        <div class="myth-claim">"Karela juice every morning will cure your diabetes"</div>
+        <h4>Karela juice</h4>
+        <p class="body">May have a mild, short-term effect on blood sugar for some people, but it is not a treatment and won't replace medication or lifestyle change.</p>
+      </div>
+      <div class="myth-card">
+        <span class="verdict-tag myth">Myth</span>
+        <div class="myth-claim">"If you eat sweets even once, your sugar is ruined forever"</div>
+        <h4>One sweet "ruins" your sugar</h4>
+        <p class="body">A single food doesn't undo weeks of good management — but consistent daily patterns do matter.</p>
+      </div>
+      <div class="myth-card">
+        <span class="verdict-tag mostly">Usually a Myth</span>
+        <div class="myth-claim">"Diabetes means you can never eat rice or mangoes again"</div>
+        <h4>Total rice/mango ban</h4>
+        <p class="body">Portion and timing matter far more than total elimination for most people — this course covers exactly how.</p>
+      </div>
+      <div class="myth-card">
+        <span class="verdict-tag true">Actually True</span>
+        <div class="myth-claim">"Walking 10 minutes after any meal fixes everything"</div>
+        <h4>Post-meal walking</h4>
+        <p class="body">Genuinely useful — a short walk after eating does measurably help blood sugar. One of the few myths that holds up.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="alt">
-  <div class="wrap faq">
-    <h2>Before you ask</h2>
-    <details><summary>Should I stop all home remedies?</summary><p>Not necessarily — some are harmless and culturally meaningful. The issue is relying on them instead of evidence-based management, not using them at all. Always check with your doctor if you're combining remedies with prescribed treatment.</p></details>
-    <details><summary>Is this course going to tell me rice and sweets are totally fine?</summary><p>No — it'll tell you the honest, specific truth about portion, timing, and frequency, instead of a blanket "never" or "always."</p></details>
+<section id="evidence">
+  <div class="wrap">
+    <div class="dark-panel">
+      <div class="section-header"><span class="section-tag" style="color:#5eead4;">Why This Keeps Happening</span><h2 class="section-title light">Why myths spread so easily</h2><p class="section-sub light">Diabetes management is genuinely confusing, and a 10-minute doctor's visit rarely has time to explain the "why" behind any instruction. That gap gets filled with WhatsApp forwards and well-meaning advice from relatives — some of it harmless, some of it actively counterproductive.</p></div>
+      <p class="panel-note"><b>The evidence standard this course uses:</b> every claim here is checked against published clinical research, including trials like the UK's DiRECT study on structured lifestyle change &mdash; not family folklore, not social media trends.</p>
+    </div>
+  </div>
+</section>
+
+<section id="faqs">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Before You Ask</span><h2 class="section-title">Frequently asked questions</h2></div>
+    <details class="faq-item"><summary>Should I stop all home remedies?</summary><p>Not necessarily — some are harmless and culturally meaningful. The issue is relying on them instead of evidence-based management, not using them at all. Always check with your doctor if you're combining remedies with prescribed treatment.</p></details>
+    <details class="faq-item"><summary>Is this course going to tell me rice and sweets are totally fine?</summary><p>No — it'll tell you the honest, specific truth about portion, timing, and frequency, instead of a blanket "never" or "always."</p></details>
   </div>
 </section>
 
@@ -80,8 +122,8 @@
   <div class="wrap">
     <div class="final-cta">
       <h2>Get the evidence-based version, not the WhatsApp version</h2>
-      <p>12-week plan · Lifetime access · Learn at your own pace</p>
-      <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy →</a>
+      <p>12-week plan &middot; Lifetime access &middot; Learn at your own pace</p>
+      <a class="cta-btn" style="background:#fff;color:var(--primary-dark);" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy &rarr;</a>
     </div>
     <div class="disclaimer">
       This course is educational content and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for professional medical care. Always consult your doctor before making changes to your medication, diet, or exercise routine.

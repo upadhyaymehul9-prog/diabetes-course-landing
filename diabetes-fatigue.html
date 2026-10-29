@@ -8,7 +8,11 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:image" content="https://course.accredready.in/logo-512.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme-teal.css">
+<style>
+.info-grid.quad{grid-template-columns:1fr 1fr;}
+@media(max-width:700px){.info-grid.quad{grid-template-columns:1fr;}}
+</style>
 </head>
 <body>
 <nav class="site-nav">
@@ -23,86 +27,104 @@
   </div>
 </nav>
 
+<nav class="page-nav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Type 2 Diabetes Remission Protocol<small>Dr. Mehul Upadhyay</small></a>
+    <div class="nav-links">
+      <a href="#why">What Drives It</a>
+      <a href="#modules">Modules</a>
+      <a href="#tracker">Tracker</a>
+      <a href="#faqs">FAQs</a>
+    </div>
+    <a class="nav-cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course &rarr;</a>
+  </div>
+</nav>
+
 <header class="hero">
   <div class="wrap">
-    <span class="eyebrow">DIABETES & FATIGUE</span>
-    <h1>Tired all the time, even after a full night's sleep? Your blood sugar might be why.</h1>
-    <p class="sub">Fatigue is one of the most common, least-discussed symptoms of Type 2 diabetes. Big swings in blood sugar — not just high readings — leave you drained. Stabilize the swing, and energy usually follows.</p>
-    <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy →</a>
-    <div class="cta-sub">12-week structured plan · Lifetime access · Certificate of completion</div>
+    <span class="badge-pill">Diabetes &amp; Fatigue</span>
+    <h1 class="hero-title">Tired All the Time, Even After a Full Night's Sleep? Your Blood Sugar Might Be Why.</h1>
+    <p class="hero-subtitle">Fatigue is one of the most common, least-discussed symptoms of Type 2 diabetes. Big swings in blood sugar — not just high readings — leave you drained. Stabilize the swing, and energy usually follows.</p>
+    <a class="cta-btn" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy &rarr;</a>
+    <div class="hero-meta">12-week structured plan &middot; Lifetime access &middot; Certificate of completion</div>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <h2>Sound familiar?</h2>
-    <ul class="pain-list">
-      <li>You sleep a full night and still wake up exhausted</li>
-      <li>There's a predictable slump an hour or two after meals</li>
-      <li>You've put the tiredness down to age, work stress, or "just how it is" with diabetes</li>
-      <li>No one has connected your energy levels to your actual blood sugar readings</li>
-    </ul>
+    <div class="section-header"><span class="section-tag">Sound familiar?</span><h2 class="section-title">Nobody's connected your energy to your readings</h2></div>
+    <div class="frustration-grid">
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You sleep a full night and still wake up exhausted</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>There's a predictable slump an hour or two after meals</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You've put the tiredness down to age, work stress, or "just how it is" with diabetes</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>No one has connected your energy levels to your actual blood sugar readings</p></div>
+    </div>
   </div>
 </section>
 
-<section class="alt">
+<section id="why">
   <div class="wrap">
-    <h2>What actually drives this kind of fatigue</h2>
-    <ul class="check-list">
-      <li>A plain-English explanation of how blood sugar swings — not just high numbers — drain energy</li>
-      <li>A structured nutrition approach built to smooth out those swings, not just lower one number</li>
-      <li>Why poor sleep and high stress make blood sugar control harder, compounding the tiredness</li>
-      <li>A tracking system so you can see your own energy pattern against your own readings</li>
-      <li>Guidance on raising persistent fatigue with your doctor, in case something else is also going on</li>
-    </ul>
+    <div class="section-header"><span class="section-tag">What Actually Drives This Fatigue</span><h2 class="section-title">It's the swing, not just the number</h2></div>
+    <div class="check-grid">
+      <div class="check-card"><span class="icon-check">&check;</span><p>A plain-English explanation of how blood sugar swings — not just high numbers — drain energy</p></div>
+      <div class="check-card"><span class="icon-check">&check;</span><p>A structured nutrition approach built to smooth out those swings, not just lower one number</p></div>
+      <div class="check-card"><span class="icon-check">&check;</span><p>Why poor sleep and high stress make blood sugar control harder, compounding the tiredness</p></div>
+      <div class="check-card"><span class="icon-check">&check;</span><p>A tracking system so you can see your own energy pattern against your own readings</p></div>
+      <div class="check-card"><span class="icon-check">&check;</span><p>Guidance on raising persistent fatigue with your doctor, in case something else is also going on</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="modules">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Inside the Course</span><h2 class="section-title">Modules built to stabilize the swing</h2></div>
+    <div class="info-grid quad">
+      <div class="info-card"><b>Understanding Your Numbers</b><p style="margin-top:.4rem;">What your HbA1c and daily readings are actually telling you.</p></div>
+      <div class="info-card"><b>The Science of Remission</b><p style="margin-top:.4rem;">Why stabilizing blood sugar, not just lowering it, is the foundation of this course.</p></div>
+      <div class="info-card"><b>Nutrition Protocol</b><p style="margin-top:.4rem;">A plate-model structure and food swaps built to prevent the swings that drain your energy.</p></div>
+      <div class="info-card"><b>Movement, Sleep &amp; Stress</b><p style="margin-top:.4rem;">How sleep quality and stress hormones affect blood sugar — and your energy — independent of diet.</p></div>
+      <div class="info-card"><b>Tracking System</b><p style="margin-top:.4rem;">Log your readings over 12 weeks and see your own pattern take shape.</p></div>
+      <div class="info-card"><b>Working With Your Doctor</b><p style="margin-top:.4rem;">How to raise ongoing fatigue at your next visit.</p></div>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>Modules inside the course</h2>
-    <div class="grid">
-      <div class="module"><b>Understanding Your Numbers</b><br>What your HbA1c and daily readings are actually telling you</div>
-      <div class="module"><b>The Science of Remission</b><br>Why stabilizing blood sugar, not just lowering it, is the foundation of this course</div>
-      <div class="module"><b>Nutrition Protocol</b><br>A plate-model structure and food swaps built to prevent the swings that drain your energy</div>
-      <div class="module"><b>Movement, Sleep & Stress</b><br>How sleep quality and stress hormones affect blood sugar — and your energy — independent of diet</div>
-      <div class="module"><b>Tracking System</b><br>Log your readings over 12 weeks and see your own pattern take shape</div>
-      <div class="module"><b>Working With Your Doctor</b><br>How to raise ongoing fatigue at your next visit</div>
+    <div class="dark-panel">
+      <div class="section-header"><span class="section-tag" style="color:#5eead4;">The Evidence</span><h2 class="section-title light">Chasing the swing, not just a lower number</h2></div>
+      <p class="panel-note" style="margin-top:1.2rem;">Both high blood sugar and sharp drops after a spike are linked to fatigue, independent of total sleep time — which is why smoothing out the swing, not just chasing a lower number, is the structured approach this course takes.</p>
     </div>
   </div>
 </section>
 
-<section class="alt">
+<section id="tracker">
   <div class="wrap">
-    <h2>Why this, and not just "get more sleep" advice</h2>
-    <div class="instructor">
-      <div>
-        <p><b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management — including time in the New Zealand healthcare system. This course applies that same structured, evidence-based thinking to a symptom most diabetes content treats as an afterthought: constant fatigue.</p>
-        <span class="badge">15+ Years Healthcare Ops</span>
-        <span class="badge">International Hospital Experience</span>
+    <div class="tracker-card">
+      <div class="tracker-copy">
+        <h3>See your own energy pattern against your own readings</h3>
+        <p>The free tracker at dmremission.accredready.in logs your fasting and post-meal glucose and your sleep hours side by side, so you can see whether your tired days actually track with your numbers. No account cost, no course purchase required.</p>
       </div>
+      <a class="cta-btn outline" href="https://dmremission.accredready.in/">Open the Free Tracker &rarr;</a>
     </div>
-    <div class="evidence" style="margin-top:20px;">
-      <b>The evidence:</b> Both high blood sugar and sharp drops after a spike are linked to fatigue, independent of total sleep time — which is why smoothing out the swing, not just chasing a lower number, is the structured approach this course takes.
-    </div>
+  </div>
+</section>
+
+<section id="faqs">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Before You Ask</span><h2 class="section-title">Frequently asked questions</h2></div>
+    <details class="faq-item"><summary>Could my tiredness be something other than blood sugar?</summary><p>Possibly — fatigue has many causes. This course helps you see whether your own pattern tracks with your glucose readings, which is useful information to bring to your doctor either way.</p></details>
+    <details class="faq-item"><summary>Will this fix my fatigue completely?</summary><p>Many people find stabilizing blood sugar meaningfully improves energy, but this isn't a guarantee and isn't a substitute for ruling out other causes with your doctor.</p></details>
+    <details class="faq-item"><summary>Is this a replacement for my doctor?</summary><p>No. This is structure and knowledge to have better conversations with your doctor — never a replacement for medical advice.</p></details>
   </div>
 </section>
 
 <section>
-  <div class="wrap faq">
-    <h2>Before you ask</h2>
-    <details><summary>Could my tiredness be something other than blood sugar?</summary><p>Possibly — fatigue has many causes. This course helps you see whether your own pattern tracks with your glucose readings, which is useful information to bring to your doctor either way.</p></details>
-    <details><summary>Will this fix my fatigue completely?</summary><p>Many people find stabilizing blood sugar meaningfully improves energy, but this isn't a guarantee and isn't a substitute for ruling out other causes with your doctor.</p></details>
-    <details><summary>Is this a replacement for my doctor?</summary><p>No. This is structure and knowledge to have better conversations with your doctor — never a replacement for medical advice.</p></details>
-  </div>
-</section>
-
-<section class="alt">
   <div class="wrap">
     <div class="final-cta">
       <h2>Stop guessing why you're tired. Start tracking why.</h2>
-      <p>12-week plan · Lifetime access · Learn at your own pace</p>
-      <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy →</a>
+      <p>12-week plan &middot; Lifetime access &middot; Learn at your own pace</p>
+      <a class="cta-btn" style="background:#fff;color:var(--primary-dark);" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy &rarr;</a>
     </div>
     <div class="disclaimer">
       This course is educational content and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for professional medical care. Persistent fatigue should always be discussed with your doctor. Always consult your doctor before making changes to your medication, diet, or exercise routine.

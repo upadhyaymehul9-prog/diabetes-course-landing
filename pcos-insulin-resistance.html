@@ -8,7 +8,15 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:image" content="https://course.accredready.in/logo-512.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme-teal.css">
+<style>
+.branch-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.3rem;margin-top:1.8rem;}
+@media(max-width:760px){.branch-grid{grid-template-columns:1fr;}}
+.branch-card{border-radius:var(--radius-md);padding:1.4rem 1.6rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);}
+.branch-card h4{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;font-weight:800;margin-bottom:.6rem;color:#5eead4;}
+.branch-card p{font-size:.86rem;color:#cdd9e5;line-height:1.55;}
+.branch-arrow{text-align:center;color:#5eead4;font-weight:800;font-size:1.3rem;margin:.2rem 0;}
+</style>
 </head>
 <body>
 <nav class="site-nav">
@@ -23,86 +31,99 @@
   </div>
 </nav>
 
-<header class="hero">
-  <div class="wrap">
-    <span class="eyebrow">PCOS & INSULIN RESISTANCE</span>
-    <h1>You're not imagining it. PCOS really does make weight loss harder.</h1>
-    <p class="sub">PCOS is strongly linked to insulin resistance — the same mechanism behind Type 2 diabetes. That's why "eat less, move more" advice often doesn't work the way it does for everyone else. This course targets the insulin resistance underneath, not just calories in and out.</p>
-    <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy →</a>
-    <div class="cta-sub">12-week structured plan · Lifetime access · Certificate of completion</div>
+<nav class="page-nav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Type 2 Diabetes Remission Protocol<small>Dr. Mehul Upadhyay</small></a>
+    <div class="nav-links">
+      <a href="#plan">What You Get</a>
+      <a href="#modules">Modules</a>
+      <a href="#why">The Mechanism</a>
+      <a href="#tracker">Tracker</a>
+      <a href="#faqs">FAQs</a>
+    </div>
+    <a class="nav-cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course &rarr;</a>
   </div>
-</header>
+</nav>
 
 <section>
   <div class="wrap">
-    <h2>Sound familiar?</h2>
-    <ul class="pain-list">
-      <li>You've been told to just diet and exercise more, but your results never match the effort you're putting in</li>
-      <li>No one explained that PCOS and insulin resistance are connected, and why that changes what actually works</li>
-      <li>You're worried about your long-term risk of Type 2 diabetes but don't know where to start addressing it</li>
-      <li>Generic weight-loss content doesn't account for the hormonal piece of what you're dealing with</li>
-    </ul>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <h2>What actually helps when insulin resistance is the root cause</h2>
-    <ul class="check-list">
-      <li>A plain-English explanation of how insulin resistance drives both PCOS symptoms and diabetes risk</li>
-      <li>A structured nutrition approach built around stabilizing insulin and blood sugar, not just cutting calories</li>
-      <li>Movement guidance suited to improving insulin sensitivity, not punishing cardio-only workouts</li>
-      <li>A tracking system so you can see your own numbers improve, not just guess based on the scale</li>
-      <li>Guidance on bringing this up with your doctor, including questions about screening for prediabetes</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Modules inside the course</h2>
-    <div class="grid">
-      <div class="module"><b>Understanding Your Numbers</b><br>How insulin resistance connects PCOS symptoms to future diabetes risk</div>
-      <div class="module"><b>The Science of Remission</b><br>What the evidence shows about improving insulin sensitivity through structured lifestyle change</div>
-      <div class="module"><b>Nutrition Protocol</b><br>A realistic eating structure built around stabilizing blood sugar and insulin, not crash dieting</div>
-      <div class="module"><b>Movement, Sleep & Stress</b><br>Why sleep and stress hormones matter as much as diet for insulin resistance</div>
-      <div class="module"><b>Tracking System</b><br>A simple way to log your own progress and see real change over 12 weeks</div>
-      <div class="module"><b>Working With Your Doctor</b><br>How to raise prediabetes screening and insulin resistance with your doctor</div>
+    <div class="section-header"><span class="section-tag">Sound familiar?</span><h2 class="section-title">You're not imagining it</h2></div>
+    <div class="frustration-grid">
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You've been told to just diet and exercise more, but your results never match the effort you're putting in</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>No one explained that PCOS and insulin resistance are connected, and why that changes what actually works</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You're worried about your long-term risk of Type 2 diabetes but don't know where to start addressing it</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>Generic weight-loss content doesn't account for the hormonal piece of what you're dealing with</p></div>
     </div>
   </div>
 </section>
 
-<section class="alt">
+<section id="plan">
   <div class="wrap">
-    <h2>Why this, and not just another PCOS diet plan</h2>
-    <div class="instructor">
-      <div>
-        <p><b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management — including time in the New Zealand healthcare system. This course applies that same structured, evidence-based thinking to the insulin resistance mechanism connecting PCOS and diabetes risk, rather than treating them as unrelated problems.</p>
-        <span class="badge">15+ Years Healthcare Ops</span>
-        <span class="badge">International Hospital Experience</span>
+    <div class="section-header"><span class="section-tag">What Actually Helps</span><h2 class="section-title">What actually helps when insulin resistance is the root cause</h2></div>
+    <div class="check-grid">
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>A plain-English explanation of how insulin resistance drives both PCOS symptoms and diabetes risk</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>A structured nutrition approach built around stabilizing insulin and blood sugar, not just cutting calories</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>Movement guidance suited to improving insulin sensitivity, not punishing cardio-only workouts</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>A tracking system so you can see your own numbers improve, not just guess based on the scale</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>Guidance on bringing this up with your doctor, including questions about screening for prediabetes</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="modules">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">What's Inside</span><h2 class="section-title">Modules inside the course</h2></div>
+    <div class="info-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="info-card"><b>Understanding Your Numbers</b><p style="margin-top:.4rem;">How insulin resistance connects PCOS symptoms to future diabetes risk</p></div>
+      <div class="info-card"><b>The Science of Remission</b><p style="margin-top:.4rem;">What the evidence shows about improving insulin sensitivity through structured lifestyle change</p></div>
+      <div class="info-card"><b>Nutrition Protocol</b><p style="margin-top:.4rem;">A realistic eating structure built around stabilizing blood sugar and insulin, not crash dieting</p></div>
+      <div class="info-card"><b>Movement, Sleep &amp; Stress</b><p style="margin-top:.4rem;">Why sleep and stress hormones matter as much as diet for insulin resistance</p></div>
+      <div class="info-card"><b>Tracking System</b><p style="margin-top:.4rem;">A simple way to log your own progress and see real change over 12 weeks</p></div>
+      <div class="info-card"><b>Working With Your Doctor</b><p style="margin-top:.4rem;">How to raise prediabetes screening and insulin resistance with your doctor</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="dark-panel">
+      <div class="section-header"><span class="section-tag" style="color:#5eead4;">The Mechanism, Not Just The Symptoms</span><h2 class="section-title light">PCOS and insulin resistance feed each other</h2></div>
+      <div class="branch-grid">
+        <div class="branch-card"><h4>PCOS</h4><p>A large share of women with PCOS have measurable insulin resistance &mdash; it's a core part of the condition for many, not a separate issue.</p></div>
+        <div class="branch-card"><h4>Insulin resistance</h4><p>PCOS itself raises long-term risk of Type 2 diabetes, which is why improving insulin sensitivity matters for both conditions together.</p></div>
       </div>
+      <p class="panel-note" style="margin-top:1.4rem;">That's why improving insulin sensitivity through structured lifestyle change is a recommended approach for both conditions together &mdash; and why this course targets the insulin resistance underneath, not just calories in and out. <b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management &mdash; including time in the New Zealand healthcare system &mdash; and applies that same structured, evidence-based thinking here rather than treating PCOS and diabetes risk as unrelated problems.</p>
     </div>
-    <div class="evidence" style="margin-top:20px;">
-      <b>The evidence:</b> A large share of women with PCOS have measurable insulin resistance, and PCOS itself raises long-term risk of Type 2 diabetes — which is why improving insulin sensitivity through structured lifestyle change is a recommended approach for both conditions together.
+  </div>
+</section>
+
+<section id="tracker">
+  <div class="wrap">
+    <div class="tracker-card">
+      <div class="tracker-copy">
+        <h3>See the insulin-resistance picture, not just the scale</h3>
+        <p>The free tracker at dmremission.accredready.in logs your fasting and post-meal glucose, weight and habits weekly &mdash; so you can see real change in your own numbers over the 12 weeks, instead of guessing based on the scale.</p>
+      </div>
+      <a class="cta-btn outline" href="https://dmremission.accredready.in/">Open the Free Tracker &rarr;</a>
     </div>
+  </div>
+</section>
+
+<section id="faqs">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Before You Ask</span><h2 class="section-title">Frequently asked questions</h2></div>
+    <details class="faq-item"><summary>Is this course specifically for PCOS?</summary><p>No &mdash; it's a structured insulin-resistance and weight-loss program built around Type 2 diabetes. Many of the same mechanisms apply to PCOS-related insulin resistance, but it isn't a PCOS-specific medical treatment plan. Talk to your gynecologist or endocrinologist about your specific diagnosis.</p></details>
+    <details class="faq-item"><summary>Will this fix my PCOS symptoms?</summary><p>This course doesn't diagnose or treat PCOS directly &mdash; it's educational content on insulin resistance and structured weight loss. Many PCOS symptoms are linked to insulin resistance, so improving that can help, but always manage PCOS itself with your doctor.</p></details>
+    <details class="faq-item"><summary>Is this a replacement for my doctor?</summary><p>No. This is structure and knowledge to have better conversations with your doctor &mdash; never a replacement for medical advice.</p></details>
   </div>
 </section>
 
 <section>
-  <div class="wrap faq">
-    <h2>Before you ask</h2>
-    <details><summary>Is this course specifically for PCOS?</summary><p>No — it's a structured insulin-resistance and weight-loss program built around Type 2 diabetes. Many of the same mechanisms apply to PCOS-related insulin resistance, but it isn't a PCOS-specific medical treatment plan. Talk to your gynecologist or endocrinologist about your specific diagnosis.</p></details>
-    <details><summary>Will this fix my PCOS symptoms?</summary><p>This course doesn't diagnose or treat PCOS directly — it's educational content on insulin resistance and structured weight loss. Many PCOS symptoms are linked to insulin resistance, so improving that can help, but always manage PCOS itself with your doctor.</p></details>
-    <details><summary>Is this a replacement for my doctor?</summary><p>No. This is structure and knowledge to have better conversations with your doctor — never a replacement for medical advice.</p></details>
-  </div>
-</section>
-
-<section class="alt">
   <div class="wrap">
     <div class="final-cta">
       <h2>Target the insulin resistance, not just the symptoms</h2>
-      <p>12-week plan · Lifetime access · Learn at your own pace</p>
-      <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy →</a>
+      <p>12-week plan &middot; Lifetime access &middot; Learn at your own pace</p>
+      <a class="cta-btn" style="background:#fff;color:var(--primary-dark);" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy &rarr;</a>
     </div>
     <div class="disclaimer">
       This course is educational content and does not constitute medical advice, diagnosis, or treatment, and it is not a PCOS-specific treatment program. It is not a substitute for professional medical care. Always consult your doctor before making changes to your medication, diet, or exercise routine.
@@ -113,7 +134,7 @@
 <footer>
 <div class="wrap">
   <span class="footer-label">More on diabetes &amp; weight loss</span>
-  <div class="footer-links"><a href="index.html">Home</a><span class="sep">&middot;</span><a href="12-week-plan.html">The 12-Week Plan</a><span class="sep">&middot;</span><a href="weight-loss.html">Weight Loss & Diabetes Link</a><span class="sep">&middot;</span><a href="belly-fat.html">Belly Fat & Diabetes</a><span class="sep">&middot;</span><a href="busy-professional.html">Busy Professionals</a><span class="sep">&middot;</span><a href="for-family.html">Helping a Parent</a><span class="sep">&middot;</span><a href="newly-diagnosed.html">Newly Diagnosed</a><span class="sep">&middot;</span><a href="prediabetes.html">Prediabetes / Borderline</a><span class="sep">&middot;</span><a href="young-onset.html">Diagnosed in Your 20s-30s</a><span class="sep">&middot;</span><a href="seniors.html">Diabetes After 60</a><span class="sep">&middot;</span><a href="what-to-eat.html">What to Eat</a><span class="sep">&middot;</span><a href="indian-diet.html">Indian Diet</a><span class="sep">&middot;</span><a href="vegetarian-diet.html">Vegetarian Diet</a><span class="sep">&middot;</span><a href="food-order.html">Does Food Order Matter?</a><span class="sep">&middot;</span><a href="sugar-cravings.html">Sugar Cravings</a><span class="sep">&middot;</span><a href="movement.html">How Much Exercise?</a><span class="sep">&middot;</span><a href="post-meal-walk.html">Post-Meal Walks</a><span class="sep">&middot;</span><a href="tracking-system.html">Tracking Your Numbers</a><span class="sep">&middot;</span><a href="hba1c-numbers.html">Understanding HbA1c</a><span class="sep">&middot;</span><a href="stress-sleep-blood-sugar.html">Stress, Sleep & Sugar</a><span class="sep">&middot;</span><a href="diabetes-fatigue.html">Why Diabetes Causes Fatigue</a><span class="sep">&middot;</span><a href="complications.html">Diabetes Complications</a><span class="sep">&middot;</span><a href="diabetes-blood-pressure.html">Diabetes & Blood Pressure</a><span class="sep">&middot;</span><a href="fatty-liver.html">Fatty Liver & Diabetes</a><span class="sep">&middot;</span><a href="without-medicine.html">Control Without Medicine?</a><span class="sep">&middot;</span><a href="still-struggling.html">Still Struggling?</a><span class="sep">&middot;</span><a href="is-reversal-real.html">Is Reversal Real?</a><span class="sep">&middot;</span><a href="realistic-results.html">Realistic Results</a><span class="sep">&middot;</span><a href="long-term-maintenance.html">Long-Term Maintenance</a><span class="sep">&middot;</span><a href="diabetes-travel.html">Traveling With Diabetes</a><span class="sep">&middot;</span><a href="myths.html">Common Myths</a><span class="sep">&middot;</span><a href="is-it-worth-it.html">Why Pay For This?</a><span class="sep">&middot;</span><a href="intermittent-fasting.html">Intermittent Fasting — Is It Safe?</a><span class="sep">&middot;</span><a href="diet-chart.html">Diabetes Diet Chart (Plate Model)</a><span class="sep">&middot;</span><a href="metformin.html">On Metformin? Read This</a><span class="sep">&middot;</span><a href="fasting-vs-post-meal.html">Fasting vs After-Meal Sugar</a><span class="sep">&middot;</span><a href="foot-care.html">Foot Care Before You Start Walking</a><span class="sep">&middot;</span><a href="glp1-vs-lifestyle.html">GLP-1 Drugs vs Lifestyle-First</a></div>
+  <div class="footer-links"><a href="index.html">Home</a><span class="sep">&middot;</span><a href="12-week-plan.html">The 12-Week Plan</a><span class="sep">&middot;</span><a href="weight-loss.html">Weight Loss &amp; Diabetes Link</a><span class="sep">&middot;</span><a href="belly-fat.html">Belly Fat &amp; Diabetes</a><span class="sep">&middot;</span><a href="busy-professional.html">Busy Professionals</a><span class="sep">&middot;</span><a href="for-family.html">Helping a Parent</a><span class="sep">&middot;</span><a href="newly-diagnosed.html">Newly Diagnosed</a><span class="sep">&middot;</span><a href="prediabetes.html">Prediabetes / Borderline</a><span class="sep">&middot;</span><a href="young-onset.html">Diagnosed in Your 20s-30s</a><span class="sep">&middot;</span><a href="seniors.html">Diabetes After 60</a><span class="sep">&middot;</span><a href="what-to-eat.html">What to Eat</a><span class="sep">&middot;</span><a href="indian-diet.html">Indian Diet</a><span class="sep">&middot;</span><a href="vegetarian-diet.html">Vegetarian Diet</a><span class="sep">&middot;</span><a href="food-order.html">Does Food Order Matter?</a><span class="sep">&middot;</span><a href="sugar-cravings.html">Sugar Cravings</a><span class="sep">&middot;</span><a href="movement.html">How Much Exercise?</a><span class="sep">&middot;</span><a href="post-meal-walk.html">Post-Meal Walks</a><span class="sep">&middot;</span><a href="tracking-system.html">Tracking Your Numbers</a><span class="sep">&middot;</span><a href="hba1c-numbers.html">Understanding HbA1c</a><span class="sep">&middot;</span><a href="stress-sleep-blood-sugar.html">Stress, Sleep &amp; Sugar</a><span class="sep">&middot;</span><a href="diabetes-fatigue.html">Why Diabetes Causes Fatigue</a><span class="sep">&middot;</span><a href="complications.html">Diabetes Complications</a><span class="sep">&middot;</span><a href="diabetes-blood-pressure.html">Diabetes &amp; Blood Pressure</a><span class="sep">&middot;</span><a href="fatty-liver.html">Fatty Liver &amp; Diabetes</a><span class="sep">&middot;</span><a href="without-medicine.html">Control Without Medicine?</a><span class="sep">&middot;</span><a href="still-struggling.html">Still Struggling?</a><span class="sep">&middot;</span><a href="is-reversal-real.html">Is Reversal Real?</a><span class="sep">&middot;</span><a href="realistic-results.html">Realistic Results</a><span class="sep">&middot;</span><a href="long-term-maintenance.html">Long-Term Maintenance</a><span class="sep">&middot;</span><a href="diabetes-travel.html">Traveling With Diabetes</a><span class="sep">&middot;</span><a href="myths.html">Common Myths</a><span class="sep">&middot;</span><a href="is-it-worth-it.html">Why Pay For This?</a><span class="sep">&middot;</span><a href="intermittent-fasting.html">Intermittent Fasting &mdash; Is It Safe?</a><span class="sep">&middot;</span><a href="diet-chart.html">Diabetes Diet Chart (Plate Model)</a><span class="sep">&middot;</span><a href="metformin.html">On Metformin? Read This</a><span class="sep">&middot;</span><a href="fasting-vs-post-meal.html">Fasting vs After-Meal Sugar</a><span class="sep">&middot;</span><a href="foot-care.html">Foot Care Before You Start Walking</a><span class="sep">&middot;</span><a href="glp1-vs-lifestyle.html">GLP-1 Drugs vs Lifestyle-First</a></div>
   <p>Type 2 Diabetes Remission Protocol (12-Week System) &middot; Built by Dr. Mehul Upadhyay</p>
 </div>
 </footer>

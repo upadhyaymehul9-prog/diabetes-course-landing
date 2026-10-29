@@ -8,7 +8,26 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:image" content="https://course.accredready.in/logo-512.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme-teal.css">
+<style>
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);border:1px solid var(--card-border);}
+@media(max-width:760px){.compare-grid{grid-template-columns:1fr;}}
+.compare-col{padding:1.8rem 1.6rem;}
+.compare-col.a{background:#fff;}
+.compare-col.b{background:var(--primary-dark);color:#fff;}
+.compare-col h3{font-size:1.05rem;font-weight:800;margin-bottom:1rem;}
+.compare-col.a h3{color:var(--slate-900);}
+.compare-col.b h3{color:#fff;}
+.compare-col ul{list-style:none;}
+.compare-col li{padding:.55rem 0;font-size:.88rem;line-height:1.5;border-bottom:1px solid rgba(0,0,0,.06);}
+.compare-col.b li{border-bottom:1px solid rgba(255,255,255,.12);color:#d7f4ef;}
+.compare-col.a li{color:var(--slate-700);}
+.compare-col li:last-child{border-bottom:none;}
+.module-card{background:#fff;border:1px solid var(--card-border);border-radius:var(--radius-md);padding:1.3rem 1.5rem;box-shadow:var(--shadow-sm);}
+.module-card b{display:block;color:var(--slate-900);font-size:.98rem;margin-bottom:.35rem;}
+.module-card p{font-size:.86rem;color:var(--slate-600);line-height:1.5;margin:0;}
+.module-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.1rem;}
+</style>
 </head>
 <body>
 <nav class="site-nav">
@@ -17,95 +36,126 @@
     <a href="prediabetes.html">Prediabetes / Borderline</a>
     <a href="what-to-eat.html">What to Eat</a>
     <a href="movement.html">How Much Exercise?</a>
-    <a href="busy-professional.html" class="active">Busy Professionals</a>
+    <a href="busy-professional.html">Busy Professionals</a>
     <a href="tracking-system.html">Tracking Your Numbers</a>
     <a href="myths.html">Common Myths</a>
   </div>
 </nav>
 
+<nav class="page-nav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Type 2 Diabetes Remission Protocol<small>Dr. Mehul Upadhyay</small></a>
+    <div class="nav-links">
+      <a href="#system">The System</a>
+      <a href="#modules">Modules</a>
+      <a href="#faqs">FAQs</a>
+    </div>
+    <a class="nav-cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course &rarr;</a>
+  </div>
+</nav>
+
 <header class="hero">
   <div class="wrap">
-    <span class="eyebrow">FOR BUSY PROFESSIONALS</span>
-    <h1>You have a career. Diabetes still needs a system.</h1>
-    <p class="sub">Work, family and deadlines leave little room for a complicated routine. This course turns diabetes self-management into a structured routine you can fit around real life.</p>
-    <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy →</a>
-    <div class="cta-sub">12-week structured plan · Lifetime access · Certificate of completion</div>
+    <span class="badge-pill">For Busy Professionals</span>
+    <h1 class="hero-title">You have a career. Diabetes still needs a system.</h1>
+    <p class="hero-subtitle">Work, family and deadlines leave little room for a complicated routine. This course turns diabetes self-management into a structured routine you can fit around real life.</p>
+    <a class="cta-btn" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy &rarr;</a>
+    <div class="hero-meta">12-week structured plan &middot; Lifetime access &middot; Certificate of completion</div>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <h2>Sound familiar?</h2>
-    <ul class="pain-list">
-      <li>You know you should improve your habits, but consistency keeps breaking down</li>
-      <li>You save advice online but rarely turn it into a repeatable weekly routine</li>
-      <li>You want something practical rather than another extreme plan</li>
-      <li>Your schedule changes constantly, and your diabetes routine changes with it</li>
-    </ul>
+    <div class="section-header"><span class="section-tag">Sound familiar?</span><h2 class="section-title">Good intentions, no repeatable routine</h2></div>
+    <div class="frustration-grid">
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You know you should improve your habits, but consistency keeps breaking down</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You save advice online but rarely turn it into a repeatable weekly routine</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You want something practical rather than another extreme plan</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>Your schedule changes constantly, and your diabetes routine changes with it</p></div>
+    </div>
   </div>
 </section>
 
-<section class="alt">
+<section id="system">
   <div class="wrap">
-    <h2>Build a system that fits your calendar, not the other way round</h2>
-    <ul class="check-list">
-      <li>A week-by-week structure built around a working schedule, not a hospital waiting room</li>
-      <li>Meal and movement guidance that survives a packed calendar, travel days and client dinners</li>
-      <li>A two-minute daily tracking habit — not a spreadsheet project on top of your job</li>
-      <li>Scripts to get real value out of a rushed 10-minute doctor's appointment</li>
-      <li>A plan you can restart mid-week when a deadline wipes out your routine, without starting over</li>
-    </ul>
+    <div class="section-header"><span class="section-tag">Build a System</span><h2 class="section-title">That fits your calendar, not the other way round</h2></div>
+    <div class="check-grid">
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>A week-by-week structure built around a working schedule, not a hospital waiting room</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>Meal and movement guidance that survives a packed calendar, travel days and client dinners</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>A two-minute daily tracking habit — not a spreadsheet project on top of your job</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>Scripts to get real value out of a rushed 10-minute doctor's appointment</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>A plan you can restart mid-week when a deadline wipes out your routine, without starting over</p></div>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>Modules inside the course</h2>
-    <div class="grid">
-      <div class="module"><b>Understanding Your Numbers</b><br>What HbA1c actually means, explained once so you stop re-googling it every three months</div>
-      <div class="module"><b>The Science of Remission</b><br>What the DiRECT trial found — and what a realistic outcome looks like with a full-time job</div>
-      <div class="module"><b>Nutrition Protocol</b><br>A food framework that works from a work canteen, a flight, or a late dinner meeting</div>
-      <div class="module"><b>Movement, Sleep & Stress</b><br>How to fit movement into a desk-bound day, and why sleep and stress move your numbers as much as food does</div>
-      <div class="module"><b>Tracking System</b><br>A tracker built for two minutes a day, not a spreadsheet hobby</div>
-      <div class="module"><b>Working With Your Doctor</b><br>How to make a 10-minute appointment count when you can't take half a day off work</div>
-    </div>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <h2>Why this, and not just another productivity hack</h2>
-    <div class="instructor">
-      <div>
-        <p><b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management — including time in the New Zealand healthcare system. His day job is building systems that have to work under real-world constraints, not ideal conditions. This course applies that same discipline to a routine that has to survive your actual calendar.</p>
-        <span class="badge">15+ Years Healthcare Ops</span>
-        <span class="badge">International Hospital Experience</span>
+    <div class="section-header"><span class="section-tag">The Real Difference</span><h2 class="section-title">A hospital-paced plan vs. one built for your calendar</h2></div>
+    <div class="compare-grid">
+      <div class="compare-col a">
+        <h3>A rigid, hospital-waiting-room plan</h3>
+        <ul>
+          <li>Assumes a stable routine with no travel, deadlines or client dinners</li>
+          <li>Breaks down the first time a work crunch gets in the way</li>
+          <li>Tracking feels like a spreadsheet project on top of your job</li>
+          <li>Missing a week usually means starting over from zero</li>
+        </ul>
+      </div>
+      <div class="compare-col b">
+        <h3>This course's system</h3>
+        <ul>
+          <li>Meal and movement guidance built to survive travel and client dinners</li>
+          <li>A two-minute daily tracking habit, not a spreadsheet hobby</li>
+          <li>Scripts to get real value from a rushed 10-minute appointment</li>
+          <li>Resume where you left off mid-week — never restart from scratch</li>
+        </ul>
       </div>
     </div>
-    <div class="evidence" style="margin-top:20px;">
-      <b>The evidence:</b> The UK's DiRECT trial found that structured weight loss and lifestyle changes put a meaningful number of people with Type 2 diabetes into remission. It worked because the structure was followed consistently — not because anyone had more free time than you do.
+  </div>
+</section>
+
+<section id="modules">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Inside the Course</span><h2 class="section-title">Modules inside the course</h2></div>
+    <div class="module-grid">
+      <div class="module-card"><b>Understanding Your Numbers</b><p>What HbA1c actually means, explained once so you stop re-googling it every three months</p></div>
+      <div class="module-card"><b>The Science of Remission</b><p>What the DiRECT trial found — and what a realistic outcome looks like with a full-time job</p></div>
+      <div class="module-card"><b>Nutrition Protocol</b><p>A food framework that works from a work canteen, a flight, or a late dinner meeting</p></div>
+      <div class="module-card"><b>Movement, Sleep &amp; Stress</b><p>How to fit movement into a desk-bound day, and why sleep and stress move your numbers as much as food does</p></div>
+      <div class="module-card"><b>Tracking System</b><p>A tracker built for two minutes a day, not a spreadsheet hobby</p></div>
+      <div class="module-card"><b>Working With Your Doctor</b><p>How to make a 10-minute appointment count when you can't take half a day off work</p></div>
     </div>
   </div>
 </section>
 
 <section>
-  <div class="wrap faq">
-    <h2>Before you ask</h2>
-    <details><summary>I travel for work constantly — will this still work?</summary><p>Yes. The nutrition and movement protocol is built to flex around travel, hotel food and irregular schedules, not just a stable home routine.</p></details>
-    <details><summary>What if I miss a week because of a work crunch?</summary><p>You resume the structure where you left off — you don't restart from week one. This is covered directly in the course.</p></details>
-    <details><summary>Can I do this without cutting out client dinners and travel?</summary><p>Yes. The framework is built around real decisions at real meals, not a rule that only works if you cook every meal at home.</p></details>
+  <div class="wrap">
+    <div class="dark-panel">
+      <div class="section-header"><span class="section-tag" style="color:#5eead4;">The Evidence</span><h2 class="section-title light">Structure beat free time, not the other way round</h2></div>
+      <p class="panel-note">The UK's <b>DiRECT trial</b> found that structured weight loss and lifestyle changes put a meaningful number of people with Type 2 diabetes into remission. It worked because the structure was followed consistently &mdash; not because anyone had more free time than you do.</p>
+    </div>
   </div>
 </section>
 
-<section class="alt">
+<section id="faqs">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Before You Ask</span><h2 class="section-title">Frequently asked questions</h2></div>
+    <details class="faq-item"><summary>I travel for work constantly — will this still work?</summary><p>Yes. The nutrition and movement protocol is built to flex around travel, hotel food and irregular schedules, not just a stable home routine.</p></details>
+    <details class="faq-item"><summary>What if I miss a week because of a work crunch?</summary><p>You resume the structure where you left off — you don't restart from week one. This is covered directly in the course.</p></details>
+    <details class="faq-item"><summary>Can I do this without cutting out client dinners and travel?</summary><p>Yes. The framework is built around real decisions at real meals, not a rule that only works if you cook every meal at home.</p></details>
+  </div>
+</section>
+
+<section>
   <div class="wrap">
     <div class="final-cta">
-      <h2>Build a system that fits your life</h2>
-      <p>12-week plan · Lifetime access · Learn at your own pace</p>
-      <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy →</a>
+      <h2>Build a system that fits your life.</h2>
+      <p>12-week plan &middot; Lifetime access &middot; Learn at your own pace</p>
+      <a class="cta-btn" style="background:#fff;color:var(--primary-dark);" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy &rarr;</a>
     </div>
     <div class="disclaimer">
-      This course is educational content and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for professional medical care. Always consult your doctor before changing medication, diet, or exercise.
+      This course is educational content and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for professional medical care. Always consult your doctor before making changes to your medication, diet, or exercise routine.
     </div>
   </div>
 </section>

@@ -8,7 +8,14 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:image" content="https://course.accredready.in/logo-512.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme-teal.css">
+<style>
+.check-steps{counter-reset:step;}
+.check-step{display:flex;gap:1rem;align-items:flex-start;background:#fff;border:1px solid var(--card-border);border-radius:var(--radius-md);padding:1.1rem 1.3rem;margin-bottom:.8rem;box-shadow:var(--shadow-sm);}
+.check-step .num{counter-increment:step;flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--primary);color:#fff;font-weight:800;font-size:.85rem;display:flex;align-items:center;justify-content:center;}
+.check-step .num:before{content:counter(step);}
+.check-step p{font-size:.9rem;color:var(--slate-700);line-height:1.5;margin:0;}
+</style>
 </head>
 <body>
 <nav class="site-nav">
@@ -23,87 +30,105 @@
   </div>
 </nav>
 
+<nav class="page-nav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Type 2 Diabetes Remission Protocol<small>Dr. Mehul Upadhyay</small></a>
+    <div class="nav-links">
+      <a href="#travel-kit">Travel-Ready Structure</a>
+      <a href="#modules">Modules</a>
+      <a href="#tracker">Tracker</a>
+      <a href="#faqs">FAQs</a>
+    </div>
+    <a class="nav-cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course &rarr;</a>
+  </div>
+</nav>
+
 <header class="hero">
   <div class="wrap">
-    <span class="eyebrow">TRAVEL &amp; TYPE 2 DIABETES</span>
-    <h1>Traveling with Type 2 diabetes, without your routine falling apart</h1>
-    <p class="sub">A good week on the road shouldn't undo a good month at home. This course gives you a structure that survives flights, hotel buffets, time zones and a suitcase instead of a kitchen.</p>
-    <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy →</a>
-    <div class="cta-sub">12-week structured plan · Lifetime access · Certificate of completion</div>
+    <span class="badge-pill">Travel &amp; Type 2 Diabetes</span>
+    <h1 class="hero-title">Traveling With Type 2 Diabetes, Without Your Routine Falling Apart</h1>
+    <p class="hero-subtitle">A good week on the road shouldn't undo a good month at home. This course gives you a structure that survives flights, hotel buffets, time zones and a suitcase instead of a kitchen.</p>
+    <a class="cta-btn" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy &rarr;</a>
+    <div class="hero-meta">12-week structured plan &middot; Lifetime access &middot; Certificate of completion</div>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <h2>Sound familiar?</h2>
-    <ul class="pain-list">
-      <li>Every trip undoes weeks of progress, and you dread stepping on the scale when you get back</li>
-      <li>Hotel buffets, airport food and room service leave you with no good options you trust</li>
-      <li>You either overpack medication and supplies out of anxiety, or forget something important under time pressure</li>
-      <li>Time zones and irregular meal timings throw off your whole routine, including medication timing</li>
-      <li>You've started avoiding trips you actually want to take, just to protect your numbers</li>
-    </ul>
+    <div class="section-header"><span class="section-tag">Sound familiar?</span><h2 class="section-title">What traveling with diabetes usually feels like</h2></div>
+    <div class="frustration-grid">
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>Every trip undoes weeks of progress, and you dread stepping on the scale when you get back</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>Hotel buffets, airport food and room service leave you with no good options you trust</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You either overpack medication and supplies out of anxiety, or forget something important under time pressure</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>Time zones and irregular meal timings throw off your whole routine, including medication timing</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You've started avoiding trips you actually want to take, just to protect your numbers</p></div>
+    </div>
   </div>
 </section>
 
-<section class="alt">
+<section id="travel-kit">
   <div class="wrap">
-    <h2>A structure built to travel, not just to sit at home</h2>
-    <ul class="check-list">
-      <li>A framework for reading any menu — hotel buffet, airport food court or unfamiliar cuisine — in seconds, not minutes of panic</li>
-      <li>A written medication list and doctor-conversation scripts, so travel questions get sorted before you leave</li>
-      <li>A movement protocol that works in a hotel room or an airport terminal, with zero equipment</li>
-      <li>A two-minute tracking habit that travels in your pocket, not a scale and a kitchen you don't have access to</li>
-      <li>A plan to resume your normal routine the moment you land, instead of a slow slide back over two weeks</li>
-    </ul>
+    <div class="section-header"><span class="section-tag">Built to Travel</span><h2 class="section-title">A structure built to travel, not just to sit at home</h2></div>
+    <div class="check-steps" style="max-width:660px;margin:0 auto;">
+      <div class="check-step"><div class="num"></div><p>A framework for reading any menu — hotel buffet, airport food court or unfamiliar cuisine — in seconds, not minutes of panic.</p></div>
+      <div class="check-step"><div class="num"></div><p>A written medication list and doctor-conversation scripts, so travel questions get sorted before you leave.</p></div>
+      <div class="check-step"><div class="num"></div><p>A movement protocol that works in a hotel room or an airport terminal, with zero equipment.</p></div>
+      <div class="check-step"><div class="num"></div><p>A two-minute tracking habit that travels in your pocket, not a scale and a kitchen you don't have access to.</p></div>
+      <div class="check-step"><div class="num"></div><p>A plan to resume your normal routine the moment you land, instead of a slow slide back over two weeks.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="modules">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Inside the Course</span><h2 class="section-title">Modules inside the course</h2></div>
+    <div class="check-grid">
+      <div class="check-card"><span class="icon-check">&#10003;</span><p><b>Understanding Your Numbers</b> &mdash; what HbA1c means as an average over months, so one trip doesn't feel like a catastrophe</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p><b>The Science of Remission</b> &mdash; what the DiRECT trial found about sustained, realistic change, not perfection on every single day</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p><b>Nutrition Protocol</b> &mdash; a decision framework for unfamiliar menus, buffets and limited options on the road</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p><b>Movement, Sleep &amp; Stress</b> &mdash; a wind-down routine and a movement habit that travel disrupts less than you'd expect, with no gym required</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p><b>Tracking System</b> &mdash; a tracker built for two minutes a day from anywhere, with no special equipment required</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p><b>Working With Your Doctor</b> &mdash; a written medication list and conversation scripts, so travel-related questions get asked before you leave, not improvised abroad</p></div>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>Modules inside the course</h2>
-    <div class="grid">
-      <div class="module"><b>Understanding Your Numbers</b><br>What HbA1c means as an average over months, so one trip doesn't feel like a catastrophe</div>
-      <div class="module"><b>The Science of Remission</b><br>What the DiRECT trial found about sustained, realistic change — not perfection on every single day</div>
-      <div class="module"><b>Nutrition Protocol</b><br>A decision framework for unfamiliar menus, buffets and limited options on the road</div>
-      <div class="module"><b>Movement, Sleep & Stress</b><br>A wind-down routine and a movement habit that travel disrupts less than you'd expect, with no gym required</div>
-      <div class="module"><b>Tracking System</b><br>A tracker built for two minutes a day from anywhere, with no special equipment required</div>
-      <div class="module"><b>Working With Your Doctor</b><br>A written medication list and conversation scripts, so travel-related questions get asked before you leave, not improvised abroad</div>
+    <div class="section-header"><span class="section-tag">Why This Isn't Just a Packing List</span><h2 class="section-title">A disrupted week doesn't erase months of progress</h2></div>
+    <div class="info-card" style="max-width:720px;margin:0 auto;">
+      <p><b>The evidence:</b> the UK's DiRECT trial found that structured, consistent lifestyle change over months — not perfect adherence on every single day — produced meaningful remission rates. A disrupted week or two doesn't erase that kind of progress if you have a plan to get back on track.</p>
     </div>
   </div>
 </section>
 
-<section class="alt">
+<section id="tracker">
   <div class="wrap">
-    <h2>Why this, and not just another packing-list article</h2>
-    <div class="instructor">
-      <div>
-        <p><b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management — including time in the New Zealand healthcare system. His work has involved systems that have to hold up under changing, unpredictable conditions, not just controlled ones. This course applies that same thinking to a routine that has to survive an actual suitcase.</p>
-        <span class="badge">15+ Years Healthcare Ops</span>
-        <span class="badge">International Hospital Experience</span>
+    <div class="tracker-card">
+      <div class="tracker-copy">
+        <h3>A tracking habit that fits in your pocket</h3>
+        <p>The free tracker at dmremission.accredready.in takes about two minutes from a phone, with no scale or home setup required — so a trip doesn't mean a gap in your numbers.</p>
       </div>
+      <a class="cta-btn outline" href="https://dmremission.accredready.in/">Open the Free Tracker &rarr;</a>
     </div>
-    <div class="evidence" style="margin-top:20px;">
-      <b>The evidence:</b> The UK's DiRECT trial found that structured, consistent lifestyle change over months — not perfect adherence on every single day — produced meaningful remission rates. A disrupted week or two doesn't erase that kind of progress if you have a plan to get back on track.
-    </div>
+  </div>
+</section>
+
+<section id="faqs">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Before You Ask</span><h2 class="section-title">Frequently asked questions</h2></div>
+    <details class="faq-item"><summary>Will one trip undo my progress?</summary><p>A single trip is unlikely to undo months of structured change, especially if you have a clear plan to resume your routine afterward — which this course covers directly.</p></details>
+    <details class="faq-item"><summary>Does this tell me how to adjust medication across time zones?</summary><p>No — medication timing and dosage changes are a conversation for your own doctor, never something to work out from a course. What this course gives you is the habit of bringing a written medication list and clear questions to that conversation before you travel.</p></details>
+    <details class="faq-item"><summary>What if I can't track my usual way while traveling?</summary><p>The tracking system is built to be simple enough to use from a phone anywhere, including without your usual scale or home setup.</p></details>
   </div>
 </section>
 
 <section>
-  <div class="wrap faq">
-    <h2>Before you ask</h2>
-    <details><summary>Will one trip undo my progress?</summary><p>A single trip is unlikely to undo months of structured change, especially if you have a clear plan to resume your routine afterward — which this course covers directly.</p></details>
-    <details><summary>Does this tell me how to adjust medication across time zones?</summary><p>No — medication timing and dosage changes are a conversation for your own doctor, never something to work out from a course. What this course gives you is the habit of bringing a written medication list and clear questions to that conversation before you travel.</p></details>
-    <details><summary>What if I can't track my usual way while traveling?</summary><p>The tracking system is built to be simple enough to use from a phone anywhere, including without your usual scale or home setup.</p></details>
-  </div>
-</section>
-
-<section class="alt">
   <div class="wrap">
     <div class="final-cta">
       <h2>Take the trip. Keep the progress.</h2>
-      <p>12-week plan · Lifetime access · Learn at your own pace</p>
-      <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy →</a>
+      <p>12-week plan &middot; Lifetime access &middot; Learn at your own pace</p>
+      <a class="cta-btn" style="background:#fff;color:var(--primary-dark);" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy &rarr;</a>
     </div>
     <div class="disclaimer">
       This course is educational content and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for professional medical care. Always consult your doctor before making changes to your medication, diet, or exercise routine, including before travel.

@@ -8,7 +8,22 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:image" content="https://course.accredready.in/logo-512.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme-teal.css">
+<style>
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);border:1px solid var(--card-border);}
+@media(max-width:760px){.compare-grid{grid-template-columns:1fr;}}
+.compare-col{padding:1.8rem 1.6rem;}
+.compare-col.a{background:#fff;}
+.compare-col.b{background:var(--primary-dark);color:#fff;}
+.compare-col h3{font-size:1.05rem;font-weight:800;margin-bottom:1rem;}
+.compare-col.a h3{color:var(--slate-900);}
+.compare-col.b h3{color:#fff;}
+.compare-col ul{list-style:none;}
+.compare-col li{padding:.55rem 0;font-size:.88rem;line-height:1.5;border-bottom:1px solid rgba(0,0,0,.06);}
+.compare-col.b li{border-bottom:1px solid rgba(255,255,255,.12);color:#d7f4ef;}
+.compare-col.a li{color:var(--slate-700);}
+.compare-col li:last-child{border-bottom:none;}
+</style>
 </head>
 <body>
 <nav class="site-nav">
@@ -23,86 +38,116 @@
   </div>
 </nav>
 
-<header class="hero">
-  <div class="wrap">
-    <span class="eyebrow">FOR PEOPLE MANAGING DIABETES AFTER 60</span>
-    <h1>Most diabetes advice assumes you're young, fit, and on one medication</h1>
-    <p class="sub">You're also managing blood pressure, joint pain, or other conditions — and generic advice doesn't account for any of it. This course builds a structure around your actual situation, not an idealised one.</p>
-    <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy →</a>
-    <div class="cta-sub">12-week structured plan · Lifetime access · Certificate of completion</div>
+<nav class="page-nav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Type 2 Diabetes Remission Protocol<small>Dr. Mehul Upadhyay</small></a>
+    <div class="nav-links">
+      <a href="#plan">What You Get</a>
+      <a href="#modules">Modules</a>
+      <a href="#why">Why This</a>
+      <a href="#tracker">Tracker</a>
+      <a href="#faqs">FAQs</a>
+    </div>
+    <a class="nav-cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course &rarr;</a>
   </div>
-</header>
+</nav>
 
 <section>
   <div class="wrap">
-    <h2>Sound familiar?</h2>
-    <ul class="pain-list">
-      <li>You're managing diabetes alongside blood pressure, joint pain, or other long-term conditions</li>
-      <li>Most exercise advice assumes a level of mobility you don't have anymore</li>
-      <li>You're on multiple medications and worried about how food or activity changes interact with them</li>
-      <li>You don't want a plan built for a 30-year-old applied to your situation</li>
-    </ul>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <h2>A structure built around your actual situation</h2>
-    <ul class="check-list">
-      <li>A nutrition and movement protocol that works alongside joint pain, reduced mobility and other common conditions</li>
-      <li>Clear guidance on recognising and avoiding low blood sugar (hypoglycemia), especially if you're on insulin or sulfonylureas</li>
-      <li>A simple tracking system that doesn't require a smartphone fluency you don't have or want</li>
-      <li>Scripts to bring to appointments when you're managing diabetes alongside two or three other conditions</li>
-      <li>A realistic pace — this isn't a race, and the course doesn't treat it like one</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Modules inside the course</h2>
-    <div class="grid">
-      <div class="module"><b>Understanding Your Numbers</b><br>What HbA1c means, and why target ranges can differ for older adults managing multiple conditions</div>
-      <div class="module"><b>The Science of Remission</b><br>What's realistically achievable, and when a maintenance-and-stability goal matters more than remission itself</div>
-      <div class="module"><b>Nutrition Protocol</b><br>A structured, sustainable approach that doesn't require giving up meals you've cooked your whole life</div>
-      <div class="module"><b>Movement, Sleep & Stress</b><br>Safe, low-impact movement options that work with joint pain and reduced mobility</div>
-      <div class="module"><b>Tracking System</b><br>A simple, low-tech way to log numbers — including how to recognise warning signs of low blood sugar</div>
-      <div class="module"><b>Working With Your Doctor</b><br>How to bring up diabetes alongside your other conditions and medications, not as a separate conversation</div>
+    <div class="section-header"><span class="section-tag">Sound familiar?</span><h2 class="section-title">The mismatch generic advice never accounts for</h2></div>
+    <div class="frustration-grid">
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You're managing diabetes alongside blood pressure, joint pain, or other long-term conditions</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>Most exercise advice assumes a level of mobility you don't have anymore</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You're on multiple medications and worried about how food or activity changes interact with them</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You don't want a plan built for a 30-year-old applied to your situation</p></div>
     </div>
   </div>
 </section>
 
-<section class="alt">
+<section id="plan">
   <div class="wrap">
-    <h2>Why this, and not a plan built for someone 30 years younger</h2>
-    <div class="instructor">
-      <div>
-        <p><b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management — including time in the New Zealand healthcare system, where structured care for older adults managing multiple conditions is a core part of the system. This course brings that same careful, safety-first thinking home.</p>
-        <span class="badge">15+ Years Healthcare Ops</span>
-        <span class="badge">International Hospital Experience</span>
+    <div class="section-header"><span class="section-tag">A Structure Built Around You</span><h2 class="section-title">A structure built around your actual situation</h2></div>
+    <div class="check-grid">
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>A nutrition and movement protocol that works alongside joint pain, reduced mobility and other common conditions</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>Clear guidance on recognising and avoiding low blood sugar (hypoglycemia), especially if you're on insulin or sulfonylureas</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>A simple tracking system that doesn't require a smartphone fluency you don't have or want</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>Scripts to bring to appointments when you're managing diabetes alongside two or three other conditions</p></div>
+      <div class="check-card"><span class="icon-check">&#10003;</span><p>A realistic pace &mdash; this isn't a race, and the course doesn't treat it like one</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="modules">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">What's Inside</span><h2 class="section-title">Modules inside the course</h2></div>
+    <div class="info-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="info-card"><b>Understanding Your Numbers</b><p style="margin-top:.4rem;">What HbA1c means, and why target ranges can differ for older adults managing multiple conditions</p></div>
+      <div class="info-card"><b>The Science of Remission</b><p style="margin-top:.4rem;">What's realistically achievable, and when a maintenance-and-stability goal matters more than remission itself</p></div>
+      <div class="info-card"><b>Nutrition Protocol</b><p style="margin-top:.4rem;">A structured, sustainable approach that doesn't require giving up meals you've cooked your whole life</p></div>
+      <div class="info-card"><b>Movement, Sleep &amp; Stress</b><p style="margin-top:.4rem;">Safe, low-impact movement options that work with joint pain and reduced mobility</p></div>
+      <div class="info-card"><b>Tracking System</b><p style="margin-top:.4rem;">A simple, low-tech way to log numbers &mdash; including how to recognise warning signs of low blood sugar</p></div>
+      <div class="info-card"><b>Working With Your Doctor</b><p style="margin-top:.4rem;">How to bring up diabetes alongside your other conditions and medications, not as a separate conversation</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Not A Plan Built For A 30-Year-Old</span><h2 class="section-title">What generic advice assumes vs. what this course accounts for</h2></div>
+    <div class="compare-grid">
+      <div class="compare-col a">
+        <h3>Most diabetes advice assumes</h3>
+        <ul>
+          <li>You're young, fit, and on one medication</li>
+          <li>Full mobility and no joint pain</li>
+          <li>Smartphone fluency for tracking</li>
+          <li>Remission is always the right goal</li>
+        </ul>
+      </div>
+      <div class="compare-col b">
+        <h3>This course accounts for</h3>
+        <ul>
+          <li>Blood pressure, joint pain, and other long-term conditions alongside diabetes</li>
+          <li>Safe, low-impact movement that works with reduced mobility</li>
+          <li>A simple, low-tech tracking system &mdash; pen and paper works just as well</li>
+          <li>Individualised goals: remission-focused or stability-focused, set with your doctor</li>
+        </ul>
       </div>
     </div>
-    <div class="evidence" style="margin-top:20px;">
-      <b>Important:</b> Diabetes management goals can reasonably differ with age and other health conditions. This course is educational and does not replace the individualised treatment targets your doctor sets for you.
+    <div class="info-card" style="max-width:720px;margin:1.6rem auto 0;">
+      <p><b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management &mdash; including time in the New Zealand healthcare system, where structured care for older adults managing multiple conditions is a core part of the system. This course brings that same careful, safety-first thinking home.</p>
+      <p style="margin-top:14px;"><b>Important:</b> Diabetes management goals can reasonably differ with age and other health conditions. This course is educational and does not replace the individualised treatment targets your doctor sets for you.</p>
     </div>
   </div>
 </section>
 
-<section>
-  <div class="wrap faq">
-    <h2>Before you ask</h2>
-    <details><summary>Is remission still a realistic goal at my age?</summary><p>It depends on your individual situation. The course covers both remission-focused and stability-focused goals — your doctor is best placed to help you decide which applies to you.</p></details>
-    <details><summary>I'm on several medications — is this still safe to follow?</summary><p>The course is educational and designed to work alongside medical care, not replace it. Always review any diet or activity changes with your doctor, especially with multiple medications.</p></details>
-    <details><summary>Do I need to be tech-savvy to use this course?</summary><p>No. It's video-based and self-paced, and the tracking system is deliberately simple — pen and paper works just as well as an app.</p></details>
+<section id="tracker">
+  <div class="wrap">
+    <div class="tracker-card">
+      <div class="tracker-copy">
+        <h3>Tracking that works whether or not you're on your phone</h3>
+        <p>The free tracker at dmremission.accredready.in logs your fasting and post-meal glucose, weight, and blood pressure in one place &mdash; useful for your appointments, but never a requirement. Pen and paper still works just as well; this is simply an option if you'd rather log online.</p>
+      </div>
+      <a class="cta-btn outline" href="https://dmremission.accredready.in/">Open the Free Tracker &rarr;</a>
+    </div>
   </div>
 </section>
 
-<section class="alt">
+<section id="faqs">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Before You Ask</span><h2 class="section-title">Frequently asked questions</h2></div>
+    <details class="faq-item"><summary>Is remission still a realistic goal at my age?</summary><p>It depends on your individual situation. The course covers both remission-focused and stability-focused goals &mdash; your doctor is best placed to help you decide which applies to you.</p></details>
+    <details class="faq-item"><summary>I'm on several medications &mdash; is this still safe to follow?</summary><p>The course is educational and designed to work alongside medical care, not replace it. Always review any diet or activity changes with your doctor, especially with multiple medications.</p></details>
+    <details class="faq-item"><summary>Do I need to be tech-savvy to use this course?</summary><p>No. It's video-based and self-paced, and the tracking system is deliberately simple &mdash; pen and paper works just as well as an app.</p></details>
+  </div>
+</section>
+
+<section>
   <div class="wrap">
     <div class="final-cta">
       <h2>A structure built for your actual situation</h2>
-      <p>12-week plan · Lifetime access · Learn at your own pace</p>
-      <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy →</a>
+      <p>12-week plan &middot; Lifetime access &middot; Learn at your own pace</p>
+      <a class="cta-btn" style="background:#fff;color:var(--primary-dark);" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy &rarr;</a>
     </div>
     <div class="disclaimer">
       This course is educational content and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for professional medical care. Always consult your doctor before making changes to your medication, diet, or exercise routine.
@@ -113,7 +158,7 @@
 <footer>
 <div class="wrap">
   <span class="footer-label">More on diabetes &amp; weight loss</span>
-  <div class="footer-links"><a href="index.html">Home</a><span class="sep">&middot;</span><a href="12-week-plan.html">The 12-Week Plan</a><span class="sep">&middot;</span><a href="weight-loss.html">Weight Loss & Diabetes Link</a><span class="sep">&middot;</span><a href="belly-fat.html">Belly Fat & Diabetes</a><span class="sep">&middot;</span><a href="busy-professional.html">Busy Professionals</a><span class="sep">&middot;</span><a href="for-family.html">Helping a Parent</a><span class="sep">&middot;</span><a href="newly-diagnosed.html">Newly Diagnosed</a><span class="sep">&middot;</span><a href="prediabetes.html">Prediabetes / Borderline</a><span class="sep">&middot;</span><a href="young-onset.html">Diagnosed in Your 20s-30s</a><span class="sep">&middot;</span><a href="pcos-insulin-resistance.html">PCOS & Insulin Resistance</a><span class="sep">&middot;</span><a href="what-to-eat.html">What to Eat</a><span class="sep">&middot;</span><a href="indian-diet.html">Indian Diet</a><span class="sep">&middot;</span><a href="vegetarian-diet.html">Vegetarian Diet</a><span class="sep">&middot;</span><a href="food-order.html">Does Food Order Matter?</a><span class="sep">&middot;</span><a href="sugar-cravings.html">Sugar Cravings</a><span class="sep">&middot;</span><a href="movement.html">How Much Exercise?</a><span class="sep">&middot;</span><a href="post-meal-walk.html">Post-Meal Walks</a><span class="sep">&middot;</span><a href="tracking-system.html">Tracking Your Numbers</a><span class="sep">&middot;</span><a href="hba1c-numbers.html">Understanding HbA1c</a><span class="sep">&middot;</span><a href="stress-sleep-blood-sugar.html">Stress, Sleep & Sugar</a><span class="sep">&middot;</span><a href="diabetes-fatigue.html">Why Diabetes Causes Fatigue</a><span class="sep">&middot;</span><a href="complications.html">Diabetes Complications</a><span class="sep">&middot;</span><a href="diabetes-blood-pressure.html">Diabetes & Blood Pressure</a><span class="sep">&middot;</span><a href="fatty-liver.html">Fatty Liver & Diabetes</a><span class="sep">&middot;</span><a href="without-medicine.html">Control Without Medicine?</a><span class="sep">&middot;</span><a href="still-struggling.html">Still Struggling?</a><span class="sep">&middot;</span><a href="is-reversal-real.html">Is Reversal Real?</a><span class="sep">&middot;</span><a href="realistic-results.html">Realistic Results</a><span class="sep">&middot;</span><a href="long-term-maintenance.html">Long-Term Maintenance</a><span class="sep">&middot;</span><a href="diabetes-travel.html">Traveling With Diabetes</a><span class="sep">&middot;</span><a href="myths.html">Common Myths</a><span class="sep">&middot;</span><a href="is-it-worth-it.html">Why Pay For This?</a><span class="sep">&middot;</span><a href="intermittent-fasting.html">Intermittent Fasting — Is It Safe?</a><span class="sep">&middot;</span><a href="diet-chart.html">Diabetes Diet Chart (Plate Model)</a><span class="sep">&middot;</span><a href="metformin.html">On Metformin? Read This</a><span class="sep">&middot;</span><a href="fasting-vs-post-meal.html">Fasting vs After-Meal Sugar</a><span class="sep">&middot;</span><a href="foot-care.html">Foot Care Before You Start Walking</a><span class="sep">&middot;</span><a href="glp1-vs-lifestyle.html">GLP-1 Drugs vs Lifestyle-First</a></div>
+  <div class="footer-links"><a href="index.html">Home</a><span class="sep">&middot;</span><a href="12-week-plan.html">The 12-Week Plan</a><span class="sep">&middot;</span><a href="weight-loss.html">Weight Loss &amp; Diabetes Link</a><span class="sep">&middot;</span><a href="belly-fat.html">Belly Fat &amp; Diabetes</a><span class="sep">&middot;</span><a href="busy-professional.html">Busy Professionals</a><span class="sep">&middot;</span><a href="for-family.html">Helping a Parent</a><span class="sep">&middot;</span><a href="newly-diagnosed.html">Newly Diagnosed</a><span class="sep">&middot;</span><a href="prediabetes.html">Prediabetes / Borderline</a><span class="sep">&middot;</span><a href="young-onset.html">Diagnosed in Your 20s-30s</a><span class="sep">&middot;</span><a href="pcos-insulin-resistance.html">PCOS &amp; Insulin Resistance</a><span class="sep">&middot;</span><a href="what-to-eat.html">What to Eat</a><span class="sep">&middot;</span><a href="indian-diet.html">Indian Diet</a><span class="sep">&middot;</span><a href="vegetarian-diet.html">Vegetarian Diet</a><span class="sep">&middot;</span><a href="food-order.html">Does Food Order Matter?</a><span class="sep">&middot;</span><a href="sugar-cravings.html">Sugar Cravings</a><span class="sep">&middot;</span><a href="movement.html">How Much Exercise?</a><span class="sep">&middot;</span><a href="post-meal-walk.html">Post-Meal Walks</a><span class="sep">&middot;</span><a href="tracking-system.html">Tracking Your Numbers</a><span class="sep">&middot;</span><a href="hba1c-numbers.html">Understanding HbA1c</a><span class="sep">&middot;</span><a href="stress-sleep-blood-sugar.html">Stress, Sleep &amp; Sugar</a><span class="sep">&middot;</span><a href="diabetes-fatigue.html">Why Diabetes Causes Fatigue</a><span class="sep">&middot;</span><a href="complications.html">Diabetes Complications</a><span class="sep">&middot;</span><a href="diabetes-blood-pressure.html">Diabetes &amp; Blood Pressure</a><span class="sep">&middot;</span><a href="fatty-liver.html">Fatty Liver &amp; Diabetes</a><span class="sep">&middot;</span><a href="without-medicine.html">Control Without Medicine?</a><span class="sep">&middot;</span><a href="still-struggling.html">Still Struggling?</a><span class="sep">&middot;</span><a href="is-reversal-real.html">Is Reversal Real?</a><span class="sep">&middot;</span><a href="realistic-results.html">Realistic Results</a><span class="sep">&middot;</span><a href="long-term-maintenance.html">Long-Term Maintenance</a><span class="sep">&middot;</span><a href="diabetes-travel.html">Traveling With Diabetes</a><span class="sep">&middot;</span><a href="myths.html">Common Myths</a><span class="sep">&middot;</span><a href="is-it-worth-it.html">Why Pay For This?</a><span class="sep">&middot;</span><a href="intermittent-fasting.html">Intermittent Fasting &mdash; Is It Safe?</a><span class="sep">&middot;</span><a href="diet-chart.html">Diabetes Diet Chart (Plate Model)</a><span class="sep">&middot;</span><a href="metformin.html">On Metformin? Read This</a><span class="sep">&middot;</span><a href="fasting-vs-post-meal.html">Fasting vs After-Meal Sugar</a><span class="sep">&middot;</span><a href="foot-care.html">Foot Care Before You Start Walking</a><span class="sep">&middot;</span><a href="glp1-vs-lifestyle.html">GLP-1 Drugs vs Lifestyle-First</a></div>
   <p>Type 2 Diabetes Remission Protocol (12-Week System) &middot; Built by Dr. Mehul Upadhyay</p>
 </div>
 </footer>

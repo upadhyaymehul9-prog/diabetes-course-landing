@@ -8,7 +8,17 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:image" content="https://course.accredready.in/logo-512.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme-teal.css">
+<style>
+.staple-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.1rem;}
+.staple-card{background:#fff;border:1px solid var(--card-border);border-radius:var(--radius-md);padding:1.3rem 1.4rem;box-shadow:var(--shadow-sm);border-top:4px solid var(--carb-color);}
+.staple-card.protein{border-top-color:var(--protein-color);}
+.staple-card.veg{border-top-color:var(--veg-color);}
+.staple-card .stag{display:block;font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--slate-500);margin-bottom:.5rem;}
+.staple-card h4{font-size:1rem;color:var(--slate-900);margin-bottom:.6rem;}
+.staple-foods{display:flex;flex-wrap:wrap;gap:6px;}
+.staple-foods span{background:var(--slate-50);border:1px solid var(--slate-200);border-radius:8px;padding:4px 10px;font-size:12.5px;color:var(--slate-700);}
+</style>
 </head>
 <body>
 <nav class="site-nav">
@@ -23,86 +33,106 @@
   </div>
 </nav>
 
+<nav class="page-nav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Type 2 Diabetes Remission Protocol<small>Dr. Mehul Upadhyay</small></a>
+    <div class="nav-links">
+      <a href="#framework">The Framework</a>
+      <a href="#staples">Your Staples</a>
+      <a href="#tracker">Tracker</a>
+      <a href="#faqs">FAQs</a>
+    </div>
+    <a class="nav-cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course &rarr;</a>
+  </div>
+</nav>
+
 <header class="hero">
   <div class="wrap">
-    <span class="eyebrow">FOR THE INDIAN DIET &amp; LIFESTYLE</span>
-    <h1>You don't need a Western diet to manage Type 2 diabetes</h1>
-    <p class="sub">Most diabetes advice online is built around a plate of grilled chicken and broccoli. This course gives you a structured framework that works with dal, roti, rice, sabzi and the meals you actually eat.</p>
-    <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy →</a>
-    <div class="cta-sub">12-week structured plan · Lifetime access · Certificate of completion</div>
+    <span class="badge-pill">For the Indian Diet &amp; Lifestyle</span>
+    <h1 class="hero-title">You Don't Need a Western Diet to Manage Type 2 Diabetes</h1>
+    <p class="hero-subtitle">Most diabetes advice online is built around a plate of grilled chicken and broccoli. This course gives you a structured framework that works with dal, roti, rice, sabzi and the meals you actually eat.</p>
+    <a class="cta-btn" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy &rarr;</a>
+    <div class="hero-meta">12-week structured plan &middot; Lifetime access &middot; Certificate of completion</div>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <h2>Sound familiar?</h2>
-    <ul class="pain-list">
-      <li>Every diet plan online is built around food you don't eat on a regular day</li>
-      <li>You've been told to "just cut carbs," but roti and rice are central to every meal in your house</li>
-      <li>Festivals, family functions and home-cooked food feel impossible to plan around</li>
-      <li>You don't want to eat a separate "diabetic meal" apart from your own family for the rest of your life</li>
-    </ul>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <h2>A framework built around your actual plate</h2>
-    <ul class="check-list">
-      <li>A structured approach to Indian staples — roti, rice, dal, sabzi — based on portions and sequencing, not elimination</li>
-      <li>Practical adjustments for thalis, tiffins, festivals and family meals, not a plan built for someone living alone</li>
-      <li>Plain-English guidance on glycemic load for common Indian foods, with no confusing jargon</li>
-      <li>A tracking system to see exactly how your own regular meals affect your own numbers</li>
-      <li>A plan your whole family can eat alongside you, with small adjustments — not a separate diabetic meal</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Modules inside the course</h2>
-    <div class="grid">
-      <div class="module"><b>Understanding Your Numbers</b><br>What HbA1c means, explained without assuming a Western diet as the default</div>
-      <div class="module"><b>The Science of Remission</b><br>What the DiRECT trial found — and how the same underlying principles apply to an Indian plate</div>
-      <div class="module"><b>Nutrition Protocol</b><br>A portion-and-sequencing framework for roti, rice, dal and sabzi, not a list of foods to give up</div>
-      <div class="module"><b>Movement, Sleep & Stress</b><br>Practical movement that fits around work, commute and family responsibilities</div>
-      <div class="module"><b>Tracking System</b><br>A simple way to track meals that actually reflects what you eat every day</div>
-      <div class="module"><b>Working With Your Doctor</b><br>How to bring real data to an appointment that's often rushed</div>
+    <div class="section-header"><span class="section-tag">Sound familiar?</span><h2 class="section-title">Every plan assumes a plate you don't eat</h2></div>
+    <div class="frustration-grid">
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>Every diet plan online is built around food you don't eat on a regular day</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You've been told to "just cut carbs," but roti and rice are central to every meal in your house</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>Festivals, family functions and home-cooked food feel impossible to plan around</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You don't want to eat a separate "diabetic meal" apart from your own family for the rest of your life</p></div>
     </div>
   </div>
 </section>
 
-<section class="alt">
+<section id="framework">
   <div class="wrap">
-    <h2>Why this, and not just another generic diet plan</h2>
-    <div class="instructor">
-      <div>
-        <p><b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management, including time in the New Zealand healthcare system. Type 2 diabetes affects a very large share of Indian adults, often with different dietary patterns and triggers than the Western populations most online diet content is written for — this course was built with that gap in mind.</p>
-        <span class="badge">15+ Years Healthcare Ops</span>
-        <span class="badge">International Hospital Experience</span>
+    <div class="section-header"><span class="section-tag">Built Around Your Plate</span><h2 class="section-title">A framework built around your actual plate</h2></div>
+    <div class="check-grid">
+      <div class="check-card"><span class="icon-check">&check;</span><p>A structured approach to Indian staples &mdash; roti, rice, dal, sabzi &mdash; based on portions and sequencing, not elimination</p></div>
+      <div class="check-card"><span class="icon-check">&check;</span><p>Practical adjustments for thalis, tiffins, festivals and family meals, not a plan built for someone living alone</p></div>
+      <div class="check-card"><span class="icon-check">&check;</span><p>Plain-English guidance on glycemic load for common Indian foods, with no confusing jargon</p></div>
+      <div class="check-card"><span class="icon-check">&check;</span><p>A tracking system to see exactly how your own regular meals affect your own numbers</p></div>
+      <div class="check-card"><span class="icon-check">&check;</span><p>A plan your whole family can eat alongside you, with small adjustments &mdash; not a separate diabetic meal</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="staples">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Your Everyday Staples</span><h2 class="section-title">Portion and sequencing, not elimination</h2><p class="section-sub">The framework works with the food already on your table &mdash; not against it.</p></div>
+    <div class="staple-grid">
+      <div class="staple-card"><span class="stag">Carbohydrate Staples</span><h4>Roti &amp; Rice</h4><div class="staple-foods"><span>Roti</span><span>Rice</span><span>Khichdi</span></div></div>
+      <div class="staple-card protein"><span class="stag">Protein Staples</span><h4>Dal &amp; Legumes</h4><div class="staple-foods"><span>Dal</span><span>Legumes</span><span>Paneer</span></div></div>
+      <div class="staple-card veg"><span class="stag">Vegetable Staples</span><h4>Sabzi</h4><div class="staple-foods"><span>Sabzi</span><span>Salad</span><span>Curd</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="modules">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">What's Inside</span><h2 class="section-title">Modules inside the course</h2></div>
+    <div class="info-grid">
+      <div class="info-card"><b>Understanding Your Numbers</b><br>What HbA1c means, explained without assuming a Western diet as the default</div>
+      <div class="info-card"><b>The Science of Remission</b><br>What the DiRECT trial found &mdash; and how the same underlying principles apply to an Indian plate</div>
+      <div class="info-card"><b>Nutrition Protocol</b><br>A portion-and-sequencing framework for roti, rice, dal and sabzi, not a list of foods to give up</div>
+      <div class="info-card"><b>Movement, Sleep &amp; Stress</b><br>Practical movement that fits around work, commute and family responsibilities</div>
+      <div class="info-card"><b>Tracking System</b><br>A simple way to track meals that actually reflects what you eat every day</div>
+      <div class="info-card"><b>Working With Your Doctor</b><br>How to bring real data to an appointment that's often rushed</div>
+    </div>
+  </div>
+</section>
+
+<section id="tracker">
+  <div class="wrap">
+    <div class="tracker-card">
+      <div class="tracker-copy">
+        <h3>See your own plate, not someone else's</h3>
+        <p>The free tracker at dmremission.accredready.in has a daily field for whether you followed the plate model (half vegetables, a quarter protein, a quarter grain) and a field for today's food swap — so your own roti, rice and dal meals become visible data, not guesswork. No account cost, no course purchase required.</p>
       </div>
+      <a class="cta-btn outline" href="https://dmremission.accredready.in/">Open the Free Tracker &rarr;</a>
     </div>
-    <div class="evidence" style="margin-top:20px;">
-      <b>The evidence:</b> The UK's DiRECT trial found that structured weight loss and lifestyle changes — built on portion control and food structure rather than any single "forbidden" food — put a meaningful number of people with Type 2 diabetes into remission. The same principles of portion and pattern apply regardless of which cuisine you're eating.
-    </div>
+  </div>
+</section>
+
+<section id="faqs">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Before You Ask</span><h2 class="section-title">Frequently asked questions</h2></div>
+    <details class="faq-item"><summary>Do I need to stop eating rice or roti completely?</summary><p>No. The framework is about portion and sequencing within your existing meals, not elimination of staple foods.</p></details>
+    <details class="faq-item"><summary>Will this work with festival food and family functions?</summary><p>Yes — festivals and family meals are covered directly in the course, rather than ignored or treated as automatic failures.</p></details>
+    <details class="faq-item"><summary>Is this only useful for people living in India?</summary><p>No. It works for anyone eating an Indian-style diet, wherever they live.</p></details>
   </div>
 </section>
 
 <section>
-  <div class="wrap faq">
-    <h2>Before you ask</h2>
-    <details><summary>Do I need to stop eating rice or roti completely?</summary><p>No. The framework is about portion and sequencing within your existing meals, not elimination of staple foods.</p></details>
-    <details><summary>Will this work with festival food and family functions?</summary><p>Yes — festivals and family meals are covered directly in the course, rather than ignored or treated as automatic failures.</p></details>
-    <details><summary>Is this only useful for people living in India?</summary><p>No. It works for anyone eating an Indian-style diet, wherever they live.</p></details>
-  </div>
-</section>
-
-<section class="alt">
   <div class="wrap">
     <div class="final-cta">
       <h2>Keep your food. Change your structure.</h2>
-      <p>12-week plan · Lifetime access · Learn at your own pace</p>
-      <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy →</a>
+      <p>12-week plan &middot; Lifetime access &middot; Learn at your own pace</p>
+      <a class="cta-btn" style="background:#fff;color:var(--primary-dark);" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy &rarr;</a>
     </div>
     <div class="disclaimer">
       This course is educational content and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for professional medical care. Always consult your doctor before making changes to your medication, diet, or exercise routine.

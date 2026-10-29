@@ -8,7 +8,19 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:image" content="https://course.accredready.in/logo-512.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme-teal.css">
+<style>
+.risk-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;}
+@media(max-width:700px){.risk-grid{grid-template-columns:1fr;}}
+.risk-card{border-radius:var(--radius-md);padding:1.3rem 1.5rem;border:2px solid var(--slate-200);background:#fff;}
+.risk-card.low{border-color:#99d8cf;}
+.risk-card.high{border-color:#fecaca;}
+.risk-tag{display:inline-block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;padding:3px 10px;border-radius:999px;margin-bottom:10px;}
+.risk-card.low .risk-tag{background:var(--primary-light);color:var(--primary-dark);}
+.risk-card.high .risk-tag{background:#fee2e2;color:#b91c1c;}
+.risk-card h4{font-size:1rem;margin-bottom:6px;color:var(--slate-900);}
+.risk-card p{font-size:.88rem;color:var(--slate-600);line-height:1.5;}
+</style>
 </head>
 <body>
 <nav class="site-nav">
@@ -23,86 +35,113 @@
   </div>
 </nav>
 
+<nav class="page-nav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Type 2 Diabetes Remission Protocol<small>Dr. Mehul Upadhyay</small></a>
+    <div class="nav-links">
+      <a href="#different">Why It's Different</a>
+      <a href="#tracker">Tracker</a>
+      <a href="#faqs">FAQs</a>
+    </div>
+    <a class="nav-cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course &rarr;</a>
+  </div>
+</nav>
+
 <header class="hero">
   <div class="wrap">
-    <span class="eyebrow">BELLY FAT & INSULIN RESISTANCE</span>
-    <h1>Your BMI might look "fine." Your belly fat still isn't.</h1>
-    <p class="sub">Doctors increasingly look past the scale to where fat is actually stored. Visceral fat — the fat around your organs, not just under your skin — is a bigger driver of insulin resistance than total body weight. This course targets that, not just a smaller number on the scale.</p>
-    <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy →</a>
-    <div class="cta-sub">12-week structured plan · Lifetime access · Certificate of completion</div>
+    <span class="badge-pill">Belly Fat &amp; Insulin Resistance</span>
+    <h1 class="hero-title">Your BMI Might Look "Fine." Your Belly Fat Still Isn't.</h1>
+    <p class="hero-subtitle">Doctors increasingly look past the scale to where fat is actually stored. Visceral fat — the fat around your organs, not just under your skin — is a bigger driver of insulin resistance than total body weight. This course targets that, not just a smaller number on the scale.</p>
+    <a class="cta-btn" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy &rarr;</a>
+    <div class="hero-meta">12-week structured plan &middot; Lifetime access &middot; Certificate of completion</div>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <h2>Sound familiar?</h2>
-    <ul class="pain-list">
-      <li>Your BMI or weight looks "normal" on paper, but your waist and your sugar numbers tell a different story</li>
-      <li>You've lost weight before, but your waistline barely moved</li>
-      <li>No one has explained why belly fat specifically — not just total weight — affects your blood sugar</li>
-      <li>You don't know which kind of exercise or diet actually targets visceral fat, versus just "losing weight" generally</li>
-    </ul>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <h2>Why belly fat is different</h2>
-    <ul class="check-list">
-      <li>A plain-English explanation of how insulin resistance and stubborn body fat are driven by the same underlying system</li>
-      <li>A structured nutrition approach shown to reduce visceral fat specifically, not just total body mass</li>
-      <li>The role of sleep and stress hormones (cortisol) in driving abdominal fat storage — not just food</li>
-      <li>A tracking system that logs weight alongside your blood sugar, so you see the two move together over the 12 weeks</li>
-      <li>Movement guidance that targets the metabolically active fat around your organs, not spot-reduction myths</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Modules inside the course</h2>
-    <div class="grid">
-      <div class="module"><b>Understanding Your Numbers</b><br>How HbA1c and insulin resistance relate to body fat, not just total body weight</div>
-      <div class="module"><b>The Science of Remission</b><br>How visceral fat loss specifically, not total weight, is linked to improved insulin sensitivity</div>
-      <div class="module"><b>Nutrition Protocol</b><br>A structured, realistic eating approach built around reducing abdominal fat</div>
-      <div class="module"><b>Movement, Sleep & Stress</b><br>Why cortisol and poor sleep quietly work against belly-fat loss</div>
-      <div class="module"><b>Tracking System</b><br>Log weight and blood sugar together to see the real connection, week by week</div>
-      <div class="module"><b>Working With Your Doctor</b><br>How to bring real data into your next appointment</div>
+    <div class="section-header"><span class="section-tag">Sound familiar?</span><h2 class="section-title">When the scale and your waistline disagree</h2></div>
+    <div class="frustration-grid">
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>Your BMI or weight looks "normal" on paper, but your waist and your sugar numbers tell a different story</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You've lost weight before, but your waistline barely moved</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>No one has explained why belly fat specifically — not just total weight — affects your blood sugar</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You don't know which kind of exercise or diet actually targets visceral fat, versus just "losing weight" generally</p></div>
     </div>
   </div>
 </section>
 
-<section class="alt">
+<section id="different">
   <div class="wrap">
-    <h2>Why this, and not just another "lose belly fat" article</h2>
-    <div class="instructor">
-      <div>
-        <p><b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management — including time in the New Zealand healthcare system. This course applies that same structured, evidence-based thinking to a distinction most generic weight-loss content skips entirely: where your fat is stored matters as much as how much of it there is.</p>
-        <span class="badge">15+ Years Healthcare Ops</span>
-        <span class="badge">International Hospital Experience</span>
+    <div class="section-header"><span class="section-tag">Why Belly Fat Is Different</span><h2 class="section-title">Where fat is stored matters as much as how much</h2></div>
+    <div class="risk-grid" style="margin-bottom:1.6rem;">
+      <div class="risk-card low">
+        <span class="risk-tag">Normal BMI Alone</span>
+        <h4>Doesn't rule out risk</h4>
+        <p>BMI measures total weight against height — it doesn't distinguish between fat stored around your organs and fat stored elsewhere, which is exactly why a "normal" BMI can still carry real risk.</p>
+      </div>
+      <div class="risk-card high">
+        <span class="risk-tag">Visceral Fat</span>
+        <h4>The bigger driver</h4>
+        <p>Visceral (abdominal) fat is consistently linked to insulin resistance and Type 2 diabetes risk more strongly than overall body weight — which is why waist circumference is now used alongside BMI in many clinical risk assessments, especially for South Asian populations where risk rises at lower BMI levels.</p>
       </div>
     </div>
-    <div class="evidence" style="margin-top:20px;">
-      <b>The evidence:</b> Research consistently links visceral (abdominal) fat — not overall body weight — to insulin resistance and Type 2 diabetes risk, which is why waist circumference is now used alongside BMI in many clinical risk assessments, especially for South Asian populations where risk rises at lower BMI levels.
+    <div class="check-grid">
+      <div class="check-card"><span class="icon-check">&check;</span><p>A plain-English explanation of how insulin resistance and stubborn body fat are driven by the same underlying system</p></div>
+      <div class="check-card"><span class="icon-check">&check;</span><p>A structured nutrition approach shown to reduce visceral fat specifically, not just total body mass</p></div>
+      <div class="check-card"><span class="icon-check">&check;</span><p>The role of sleep and stress hormones (cortisol) in driving abdominal fat storage — not just food</p></div>
+      <div class="check-card"><span class="icon-check">&check;</span><p>A tracking system that logs weight alongside your blood sugar, so you see the two move together over the 12 weeks</p></div>
+      <div class="check-card"><span class="icon-check">&check;</span><p>Movement guidance that targets the metabolically active fat around your organs, not spot-reduction myths</p></div>
     </div>
   </div>
 </section>
 
 <section>
-  <div class="wrap faq">
-    <h2>Before you ask</h2>
-    <details><summary>Can I target belly fat specifically with exercise?</summary><p>Spot-reduction (losing fat from one area through targeted exercise alone) isn't supported by evidence. What does work is the combination of nutrition, overall fat loss, sleep, and stress management covered in this course — visceral fat tends to respond well to that combination.</p></details>
-    <details><summary>My BMI is normal — do I still need this?</summary><p>If your waist measurement or blood sugar is a concern despite a "normal" BMI, this is exactly the gap this course addresses. Talk to your doctor about your specific risk.</p></details>
-    <details><summary>Is this a replacement for my doctor?</summary><p>No. This is structure and knowledge to have better conversations with your doctor — never a replacement for medical advice.</p></details>
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Inside the Course</span><h2 class="section-title">Modules built around where the fat is, not just how much</h2></div>
+    <div class="info-grid">
+      <div class="info-card"><b>Understanding Your Numbers</b><p style="margin-top:.4rem;">How HbA1c and insulin resistance relate to body fat, not just total body weight.</p></div>
+      <div class="info-card"><b>The Science of Remission</b><p style="margin-top:.4rem;">How visceral fat loss specifically, not total weight, is linked to improved insulin sensitivity.</p></div>
+      <div class="info-card"><b>Nutrition Protocol</b><p style="margin-top:.4rem;">A structured, realistic eating approach built around reducing abdominal fat.</p></div>
+      <div class="info-card"><b>Movement, Sleep &amp; Stress</b><p style="margin-top:.4rem;">Why cortisol and poor sleep quietly work against belly-fat loss.</p></div>
+      <div class="info-card"><b>Tracking System</b><p style="margin-top:.4rem;">Log weight and blood sugar together to see the real connection, week by week.</p></div>
+      <div class="info-card"><b>Working With Your Doctor</b><p style="margin-top:.4rem;">How to bring real data into your next appointment.</p></div>
+    </div>
   </div>
 </section>
 
-<section class="alt">
+<section>
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">A Distinction Most Generic Content Skips</span><h2 class="section-title">The evidence behind targeting the fat that matters</h2></div>
+    <div class="info-card"><b>The evidence:</b> Research consistently links visceral (abdominal) fat — not overall body weight — to insulin resistance and Type 2 diabetes risk, which is why waist circumference is now used alongside BMI in many clinical risk assessments, especially for South Asian populations where risk rises at lower BMI levels.</div>
+  </div>
+</section>
+
+<section id="tracker">
+  <div class="wrap">
+    <div class="tracker-card">
+      <div class="tracker-copy">
+        <h3>See weight and blood sugar move together</h3>
+        <p>The free tracker at dmremission.accredready.in logs your weight alongside your fasting and post-meal glucose, so the connection between the two — not just the scale on its own — becomes visible over the 12 weeks. No account cost, no course purchase required.</p>
+      </div>
+      <a class="cta-btn outline" href="https://dmremission.accredready.in/">Open the Free Tracker &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section id="faqs">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Before You Ask</span><h2 class="section-title">Frequently asked questions</h2></div>
+    <details class="faq-item"><summary>Can I target belly fat specifically with exercise?</summary><p>Spot-reduction (losing fat from one area through targeted exercise alone) isn't supported by evidence. What does work is the combination of nutrition, overall fat loss, sleep, and stress management covered in this course — visceral fat tends to respond well to that combination.</p></details>
+    <details class="faq-item"><summary>My BMI is normal — do I still need this?</summary><p>If your waist measurement or blood sugar is a concern despite a "normal" BMI, this is exactly the gap this course addresses. Talk to your doctor about your specific risk.</p></details>
+    <details class="faq-item"><summary>Is this a replacement for my doctor?</summary><p>No. This is structure and knowledge to have better conversations with your doctor — never a replacement for medical advice.</p></details>
+  </div>
+</section>
+
+<section>
   <div class="wrap">
     <div class="final-cta">
       <h2>Target the fat that actually drives your blood sugar</h2>
-      <p>12-week plan · Lifetime access · Learn at your own pace</p>
-      <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy →</a>
+      <p>12-week plan &middot; Lifetime access &middot; Learn at your own pace</p>
+      <a class="cta-btn" style="background:#fff;color:var(--primary-dark);" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy &rarr;</a>
     </div>
     <div class="disclaimer">
       This course is educational content and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for professional medical care. Always consult your doctor before making changes to your medication, diet, or exercise routine.
