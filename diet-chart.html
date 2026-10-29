@@ -4,11 +4,39 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Type 2 Diabetes Diet Chart — The Plate Model Explained</title>
-<meta name="description" content="A simple, visual diabetes diet chart you don't need to weigh or calculate — the plate model used throughout this 12-week course, explained in plain language.">
+<meta name="description" content="A simple, visual diabetes diet chart you don't need to weigh or calculate — the plate model used throughout this 12-week course, with real North Indian, South Indian, and Gujarati meal guidance.">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:image" content="https://course.accredready.in/logo-512.png">
 <link rel="stylesheet" href="theme-navy.css">
+<style>
+  .plate-wrap{display:flex;flex-direction:column;align-items:center;gap:24px;}
+  .plate-svg{width:100%;max-width:340px;}
+  .plate-slice{cursor:pointer;transition:filter .2s ease, transform .2s ease;transform-origin:200px 200px;}
+  .plate-slice:hover{filter:brightness(1.12);}
+  .plate-slice.active{filter:brightness(1.18) drop-shadow(0 4px 10px rgba(0,0,0,.35));}
+  .plate-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;}
+  .plate-chip{border:1px solid #D8E3F0;background:#fff;border-radius:999px;padding:8px 16px;font-size:13px;font-weight:700;cursor:pointer;color:var(--muted);}
+  .plate-chip.active{background:var(--navy-dark);color:#fff;border-color:var(--navy-dark);}
+  .plate-detail{background:#fff;border:1px solid #E3E9E7;border-radius:12px;padding:20px 22px;max-width:620px;margin:0 auto;}
+  .plate-detail .ptag{display:inline-block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;color:var(--accent-dark);background:var(--navy-light);border-radius:999px;padding:4px 12px;margin-bottom:10px;}
+  .plate-detail h3{margin:0 0 8px;color:var(--navy-dark);}
+  .plate-detail p{margin:0 0 12px;color:var(--text);font-size:15px;line-height:1.55;}
+  .plate-foods{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+  .plate-foods span{background:var(--card,#F4F7FB);border-radius:8px;padding:4px 10px;font-size:13px;}
+  .plate-tip{font-size:13px;color:var(--muted);background:var(--navy-light);border-left:3px solid var(--accent);border-radius:8px;padding:10px 14px;}
+
+  .region-tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:20px 0 28px;}
+  .region-tab{border:1px solid #D8E3F0;background:#fff;border-radius:999px;padding:9px 18px;font-size:13px;font-weight:700;cursor:pointer;color:var(--muted);}
+  .region-tab.active{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+  .region-panel{display:none;}
+  .region-panel.active{display:block;}
+  .region-grid{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:640px){.region-grid{grid-template-columns:1fr 1fr;}}
+  .region-card{background:#fff;border:1px solid #E3E9E7;border-radius:12px;padding:16px 18px;}
+  .region-card b{color:var(--navy-dark);}
+  .region-swap{margin-top:14px;font-size:14px;background:var(--navy-light);border-radius:10px;padding:12px 16px;}
+</style>
 </head>
 <body>
 <nav class="site-nav">
@@ -25,9 +53,9 @@
 
 <header class="hero">
   <div class="wrap">
-    <span class="eyebrow">NO WEIGHING, NO CALCULATING</span>
+    <span class="eyebrow">INTERACTIVE PLATE GUIDE</span>
     <h1>A Diabetes Diet Chart You Can Actually Use at Every Meal</h1>
-    <p class="sub">Half your plate vegetables, a quarter protein, a quarter carbs, a teaspoon of fat. That's it. No app, no scale, no calorie counting.</p>
+    <p class="sub">Half your plate vegetables, a quarter protein, a quarter carbs, a teaspoon of fat. Tap each section below to see exactly what it means for your kitchen.</p>
     <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy &rarr;</a>
     <div class="cta-sub">12-week structured plan &middot; Lifetime access &middot; Certificate of completion</div>
   </div>
@@ -47,29 +75,86 @@
 
 <section class="alt">
   <div class="wrap">
-    <h2>What you actually get</h2>
-    <ul class="check-list">
-      <li>The plate model — one visual structure you apply to almost any meal, any cuisine</li>
-      <li>Why this specific ratio works: fiber and volume from vegetables, fullness from protein, steady energy from carbs</li>
-      <li>The meal-sequencing trick — eating vegetables and protein before carbs — and why it measurably lowers your blood sugar spike</li>
-      <li>How to apply this directly to North Indian, South Indian, and Gujarati thalis</li>
-      <li>How to read packaged food labels for hidden sugar once you've got your plate sorted</li>
-    </ul>
+    <h2>Tap the plate to explore each part</h2>
+    <div class="plate-wrap">
+      <svg id="plateSvg" class="plate-svg" viewBox="0 0 400 400">
+        <path id="slice-veg" class="plate-slice active" fill="#5FB98C" stroke="#fff" stroke-width="4"
+              d="M 200,200 L 200,30 A 170,170 0 0,0 200,370 Z" onclick="selectSlice('veg')"></path>
+        <path id="slice-protein" class="plate-slice" fill="#2E6B4C" stroke="#fff" stroke-width="4"
+              d="M 200,200 L 370,200 A 170,170 0 0,0 200,30 Z" onclick="selectSlice('protein')"></path>
+        <path id="slice-carbs" class="plate-slice" fill="#F2A93B" stroke="#fff" stroke-width="4"
+              d="M 200,200 L 200,370 A 170,170 0 0,0 370,200 Z" onclick="selectSlice('carbs')"></path>
+        <g font-family="inherit" font-weight="700" fill="#ffffff" text-anchor="middle" pointer-events="none">
+          <text x="110" y="200" font-size="15">50%</text>
+          <text x="110" y="218" font-size="10">Vegetables</text>
+          <text x="278" y="128" font-size="13">25%</text>
+          <text x="278" y="144" font-size="9.5">Protein</text>
+          <text x="278" y="272" font-size="13">25%</text>
+          <text x="278" y="288" font-size="9.5">Carbs</text>
+        </g>
+        <circle id="slice-fats" cx="200" cy="200" r="42" fill="#081A33" stroke="#fff" stroke-width="3.5" class="plate-slice" onclick="selectSlice('fats')"></circle>
+        <g font-family="inherit" text-anchor="middle" pointer-events="none">
+          <text x="200" y="197" font-size="10" font-weight="700" fill="#F2A93B">1 TSP</text>
+          <text x="200" y="210" font-size="8" fill="#EEF2F8">FAT</text>
+        </g>
+      </svg>
+
+      <div class="plate-chips">
+        <button class="plate-chip active" id="chip-veg" onclick="selectSlice('veg')">Vegetables (50%)</button>
+        <button class="plate-chip" id="chip-protein" onclick="selectSlice('protein')">Protein (25%)</button>
+        <button class="plate-chip" id="chip-carbs" onclick="selectSlice('carbs')">Carbs (25%)</button>
+        <button class="plate-chip" id="chip-fats" onclick="selectSlice('fats')">Fat (1 tsp)</button>
+      </div>
+
+      <div class="plate-detail" id="plateDetail"></div>
+    </div>
+    <p style="margin-top:24px;">This isn't a diet brand and it's not a rigid meal plan you follow exactly every day. It's a structure you apply to almost any meal you already eat — including your own regional cuisine.</p>
   </div>
 </section>
 
 <section class="alt">
   <div class="wrap">
-    <h2>The plate model</h2>
-    <div class="grid">
-      <div class="module"><b>Half the plate</b><br>Non-starchy vegetables — leafy greens, cucumber, tomato, cauliflower, bottle gourd, okra. Anything except potato or corn.</div>
-      <div class="module"><b>A quarter of the plate</b><br>Lean protein — dal, paneer, eggs, fish, chicken, or whichever source fits your regular diet.</div>
-      <div class="module"><b>The final quarter</b><br>A complex carbohydrate — a portion of roti, rice, or another grain.</div>
-      <div class="module"><b>Alongside it</b><br>A small amount of healthy fat — roughly a teaspoon of ghee or oil, used in cooking, not piled on separately.</div>
-    </div>
-    <p style="margin-top:20px;">This isn't a diet brand and it's not a rigid meal plan you follow exactly every day. It's a structure you apply to almost any meal you already eat — including your own regional cuisine.</p>
+    <h2>Does the order you eat in actually matter?</h2>
+    <p>Yes. Eating your vegetables and protein first, and your rice or roti last, has generally been shown in meal-sequencing research to produce a smaller blood sugar spike than eating everything mixed together, or eating carbohydrates first. It's a small, free adjustment — no different quantity of food, just a different order. Try it yourself and watch what your own post-meal glucose readings show once you get to the tracking module.</p>
   </div>
 </section>
+
+<section>
+  <div class="wrap">
+    <h2>Real Indian meal guidance, by region</h2>
+    <p>India isn't one cuisine, so here's region-specific guidance rather than generic advice that doesn't match your actual kitchen. Roti, rice, and dal are not the enemy — what matters is portion and pairing, not elimination.</p>
+    <div class="region-tabs">
+      <button class="region-tab active" id="tab-north" onclick="selectRegion('north')">North Indian</button>
+      <button class="region-tab" id="tab-south" onclick="selectRegion('south')">South Indian</button>
+      <button class="region-tab" id="tab-gujarati" onclick="selectRegion('gujarati')">Gujarati</button>
+    </div>
+
+    <div class="region-panel active" id="panel-north">
+      <div class="region-grid">
+        <div class="region-card"><b>The structure</b><br>Roti, a vegetable sabzi, dal, often a side of salad or raita. Keep your roti portion moderate — ideally whole wheat or a millet blend. Make your sabzi genuinely vegetable-heavy, not swimming in oil with just a couple of pieces floating in it. Treat dal as a real portion, not an afterthought.</div>
+        <div class="region-card"><b>Watch for</b><br>Ghee and oil add up quickly in tadka, layered parathas, and rich gravies like paneer butter masala or dal makhani — often finished with a generous pour of cream or ghee. A small amount of fat is part of the plate model on purpose, but watch for fat layered on top of an already carb-heavy meal.</div>
+      </div>
+      <div class="region-swap"><b>Practical swap:</b> Shift from refined-flour (maida) roti to whole wheat first — usually the easiest transition, taking most people about a week or two to feel normal. Then experiment with a millet blend, starting at roughly one part bajra flour to three parts wheat atta.</div>
+    </div>
+
+    <div class="region-panel" id="panel-south">
+      <div class="region-grid">
+        <div class="region-card"><b>The structure</b><br>Idli, dosa, sambar, and chutney are structured differently from North Indian meals. Idli, being steamed rather than fried, is a reasonably good option, especially paired generously with sambar — which contains dal and vegetables, giving built-in protein and fiber.</div>
+        <div class="region-card"><b>Watch for</b><br>A large, thin, crisp dosa is primarily refined-rice-batter — a fast carbohydrate, so portion matters more here than with idli. Pair dosa or idli with extra sambar and a vegetable-based chutney rather than coconut chutney alone.</div>
+      </div>
+      <div class="region-swap"><b>Practical swap:</b> If you make dosa batter at home, increase the lentil-to-rice ratio slightly — something like one part urad dal to two parts rice instead of a more rice-heavy ratio — to meaningfully improve the fiber and protein content.</div>
+    </div>
+
+    <div class="region-panel" id="panel-gujarati">
+      <div class="region-grid">
+        <div class="region-card"><b>The structure</b><br>Typically roti or bajra rotla, a vegetable sabzi, kadhi, and dal, often with a distinctive touch of sweetness characteristic of the cuisine. Gujarati cooking often includes jaggery or sugar in dishes you might not immediately expect — in kadhi, in certain dals, even in some sabzis like undhiyu.</div>
+        <div class="region-card"><b>What to do</b><br>None of this needs to disappear completely, and you don't need to cook food that no longer tastes like home. But being aware of where sugar hides matters, so you can moderate it deliberately rather than by accident.</div>
+      </div>
+      <div class="region-swap"><b>Practical swap:</b> When cooking at home, try moderating the added jaggery in kadhi and dal by roughly half of what you'd normally use, and genuinely taste the dish afterward. Most people's palates adjust within two to three weeks of consistent reduction.</div>
+    </div>
+  </div>
+</section>
+
 <section class="alt">
   <div class="wrap">
     <h2>Why this, and not just another generic article</h2>
@@ -87,8 +172,11 @@
   <div class="wrap faq">
     <h2>Before you ask</h2>
     <details><summary>Do I need to weigh my food to follow this?</summary><p>No. You don't need to weigh or calculate anything — just notice the rough proportions on your plate and adjust gradually. Small, repeated adjustments beat one perfect plate you never repeat.</p></details>
+    <details><summary>Do I need to give up roti, rice, and dal?</summary><p>No. Nothing in this course asks you to give up the food you grew up eating. What actually matters is portion and pairing, not elimination — diet programs that ask people to eat food that feels foreign to them rarely get followed for twelve weeks, let alone for life.</p></details>
+    <details><summary>My dal is usually thin and watery — does it still count as protein?</summary><p>Dal is high in both fiber and protein, but a thin, watery dal treated as a flavoring liquid gives you less of both than it could. Consider making it slightly thicker, with more actual lentils per serving, and treat it as a genuine, substantial part of your meal.</p></details>
+    <details><summary>Can I still eat white rice?</summary><p>The fix isn't necessarily eliminating rice — for many households that's not realistic, and it doesn't need to be. The fix is portion and pairing: a smaller mound, roughly the size of your cupped palm, alongside a generous portion of dal and vegetable sabzi, produces a very different blood sugar response than a large plate of rice with a thin curry poured over it.</p></details>
+    <details><summary>How much ghee or oil is actually allowed?</summary><p>Roughly a teaspoon, used in cooking rather than piled on separately. Watch specifically for dishes where fat is layered on top of an already carbohydrate-heavy meal — rich gravies finished with cream or a generous pour of ghee add up quickly without adding much fullness.</p></details>
     <details><summary>Does this work for vegetarians?</summary><p>Completely. The plate model needs protein, not meat specifically — dal, paneer, curd, tofu, chickpeas, and rajma all work. Swap the protein source, keep the same proportions.</p></details>
-    <details><summary>Does the order I eat food in actually matter?</summary><p>Research on meal sequencing generally shows eating vegetables and protein before carbohydrates produces a smaller blood sugar spike than eating everything together, or carbs first. It's a free adjustment — same food, different order.</p></details>
   </div>
 </section>
 
@@ -112,6 +200,63 @@
   <p>Type 2 Diabetes Remission Protocol (12-Week System) &middot; Built by Dr. Mehul Upadhyay</p>
 </div>
 </footer>
+
+<script>
+var plateData = {
+  veg: {
+    tag: "Half the plate (50%)",
+    title: "Non-starchy vegetables",
+    desc: "Leafy greens, cucumber, tomato, cauliflower, bottle gourd, okra — anything except potato or corn. The vegetables provide fiber and volume without meaningfully spiking glucose, and they physically fill your stomach, which matters for satisfaction.",
+    foods: ["Palak (spinach)", "Bhindi (okra)", "Gobi (cauliflower)", "Lauki (bottle gourd)", "Cucumber & tomato", "Methi & karela", "Cabbage"],
+    tip: "Eat these first, before your roti or rice — that order alone can lower your post-meal blood sugar spike."
+  },
+  protein: {
+    tag: "A quarter of the plate (25%)",
+    title: "Lean protein",
+    desc: "Dal, paneer in moderate amounts, eggs, fish, chicken, or whichever protein source fits your regular diet. Protein slows digestion and is one of the most effective things you can eat for feeling genuinely full, not just full for twenty minutes.",
+    foods: ["Dal (thick, not watery)", "Paneer", "Curd", "Eggs", "Fish or chicken", "Chickpeas / rajma"],
+    tip: "If your usual dal is thin and watery, make it thicker with more actual lentils per serving — it's one of your best tools here."
+  },
+  carbs: {
+    tag: "The final quarter (25%)",
+    title: "Complex carbohydrate",
+    desc: "A portion of roti, rice, or another grain. Gives you real energy without being the dominant part of the meal the way it often is on a typical rice-heavy or roti-heavy plate.",
+    foods: ["Whole wheat roti", "Bajra / jowar rotla", "Brown rice", "Rice + quinoa or moong dal blend"],
+    tip: "Try shifting from refined flour to whole wheat first, then experiment with a millet blend — start at roughly one part bajra flour to three parts wheat atta."
+  },
+  fats: {
+    tag: "Alongside the plate (1 tsp)",
+    title: "A small amount of healthy fat",
+    desc: "Roughly a teaspoon of ghee or oil, used in cooking, not piled on separately. In moderate amounts this slows how quickly your stomach empties, which smooths out the glucose response even further.",
+    foods: ["Ghee (in cooking)", "Mustard or groundnut oil", "Nuts in small amounts"],
+    tip: "Watch for fat layered on top of an already carb-heavy meal — rich gravies finished with cream or a heavy pour of ghee add up quickly."
+  }
+};
+
+function selectSlice(key){
+  ["veg","protein","carbs","fats"].forEach(function(k){
+    document.getElementById("slice-"+k).classList.toggle("active", k===key);
+    document.getElementById("chip-"+k).classList.toggle("active", k===key);
+  });
+  var d = plateData[key];
+  var foods = d.foods.map(function(f){ return "<span>"+f+"</span>"; }).join("");
+  document.getElementById("plateDetail").innerHTML =
+    '<span class="ptag">'+d.tag+'</span>' +
+    '<h3>'+d.title+'</h3>' +
+    '<p>'+d.desc+'</p>' +
+    '<div class="plate-foods">'+foods+'</div>' +
+    '<div class="plate-tip">'+d.tip+'</div>';
+}
+
+function selectRegion(key){
+  ["north","south","gujarati"].forEach(function(k){
+    document.getElementById("tab-"+k).classList.toggle("active", k===key);
+    document.getElementById("panel-"+k).classList.toggle("active", k===key);
+  });
+}
+
+selectSlice("veg");
+</script>
 
 </body>
 </html>
