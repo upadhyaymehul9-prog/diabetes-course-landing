@@ -8,7 +8,25 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:image" content="https://course.accredready.in/logo-512.png">
-<link rel="stylesheet" href="theme-navy.css">
+<link rel="stylesheet" href="theme-teal.css">
+<style>
+.scale-track{display:flex;}
+.scale-seg{flex:1;}
+.risk-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;}
+@media(max-width:700px){.risk-grid{grid-template-columns:1fr;}}
+.risk-card{border-radius:var(--radius-md);padding:1.3rem 1.5rem;border:2px solid var(--slate-200);background:#fff;}
+.risk-card.low{border-color:#99d8cf;}
+.risk-card.high{border-color:#fecaca;}
+.risk-tag{display:inline-block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;padding:3px 10px;border-radius:999px;margin-bottom:10px;}
+.risk-card.low .risk-tag{background:var(--primary-light);color:var(--primary-dark);}
+.risk-card.high .risk-tag{background:#fee2e2;color:#b91c1c;}
+.risk-card h4{font-size:1rem;margin-bottom:6px;color:var(--slate-900);}
+.risk-card p{font-size:.88rem;color:var(--slate-600);line-height:1.5;}
+.prep-list{list-style:none;}
+.prep-list li{display:flex;gap:.7rem;padding:.6rem 0;border-bottom:1px solid var(--slate-200);font-size:.9rem;color:var(--slate-700);}
+.prep-list li:last-child{border-bottom:none;}
+.prep-list li:before{content:"\2713";flex-shrink:0;width:20px;height:20px;border-radius:50%;background:var(--primary-light);color:var(--primary-dark);font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-top:2px;}
+</style>
 </head>
 <body>
 <nav class="site-nav">
@@ -23,79 +41,135 @@
   </div>
 </nav>
 
+<nav class="page-nav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Type 2 Diabetes Remission Protocol<small>Dr. Mehul Upadhyay</small></a>
+    <div class="nav-links">
+      <a href="#mechanism">What's Happening</a>
+      <a href="#thresholds">Hypoglycemia Scale</a>
+      <a href="#tracker">Tracker</a>
+      <a href="#faqs">FAQs</a>
+    </div>
+    <a class="nav-cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course &rarr;</a>
+  </div>
+</nav>
+
 <header class="hero">
   <div class="wrap">
-    <span class="eyebrow">A SAFETY PRINCIPLE, NOT A SUGGESTION</span>
-    <h1>Why You Should Never Adjust Your Own Diabetes Medication</h1>
-    <p class="sub">As a structured plan works, your body needs less external help — which means your current dose can become too strong. Here's the actual mechanism, and why this is your doctor's call, not yours.</p>
-    <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy &rarr;</a>
-    <div class="cta-sub">12-week structured plan &middot; Lifetime access &middot; Certificate of completion</div>
+    <span class="badge-pill warn">A Safety Principle, Not a Suggestion</span>
+    <h1 class="hero-title">Why You Should Never Adjust Your Own Diabetes Medication</h1>
+    <p class="hero-subtitle">As a structured plan works, your body needs less external help — which means your current dose can become too strong. Here's the actual mechanism, and why this is your doctor's call, not yours.</p>
+    <a class="cta-btn" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy &rarr;</a>
+    <div class="hero-meta">12-week structured plan &middot; Lifetime access &middot; Certificate of completion</div>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <h2>Sound familiar?</h2>
-    <ul class="pain-list">
-      <li>Your numbers have improved and you're tempted to reduce or skip your medication yourself</li>
-      <li>You don't understand why a dose that worked fine before could suddenly be a problem</li>
-      <li>You're not sure which of your medications carry real risk if your sensitivity improves</li>
-      <li>Your doctor appointments are too short to really explain any of this</li>
-    </ul>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <h2>What you actually get</h2>
-    <ul class="check-list">
-      <li>The actual physiological mechanism — why improving insulin sensitivity changes what your medication dose should be</li>
-      <li>Which medications carry real hypoglycemia risk (insulin, sulfonylureas) versus which don't (metformin alone, generally)</li>
-      <li>The exact clinical thresholds for low blood sugar, so "hypoglycemia" isn't just a scary word</li>
-      <li>What to bring to every doctor visit so a 5-minute appointment actually becomes useful</li>
-      <li>Scripts for the specific questions to ask your doctor about adjusting your dose safely</li>
-    </ul>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <h2>What's actually happening</h2>
-    <p>As you lose weight and your insulin sensitivity genuinely improves, your body needs less external help managing glucose. The same dose that was appropriate — even necessary — three months ago can become too strong for your improved body.</p>
-    <p style="margin-top:16px;">This matters most with insulin and sulfonylurea medications, because they directly lower your blood sugar. Metformin alone rarely causes hypoglycemia on its own — it doesn't force your body to release insulin the way a sulfonylurea does. But on insulin or a sulfonylurea, the exact same dose that was safe at week one can push you into genuinely risky territory by week eight.</p>
-    <div class="evidence" style="margin-top:20px;">
-      <b>The real thresholds (ADA guidelines):</b> Below 70 mg/dL is hypoglycemia. 54–69 is Level 1 — an alert threshold needing fast-acting carbohydrates. Below 54 is Level 2 — clinically significant, can impair thinking and coordination. Level 3 means you need someone else's help to recover.
+    <div class="section-header"><span class="section-tag">Sound familiar?</span><h2 class="section-title">The trap that catches people on improving numbers</h2></div>
+    <div class="frustration-grid">
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>Your numbers have improved and you're tempted to reduce or skip your medication yourself</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You don't understand why a dose that worked fine before could suddenly be a problem</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You're not sure which of your medications carry real risk if your sensitivity improves</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>Your doctor appointments are too short to really explain any of this</p></div>
     </div>
   </div>
 </section>
-<section class="alt">
+
+<section id="mechanism">
   <div class="wrap">
-    <h2>Why this, and not just another generic article</h2>
-    <div class="instructor">
-      <div>
-        <p><b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management &mdash; including time in the New Zealand healthcare system. This course brings that same structured, checklist-driven thinking to something patients are usually left to figure out alone.</p>
-        <span class="badge">15+ Years Healthcare Ops</span>
-        <span class="badge">International Hospital Experience</span>
+    <div class="section-header"><span class="section-tag">What's Actually Happening</span><h2 class="section-title">The same dose, a different body</h2><p class="section-sub">As you lose weight and your insulin sensitivity genuinely improves, your body needs less external help managing glucose. The same dose that was appropriate — even necessary — three months ago can become too strong for your improved body.</p></div>
+    <div class="risk-grid">
+      <div class="risk-card low">
+        <span class="risk-tag">Lower Hypoglycemia Risk</span>
+        <h4>Metformin alone</h4>
+        <p>Metformin rarely causes hypoglycemia on its own — it doesn't force your body to release insulin the way a sulfonylurea does. It works by reducing how much glucose your liver releases, not by directly lowering blood sugar.</p>
+      </div>
+      <div class="risk-card high">
+        <span class="risk-tag">Real Hypoglycemia Risk</span>
+        <h4>Insulin &amp; sulfonylureas</h4>
+        <p>These medications directly lower your blood sugar. As your own insulin sensitivity improves, the exact same dose that was safe at week one can push you into genuinely risky territory by week eight.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section>
-  <div class="wrap faq">
-    <h2>Before you ask</h2>
-    <details><summary>If my numbers are improving, shouldn't I need less medication?</summary><p>Possibly — but that determination has to be made by your doctor, looking at your full trend data, your HbA1c, and your specific medication. Not by you, based on how you feel.</p></details>
-    <details><summary>What should I actually bring to my doctor appointment?</summary><p>Your tracker covering at least the past four weeks, whether your fasting and post-meal numbers are trending down, flat, or up, any recent HbA1c results, and a written list of your current medications and doses exactly as you're taking them.</p></details>
-    <details><summary>Is this caution specific to this course, or standard medical advice?</summary><p>It's standard, serious medical guidance — not something specific to this program. Self-adjusting glucose-lowering medication while your sensitivity is changing is one of the more common, entirely preventable reasons people on structured lifestyle programs end up needing urgent care.</p></details>
+<section id="thresholds">
+  <div class="wrap">
+    <div class="dark-panel warn">
+      <div class="section-header"><span class="section-tag" style="color:#fca5a5;">The Real Thresholds (ADA Guidelines)</span><h2 class="section-title light">What "hypoglycemia" actually means in numbers</h2></div>
+      <div class="scale-card" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);">
+        <div class="scale-track">
+          <div class="scale-seg" style="background:#b91c1c;flex:0.54;"></div>
+          <div class="scale-seg" style="background:#f59e0b;flex:0.16;"></div>
+          <div class="scale-seg" style="background:#16a34a;flex:1.3;"></div>
+        </div>
+        <div class="scale-labels" style="color:#e2e8f0;">
+          <span>&lt;54 Level 2</span>
+          <span>54&ndash;69 Level 1</span>
+          <span>70+ Normal range</span>
+        </div>
+      </div>
+      <p class="panel-note" style="margin-top:1.2rem;">Below 70 mg/dL is hypoglycemia. 54&ndash;69 is Level 1 &mdash; an alert threshold needing fast-acting carbohydrates. Below 54 is Level 2 &mdash; clinically significant, can impair thinking and coordination. Level 3 means you need someone else's help to recover.</p>
+    </div>
   </div>
 </section>
 
-<section class="alt">
+<section id="tracker">
+  <div class="wrap">
+    <div class="tracker-card">
+      <div class="tracker-copy">
+        <h3>Your dose decision needs trend data, not a guess</h3>
+        <p>The free tracker at dmremission.accredready.in logs your fasting and post-meal glucose over time — exactly the trend your doctor needs to see before touching your dose. No account cost, no course purchase required.</p>
+      </div>
+      <a class="cta-btn outline" href="https://dmremission.accredready.in/">Open the Free Tracker &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Before Your Next Appointment</span><h2 class="section-title">What to actually bring with you</h2></div>
+    <div class="info-card" style="max-width:620px;margin:0 auto;">
+      <ul class="prep-list">
+        <li>Your tracker covering at least the past four weeks</li>
+        <li>Whether your fasting and post-meal numbers are trending down, flat, or up</li>
+        <li>Any recent HbA1c results</li>
+        <li>A written list of your current medications and doses exactly as you're taking them</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Why This, Not Another Generic Article</span><h2 class="section-title">Built by someone who's run hospital operations, not a diet blog</h2></div>
+    <div class="author-card">
+      <div class="author-avatar">MU</div>
+      <div>
+        <p><b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management — including time in the New Zealand healthcare system. This course brings that same structured, checklist-driven thinking to something patients are usually left to figure out alone.</p>
+        <span class="author-badge">15+ Years Healthcare Ops</span>
+        <span class="author-badge">International Hospital Experience</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faqs">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Before You Ask</span><h2 class="section-title">Frequently asked questions</h2></div>
+    <details class="faq-item"><summary>If my numbers are improving, shouldn't I need less medication?</summary><p>Possibly — but that determination has to be made by your doctor, looking at your full trend data, your HbA1c, and your specific medication. Not by you, based on how you feel.</p></details>
+    <details class="faq-item"><summary>What should I actually bring to my doctor appointment?</summary><p>Your tracker covering at least the past four weeks, whether your fasting and post-meal numbers are trending down, flat, or up, any recent HbA1c results, and a written list of your current medications and doses exactly as you're taking them.</p></details>
+    <details class="faq-item"><summary>Is this caution specific to this course, or standard medical advice?</summary><p>It's standard, serious medical guidance — not something specific to this program. Self-adjusting glucose-lowering medication while your sensitivity is changing is one of the more common, entirely preventable reasons people on structured lifestyle programs end up needing urgent care.</p></details>
+  </div>
+</section>
+
+<section>
   <div class="wrap">
     <div class="final-cta">
       <h2>Lose the weight. Control the sugar. One 12-week system.</h2>
       <p>12-week plan &middot; Lifetime access &middot; Learn at your own pace</p>
-      <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy &rarr;</a>
+      <a class="cta-btn" style="background:#fff;color:var(--primary-dark);" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy &rarr;</a>
     </div>
     <div class="disclaimer">
       This course is educational content and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for professional medical care. Always consult your doctor before making changes to your medication, diet, or exercise routine.

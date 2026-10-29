@@ -8,7 +8,23 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:image" content="https://course.accredready.in/logo-512.png">
-<link rel="stylesheet" href="theme-navy.css">
+<link rel="stylesheet" href="theme-teal.css">
+<style>
+.check-steps{counter-reset:step;}
+.check-step{display:flex;gap:1rem;align-items:flex-start;background:#fff;border:1px solid var(--card-border);border-radius:var(--radius-md);padding:1.1rem 1.3rem;margin-bottom:.8rem;box-shadow:var(--shadow-sm);}
+.check-step .num{counter-increment:step;flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--primary);color:#fff;font-weight:800;font-size:.85rem;display:flex;align-items:center;justify-content:center;}
+.check-step .num:before{content:counter(step);}
+.check-step p{font-size:.9rem;color:var(--slate-700);line-height:1.5;margin:0;}
+.then-now{display:grid;grid-template-columns:1fr 1fr;gap:1.3rem;margin-top:1.8rem;}
+@media(max-width:760px){.then-now{grid-template-columns:1fr;}}
+.then-now .col{border-radius:var(--radius-md);padding:1.4rem 1.6rem;}
+.then-now .then{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);}
+.then-now .now{background:rgba(94,234,212,.08);border:1px solid rgba(94,234,212,.25);}
+.then-now h4{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;font-weight:800;margin-bottom:.6rem;}
+.then-now .then h4{color:#fca5a5;}
+.then-now .now h4{color:#5eead4;}
+.then-now p{font-size:.86rem;color:#cdd9e5;line-height:1.55;}
+</style>
 </head>
 <body>
 <nav class="site-nav">
@@ -23,80 +39,107 @@
   </div>
 </nav>
 
+<nav class="page-nav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Type 2 Diabetes Remission Protocol<small>Dr. Mehul Upadhyay</small></a>
+    <div class="nav-links">
+      <a href="#footcheck">30-Second Check</a>
+      <a href="#research">What Changed</a>
+      <a href="#tracker">Tracker</a>
+      <a href="#faqs">FAQs</a>
+    </div>
+    <a class="nav-cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course &rarr;</a>
+  </div>
+</nav>
+
 <header class="hero">
   <div class="wrap">
-    <span class="eyebrow">A SAFETY ROUTINE, NOT A REASON TO STOP WALKING</span>
-    <h1>Diabetes and Your Feet: What You Need to Know Before You Start Walking</h1>
-    <p class="sub">Older guidance discouraged walking if you had nerve damage in your feet. More recent research tells a different story — here's what actually matters.</p>
-    <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy &rarr;</a>
-    <div class="cta-sub">12-week structured plan &middot; Lifetime access &middot; Certificate of completion</div>
+    <span class="badge-pill">A Safety Routine, Not a Reason to Stop Walking</span>
+    <h1 class="hero-title">Diabetes and Your Feet: What You Need to Know Before You Start Walking</h1>
+    <p class="hero-subtitle">Older guidance discouraged walking if you had nerve damage in your feet. More recent research tells a different story — here's what actually matters.</p>
+    <a class="cta-btn" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy &rarr;</a>
+    <div class="hero-meta">12-week structured plan &middot; Lifetime access &middot; Certificate of completion</div>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <h2>Sound familiar?</h2>
-    <ul class="pain-list">
-      <li>You've been told diabetes can affect your feet but don't know what that actually means day to day</li>
-      <li>You're worried walking could cause a problem you won't even feel happening</li>
-      <li>You've heard older advice to avoid walking if you have nerve damage and don't know if it still applies</li>
-      <li>You don't know what to actually check, or how often</li>
-    </ul>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <h2>What you actually get</h2>
-    <ul class="check-list">
-      <li>Why footwear matters more for you than for most people, and what "proper" actually means</li>
-      <li>The 30-second foot-check routine to build around every walk</li>
-      <li>What current research actually says about walking with nerve damage — it's changed from older guidance</li>
-      <li>The specific precaution if you're on insulin or a sulfonylurea and plan to walk</li>
-      <li>How this fits into the full movement plan — not just walking in isolation</li>
-    </ul>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <h2>What actually matters</h2>
-    <p>Diabetes can affect circulation and nerve sensation in your feet over time — a condition called peripheral neuropathy — which means you might not always feel a blister or pressure point forming the way someone else would. Proper, well-fitted, cushioned shoes matter every single time you walk — not sandals, not worn-out footwear.</p>
-    <p style="margin-top:16px;">Check your feet before and after each walk, especially if you've had diabetes for several years or have any nerve involvement. You're looking for redness, blisters, cuts, or unusual pressure marks. It takes thirty seconds.</p>
-    <div class="evidence" style="margin-top:20px;">
-      <b>Worth knowing:</b> Older guidance used to discourage walking for people with nerve damage in their feet, out of concern it would cause ulcers. More recent studies have shown that moderate walking does not increase ulcer risk in most people with neuropathy, provided you're doing the foot checks and wearing proper shoes. This is a safety routine to build alongside walking — not a reason to avoid it.
+    <div class="section-header"><span class="section-tag">Sound familiar?</span><h2 class="section-title">The uncertainty that keeps people from starting</h2></div>
+    <div class="frustration-grid">
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You've been told diabetes can affect your feet but don't know what that actually means day to day</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You're worried walking could cause a problem you won't even feel happening</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You've heard older advice to avoid walking if you have nerve damage and don't know if it still applies</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You don't know what to actually check, or how often</p></div>
     </div>
-    <p style="margin-top:16px;">One more thing: if you take insulin or a sulfonylurea, physical activity can occasionally lower your blood sugar more than expected. If your blood sugar is below 100 before you walk, have a small carbohydrate snack first, and carry something with fast-acting sugar with you.</p>
   </div>
 </section>
-<section class="alt">
+
+<section id="footcheck">
   <div class="wrap">
-    <h2>Why this, and not just another generic article</h2>
-    <div class="instructor">
-      <div>
-        <p><b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management &mdash; including time in the New Zealand healthcare system. This course brings that same structured, checklist-driven thinking to something patients are usually left to figure out alone.</p>
-        <span class="badge">15+ Years Healthcare Ops</span>
-        <span class="badge">International Hospital Experience</span>
+    <div class="section-header"><span class="section-tag">The Routine</span><h2 class="section-title">Your 30-second foot check</h2><p class="section-sub">Build this around every walk — before you go, and after you're back.</p></div>
+    <div class="check-steps" style="max-width:620px;margin:0 auto;">
+      <div class="check-step"><div class="num"></div><p>Wear proper, well-fitted, cushioned shoes every single time — not sandals, not worn-out footwear.</p></div>
+      <div class="check-step"><div class="num"></div><p>Before you walk, look over both feet for anything already there — redness, blisters, cuts, pressure marks.</p></div>
+      <div class="check-step"><div class="num"></div><p>After you walk, check again, especially if you've had diabetes for several years or have any nerve involvement.</p></div>
+      <div class="check-step"><div class="num"></div><p>If you're on insulin or a sulfonylurea and your blood sugar is below 100 before you walk, have a small carbohydrate snack first and carry something with fast-acting sugar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <div class="dark-panel">
+      <div class="section-header"><span class="section-tag" style="color:#5eead4;">What Actually Changed</span><h2 class="section-title light">Older caution vs. current research</h2></div>
+      <div class="then-now">
+        <div class="col then"><h4>Older guidance</h4><p>Discouraged walking for people with nerve damage (peripheral neuropathy) in their feet, out of concern it would cause ulcers.</p></div>
+        <div class="col now"><h4>Current research</h4><p>Moderate walking does not increase ulcer risk in most people with neuropathy, provided you're doing the foot checks and wearing proper shoes.</p></div>
       </div>
+      <p class="panel-note" style="margin-top:1.4rem;">This is a safety routine to build alongside walking — not a reason to avoid it. Diabetes can affect circulation and nerve sensation in your feet over time, which means you might not always feel a blister or pressure point forming the way someone else would. That's exactly why the check matters more than the caution.</p>
+    </div>
+  </div>
+</section>
+
+<section id="tracker">
+  <div class="wrap">
+    <div class="tracker-card">
+      <div class="tracker-copy">
+        <h3>Track your daily walk, not just your feet</h3>
+        <p>The free tracker at dmremission.accredready.in has a daily field for your post-meal walk, so the habit — not just the glucose number — becomes visible over weeks. No account cost, no course purchase required.</p>
+      </div>
+      <a class="cta-btn outline" href="https://dmremission.accredready.in/">Open the Free Tracker &rarr;</a>
     </div>
   </div>
 </section>
 
 <section>
-  <div class="wrap faq">
-    <h2>Before you ask</h2>
-    <details><summary>Should I avoid walking if I have nerve damage in my feet?</summary><p>Current research doesn't support that older caution. Moderate walking does not appear to increase ulcer risk in most people with neuropathy, as long as you're checking your feet and wearing proper shoes.</p></details>
-    <details><summary>What counts as "proper" shoes?</summary><p>Well-fitted, cushioned, closed footwear — not sandals, and not shoes that are worn out or no longer supportive.</p></details>
-    <details><summary>Is this foot-care routine covered as part of the course, or separate?</summary><p>It's built directly into the movement module alongside the walking plan — not a separate add-on. The safety notes are part of how walking is introduced from week one.</p></details>
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Why This, Not Another Generic Article</span><h2 class="section-title">Built by someone who's run hospital operations, not a diet blog</h2></div>
+    <div class="author-card">
+      <div class="author-avatar">MU</div>
+      <div>
+        <p><b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management — including time in the New Zealand healthcare system. This course brings that same structured, checklist-driven thinking to something patients are usually left to figure out alone.</p>
+        <span class="author-badge">15+ Years Healthcare Ops</span>
+        <span class="author-badge">International Hospital Experience</span>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="alt">
+<section id="faqs">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Before You Ask</span><h2 class="section-title">Frequently asked questions</h2></div>
+    <details class="faq-item"><summary>Should I avoid walking if I have nerve damage in my feet?</summary><p>Current research doesn't support that older caution. Moderate walking does not appear to increase ulcer risk in most people with neuropathy, as long as you're checking your feet and wearing proper shoes.</p></details>
+    <details class="faq-item"><summary>What counts as "proper" shoes?</summary><p>Well-fitted, cushioned, closed footwear — not sandals, and not shoes that are worn out or no longer supportive.</p></details>
+    <details class="faq-item"><summary>Is this foot-care routine covered as part of the course, or separate?</summary><p>It's built directly into the movement module alongside the walking plan — not a separate add-on. The safety notes are part of how walking is introduced from week one.</p></details>
+  </div>
+</section>
+
+<section>
   <div class="wrap">
     <div class="final-cta">
       <h2>Lose the weight. Control the sugar. One 12-week system.</h2>
       <p>12-week plan &middot; Lifetime access &middot; Learn at your own pace</p>
-      <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy &rarr;</a>
+      <a class="cta-btn" style="background:#fff;color:var(--primary-dark);" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy &rarr;</a>
     </div>
     <div class="disclaimer">
       This course is educational content and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for professional medical care. Always consult your doctor before making changes to your medication, diet, or exercise routine.

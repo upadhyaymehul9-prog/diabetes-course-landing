@@ -8,7 +8,16 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:image" content="https://course.accredready.in/logo-512.png">
-<link rel="stylesheet" href="theme-navy.css">
+<link rel="stylesheet" href="theme-teal.css">
+<style>
+.number-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.3rem;}
+@media(max-width:760px){.number-grid{grid-template-columns:1fr;}}
+.number-card{background:#fff;border:1px solid var(--card-border);border-radius:var(--radius-lg);box-shadow:var(--shadow-md);padding:1.8rem;}
+.number-card h3{font-size:1.05rem;font-weight:800;color:var(--slate-900);margin-bottom:.3rem;}
+.number-card .when{font-size:.8rem;color:var(--slate-500);margin-bottom:1.1rem;}
+.number-card .scale-track{margin:.3rem 0 .5rem;}
+.number-card .scale-labels span{font-size:.68rem;}
+</style>
 </head>
 <body>
 <nav class="site-nav">
@@ -23,79 +32,110 @@
   </div>
 </nav>
 
+<nav class="page-nav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Type 2 Diabetes Remission Protocol<small>Dr. Mehul Upadhyay</small></a>
+    <div class="nav-links">
+      <a href="#numbers">The Two Numbers</a>
+      <a href="#tracker">Log Them Free</a>
+      <a href="#faqs">FAQs</a>
+    </div>
+    <a class="nav-cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course &rarr;</a>
+  </div>
+</nav>
+
 <header class="hero">
   <div class="wrap">
-    <span class="eyebrow">TWO NUMBERS, TWO DIFFERENT STORIES</span>
-    <h1>Fasting Glucose vs Post-Meal Glucose — What Each One Actually Tells You</h1>
-    <p class="sub">HbA1c gives you the three-month average. These two numbers show what's happening day to day — and you can check both yourself, at home, with a glucometer.</p>
-    <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy &rarr;</a>
-    <div class="cta-sub">12-week structured plan &middot; Lifetime access &middot; Certificate of completion</div>
+    <span class="badge-pill">Two Numbers, Two Different Stories</span>
+    <h1 class="hero-title">Fasting Glucose vs Post-Meal Glucose — What Each One Actually Tells You</h1>
+    <p class="hero-subtitle">HbA1c gives you the three-month average. These two numbers show what's happening day to day — and you can check both yourself, at home, with a glucometer.</p>
+    <a class="cta-btn" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy &rarr;</a>
+    <div class="hero-meta">12-week structured plan &middot; Lifetime access &middot; Certificate of completion</div>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <h2>Sound familiar?</h2>
-    <ul class="pain-list">
-      <li>Your lab report shows both numbers and you don't know what either one means on its own</li>
-      <li>You've confused your fasting number with your post-meal number before</li>
-      <li>Your fasting glucose looks fine but you don't know if that's the full picture</li>
-      <li>You don't know how often you should actually be checking either number</li>
-    </ul>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <h2>What you actually get</h2>
-    <ul class="check-list">
-      <li>What fasting glucose measures, and the exact ranges — normal, prediabetic, diabetic</li>
-      <li>What post-meal (postprandial) glucose measures, and why it can reveal spikes a fasting-only check would completely miss</li>
-      <li>Why you need both numbers, not just one, to see your full picture</li>
-      <li>How these connect to the bigger mechanism — insulin resistance — that this entire course is built to improve</li>
-      <li>A tracking system so the pattern becomes obvious over time, not a jumble of random numbers</li>
-    </ul>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <h2>The two numbers, explained</h2>
-    <div class="grid">
-      <div class="module"><b>Fasting glucose</b><br>Measured first thing in the morning, before eating or drinking anything except water. Below 100 mg/dL is normal. 100–125 is prediabetic range. 126 or above, on more than one occasion, is diabetic range.</div>
-      <div class="module"><b>Post-meal (postprandial) glucose</b><br>Checked roughly two hours after you start eating. Below 140 mg/dL is normal. 140–199 suggests impaired glucose tolerance. 200 or above is diabetic range.</div>
+    <div class="section-header"><span class="section-tag">Sound familiar?</span><h2 class="section-title">Two numbers, and no idea what either means alone</h2></div>
+    <div class="frustration-grid">
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>Your lab report shows both numbers and you don't know what either one means on its own</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You've confused your fasting number with your post-meal number before</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>Your fasting glucose looks fine but you don't know if that's the full picture</p></div>
+      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You don't know how often you should actually be checking either number</p></div>
     </div>
-    <p style="margin-top:20px;">Think of it this way: HbA1c is like your bank's quarterly statement. Fasting and post-meal glucose are like checking your account balance day to day. You need both views to understand the full picture — if you only check fasting and it looks fine, you could be missing dramatic post-meal spikes entirely. If you only check after meals, you'd miss how your body behaves overnight.</p>
   </div>
 </section>
-<section class="alt">
+
+<section id="numbers">
   <div class="wrap">
-    <h2>Why this, and not just another generic article</h2>
-    <div class="instructor">
-      <div>
-        <p><b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management &mdash; including time in the New Zealand healthcare system. This course brings that same structured, checklist-driven thinking to something patients are usually left to figure out alone.</p>
-        <span class="badge">15+ Years Healthcare Ops</span>
-        <span class="badge">International Hospital Experience</span>
+    <div class="section-header"><span class="section-tag">The Two Numbers, Explained</span><h2 class="section-title">Where you actually land on each scale</h2></div>
+    <div class="number-grid">
+      <div class="number-card">
+        <h3>Fasting glucose</h3>
+        <div class="when">Measured first thing in the morning, before eating or drinking anything except water.</div>
+        <div class="scale-track">
+          <div class="scale-seg" style="background:#16a34a;flex:1;"></div>
+          <div class="scale-seg" style="background:#d97706;flex:0.75;"></div>
+          <div class="scale-seg" style="background:#b91c1c;flex:1.1;"></div>
+        </div>
+        <div class="scale-labels"><span>&lt;100 Normal</span><span>100&ndash;125 Prediabetic</span><span>126+ Diabetic</span></div>
       </div>
+      <div class="number-card">
+        <h3>Post-meal (postprandial) glucose</h3>
+        <div class="when">Checked roughly two hours after you start eating.</div>
+        <div class="scale-track">
+          <div class="scale-seg" style="background:#16a34a;flex:1.4;"></div>
+          <div class="scale-seg" style="background:#d97706;flex:0.6;"></div>
+          <div class="scale-seg" style="background:#b91c1c;flex:1;"></div>
+        </div>
+        <div class="scale-labels"><span>&lt;140 Normal</span><span>140&ndash;199 Impaired</span><span>200+ Diabetic</span></div>
+      </div>
+    </div>
+    <p style="margin-top:1.6rem;text-align:center;max-width:680px;margin-left:auto;margin-right:auto;color:var(--slate-600);font-size:.95rem;">Think of it this way: HbA1c is like your bank's quarterly statement. Fasting and post-meal glucose are like checking your account balance day to day. You need both views to understand the full picture — if you only check fasting and it looks fine, you could be missing dramatic post-meal spikes entirely.</p>
+  </div>
+</section>
+
+<section id="tracker">
+  <div class="wrap">
+    <div class="tracker-card">
+      <div class="tracker-copy">
+        <h3>Log both numbers in one place, free</h3>
+        <p>The tracker at dmremission.accredready.in has fields for exactly these two numbers — fasting and post-meal — plus which meal you measured after, so the pattern becomes visible over weeks instead of a jumble of one-off readings. No account cost, no course purchase required.</p>
+      </div>
+      <a class="cta-btn outline" href="https://dmremission.accredready.in/">Open the Free Tracker &rarr;</a>
     </div>
   </div>
 </section>
 
 <section>
-  <div class="wrap faq">
-    <h2>Before you ask</h2>
-    <details><summary>Which number matters more?</summary><p>Neither on its own gives the full picture — that's the point. A normal fasting number doesn't rule out post-meal spikes, and checking only after meals misses how your body manages glucose overnight.</p></details>
-    <details><summary>How often should I actually check these?</summary><p>This course's tracking module covers exact frequency and logging, so the pattern becomes visible over time rather than a one-off number you can't interpret.</p></details>
-    <details><summary>Why does this matter beyond just knowing the numbers?</summary><p>Both numbers trace back to the same underlying mechanism — insulin resistance. Understanding where you stand is what makes the nutrition, movement, and tracking modules in this course make sense as a connected system, not separate tips.</p></details>
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Why This, Not Another Generic Article</span><h2 class="section-title">Built by someone who's run hospital operations, not a diet blog</h2></div>
+    <div class="author-card">
+      <div class="author-avatar">MU</div>
+      <div>
+        <p><b>Dr. Mehul Upadhyay</b> has spent 15+ years working inside hospital operations and healthcare quality management — including time in the New Zealand healthcare system. This course brings that same structured, checklist-driven thinking to something patients are usually left to figure out alone.</p>
+        <span class="author-badge">15+ Years Healthcare Ops</span>
+        <span class="author-badge">International Hospital Experience</span>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="alt">
+<section id="faqs">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Before You Ask</span><h2 class="section-title">Frequently asked questions</h2></div>
+    <details class="faq-item"><summary>Which number matters more?</summary><p>Neither on its own gives the full picture — that's the point. A normal fasting number doesn't rule out post-meal spikes, and checking only after meals misses how your body manages glucose overnight.</p></details>
+    <details class="faq-item"><summary>How often should I actually check these?</summary><p>This course's tracking module covers exact frequency and logging, so the pattern becomes visible over time rather than a one-off number you can't interpret.</p></details>
+    <details class="faq-item"><summary>Why does this matter beyond just knowing the numbers?</summary><p>Both numbers trace back to the same underlying mechanism — insulin resistance. Understanding where you stand is what makes the nutrition, movement, and tracking modules in this course make sense as a connected system, not separate tips.</p></details>
+  </div>
+</section>
+
+<section>
   <div class="wrap">
     <div class="final-cta">
       <h2>Lose the weight. Control the sugar. One 12-week system.</h2>
       <p>12-week plan &middot; Lifetime access &middot; Learn at your own pace</p>
-      <a class="cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy &rarr;</a>
+      <a class="cta-btn" style="background:#fff;color:var(--primary-dark);" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy &rarr;</a>
     </div>
     <div class="disclaimer">
       This course is educational content and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for professional medical care. Always consult your doctor before making changes to your medication, diet, or exercise routine.
