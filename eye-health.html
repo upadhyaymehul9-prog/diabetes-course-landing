@@ -16,6 +16,20 @@
 .stage-card .tag{display:inline-block;font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--primary);margin-bottom:.5rem;}
 .stage-card h4{font-size:1.02rem;margin-bottom:.4rem;color:var(--slate-800);}
 .stage-card p{font-size:.86rem;color:var(--slate-600);line-height:1.5;}
+.vision-compare{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:1.8rem;}
+@media(max-width:760px){.vision-compare{grid-template-columns:1fr;}}
+.vision-panel{background:#fff;border:1px solid var(--card-border);border-radius:var(--radius-lg);box-shadow:var(--shadow-md);overflow:hidden;}
+.vision-panel .vlabel{padding:.85rem 1.2rem;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;}
+.vision-panel.normal .vlabel{background:var(--primary-light);color:var(--primary-dark);}
+.vision-panel.affected .vlabel{background:#fff5f5;color:#b91c1c;}
+.vision-panel svg{display:block;width:100%;height:auto;}
+.vision-panel .vcaption{padding:.9rem 1.2rem 1.1rem;font-size:.84rem;color:var(--slate-600);line-height:1.5;}
+.retina-compare{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:1.8rem;}
+@media(max-width:760px){.retina-compare{grid-template-columns:1fr;}}
+.retina-panel{background:#fff;border:1px solid var(--card-border);border-radius:var(--radius-lg);box-shadow:var(--shadow-md);padding:1.3rem;text-align:center;}
+.retina-panel h4{font-size:.92rem;margin:.7rem 0 .3rem;color:var(--slate-800);}
+.retina-panel p{font-size:.82rem;color:var(--slate-600);line-height:1.45;}
+.img-note{font-size:.78rem;color:var(--slate-500);text-align:center;margin-top:1rem;font-style:italic;}
 </style>
 </head>
 <body>
@@ -35,6 +49,7 @@
     <a href="index.html" class="nav-brand">Type 2 Diabetes Remission Protocol<small>Dr. Mehul Upadhyay</small></a>
     <div class="nav-links">
       <a href="#what">What It Actually Means</a>
+      <a href="#vision">See the Difference</a>
       <a href="#checkup">When to Get Checked</a>
       <a href="#tracker">Tracker</a>
       <a href="#faqs">FAQs</a>
@@ -72,6 +87,95 @@
       <div class="stage-card"><span class="tag">Early Stage</span><h4>Mild, non-proliferative</h4><p>Small changes in blood vessels, usually with no noticeable symptoms. Most commonly caught only through a dilated eye exam.</p></div>
       <div class="stage-card"><span class="tag">Progressing</span><h4>Moderate to severe</h4><p>More blood vessels affected; some people may start noticing blurred or fluctuating vision, though not always.</p></div>
       <div class="stage-card"><span class="tag">Advanced</span><h4>Proliferative</h4><p>New, fragile blood vessels can form; this stage carries the highest risk to vision and needs active medical management.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="vision">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">A Simplified Picture</span><h2 class="section-title">Normal vision vs. advanced diabetic retinopathy</h2><p class="section-sub">This is a simplified illustration of how the same everyday scene can look once retinopathy has reached an advanced stage — blurring, dark patches, and blind spots. Early stages usually show no visible change at all, which is why screening matters more than symptoms.</p></div>
+    <div class="vision-compare">
+      <div class="vision-panel normal">
+        <div class="vlabel">Normal Vision</div>
+        <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="260" fill="#cfe9f5"/>
+          <circle cx="330" cy="45" r="26" fill="#ffd166"/>
+          <rect x="0" y="180" width="400" height="80" fill="#8fc97a"/>
+          <polygon points="60,180 90,110 120,180" fill="#5a9a52"/>
+          <polygon points="85,180 115,95 145,180" fill="#4f8d49"/>
+          <rect x="95" y="160" width="10" height="20" fill="#6b4a2f"/>
+          <polygon points="300,180 325,125 350,180" fill="#5a9a52"/>
+          <rect x="195" y="175" width="10" height="85" fill="#9a9a9a"/>
+          <rect x="140" y="178" width="120" height="8" fill="#b9b9b9"/>
+          <circle cx="205" cy="160" r="6" fill="#f2c94c"/>
+        </svg>
+        <div class="vcaption">Clear edges, full field of view, even color and contrast across the whole scene.</div>
+      </div>
+      <div class="vision-panel affected">
+        <div class="vlabel">Advanced Retinopathy (Illustrative)</div>
+        <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="blurMe"><feGaussianBlur stdDeviation="2.5"/></filter>
+            <radialGradient id="vignette" cx="50%" cy="50%" r="65%">
+              <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+              <stop offset="100%" stop-color="#000" stop-opacity="0.75"/>
+            </radialGradient>
+          </defs>
+          <g filter="url(#blurMe)">
+            <rect width="400" height="260" fill="#cfe9f5"/>
+            <circle cx="330" cy="45" r="26" fill="#ffd166"/>
+            <rect x="0" y="180" width="400" height="80" fill="#8fc97a"/>
+            <polygon points="60,180 90,110 120,180" fill="#5a9a52"/>
+            <polygon points="85,180 115,95 145,180" fill="#4f8d49"/>
+            <rect x="95" y="160" width="10" height="20" fill="#6b4a2f"/>
+            <polygon points="300,180 325,125 350,180" fill="#5a9a52"/>
+            <rect x="195" y="175" width="10" height="85" fill="#9a9a9a"/>
+            <rect x="140" y="178" width="120" height="8" fill="#b9b9b9"/>
+            <circle cx="205" cy="160" r="6" fill="#f2c94c"/>
+          </g>
+          <ellipse cx="130" cy="90" rx="55" ry="45" fill="#000" opacity="0.72"/>
+          <ellipse cx="290" cy="150" rx="48" ry="60" fill="#000" opacity="0.65"/>
+          <ellipse cx="220" cy="60" rx="30" ry="24" fill="#000" opacity="0.5"/>
+          <rect width="400" height="260" fill="url(#vignette)"/>
+        </svg>
+        <div class="vcaption">Blurred edges, dark patches or blind spots, and reduced overall field of vision &mdash; the specific pattern varies a lot person to person.</div>
+      </div>
+    </div>
+    <p class="img-note">Illustrative only &mdash; not a diagnostic tool. Actual vision changes from retinopathy vary widely and should be assessed by an eye doctor.</p>
+
+    <div class="retina-compare">
+      <div class="retina-panel">
+        <svg viewBox="0 0 160 160" width="140" height="140" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="80" cy="80" r="70" fill="#fde8d8" stroke="#e8b98c" stroke-width="3"/>
+          <circle cx="80" cy="80" r="18" fill="#c97b3d"/>
+          <path d="M80 80 L40 30" stroke="#c0392b" stroke-width="3" fill="none"/>
+          <path d="M80 80 L120 28" stroke="#c0392b" stroke-width="3" fill="none"/>
+          <path d="M80 80 L30 110" stroke="#c0392b" stroke-width="3" fill="none"/>
+          <path d="M80 80 L128 115" stroke="#c0392b" stroke-width="3" fill="none"/>
+          <path d="M80 80 L80 20" stroke="#c0392b" stroke-width="2.5" fill="none"/>
+        </svg>
+        <h4>Healthy Retina</h4>
+        <p>Blood vessels are intact and evenly branching, with a clear, well-defined optic disc.</p>
+      </div>
+      <div class="retina-panel">
+        <svg viewBox="0 0 160 160" width="140" height="140" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="80" cy="80" r="70" fill="#fde8d8" stroke="#e8b98c" stroke-width="3"/>
+          <circle cx="80" cy="80" r="18" fill="#c97b3d"/>
+          <path d="M80 80 L40 30" stroke="#c0392b" stroke-width="3" fill="none"/>
+          <path d="M80 80 L120 28" stroke="#c0392b" stroke-width="3" fill="none"/>
+          <path d="M80 80 L30 110" stroke="#c0392b" stroke-width="3" fill="none"/>
+          <path d="M80 80 L128 115" stroke="#c0392b" stroke-width="3" fill="none"/>
+          <path d="M80 80 L80 20" stroke="#c0392b" stroke-width="2.5" fill="none"/>
+          <circle cx="45" cy="45" r="5" fill="#8b0000"/>
+          <circle cx="115" cy="55" r="4" fill="#8b0000"/>
+          <circle cx="50" cy="110" r="6" fill="#8b0000"/>
+          <circle cx="120" cy="100" r="4.5" fill="#8b0000"/>
+          <path d="M60 50 Q75 35 100 45" stroke="#e67e22" stroke-width="2.5" fill="none" stroke-dasharray="3,2"/>
+          <path d="M55 95 Q80 115 110 90" stroke="#e67e22" stroke-width="2.5" fill="none" stroke-dasharray="3,2"/>
+        </svg>
+        <h4>Retina With Retinopathy</h4>
+        <p>Small hemorrhages (dark red dots) and abnormal, leaking vessels (dashed lines) &mdash; changes usually invisible to you, caught only through screening.</p>
+      </div>
     </div>
   </div>
 </section>
