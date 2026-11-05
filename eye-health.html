@@ -22,7 +22,7 @@
 .vision-panel .vlabel{padding:.85rem 1.2rem;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;}
 .vision-panel.normal .vlabel{background:var(--primary-light);color:var(--primary-dark);}
 .vision-panel.affected .vlabel{background:#fff5f5;color:#b91c1c;}
-.vision-panel svg{display:block;width:100%;height:auto;}
+.vision-panel svg,.vision-panel img{display:block;width:100%;height:220px;object-fit:cover;}
 .vision-panel .vcaption{padding:.9rem 1.2rem 1.1rem;font-size:.84rem;color:var(--slate-600);line-height:1.5;}
 .retina-compare{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:1.8rem;}
 @media(max-width:760px){.retina-compare{grid-template-columns:1fr;}}
@@ -30,6 +30,7 @@
 .retina-panel h4{font-size:.92rem;margin:.7rem 0 .3rem;color:var(--slate-800);}
 .retina-panel p{font-size:.82rem;color:var(--slate-600);line-height:1.45;}
 .img-note{font-size:.78rem;color:var(--slate-500);text-align:center;margin-top:1rem;font-style:italic;}
+section[id]{scroll-margin-top:90px;}
 </style>
 </head>
 <body>
@@ -97,47 +98,12 @@
     <div class="vision-compare">
       <div class="vision-panel normal">
         <div class="vlabel">Normal Vision</div>
-        <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
-          <rect width="400" height="260" fill="#cfe9f5"/>
-          <circle cx="330" cy="45" r="26" fill="#ffd166"/>
-          <rect x="0" y="180" width="400" height="80" fill="#8fc97a"/>
-          <polygon points="60,180 90,110 120,180" fill="#5a9a52"/>
-          <polygon points="85,180 115,95 145,180" fill="#4f8d49"/>
-          <rect x="95" y="160" width="10" height="20" fill="#6b4a2f"/>
-          <polygon points="300,180 325,125 350,180" fill="#5a9a52"/>
-          <rect x="195" y="175" width="10" height="85" fill="#9a9a9a"/>
-          <rect x="140" y="178" width="120" height="8" fill="#b9b9b9"/>
-          <circle cx="205" cy="160" r="6" fill="#f2c94c"/>
-        </svg>
+        <img src="eye-vision-normal.jpg" alt="Normal vision of a tree-lined street, sharp and clear" loading="lazy">
         <div class="vcaption">Clear edges, full field of view, even color and contrast across the whole scene.</div>
       </div>
       <div class="vision-panel affected">
         <div class="vlabel">Advanced Retinopathy (Illustrative)</div>
-        <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <filter id="blurMe"><feGaussianBlur stdDeviation="2.5"/></filter>
-            <radialGradient id="vignette" cx="50%" cy="50%" r="65%">
-              <stop offset="55%" stop-color="#000" stop-opacity="0"/>
-              <stop offset="100%" stop-color="#000" stop-opacity="0.75"/>
-            </radialGradient>
-          </defs>
-          <g filter="url(#blurMe)">
-            <rect width="400" height="260" fill="#cfe9f5"/>
-            <circle cx="330" cy="45" r="26" fill="#ffd166"/>
-            <rect x="0" y="180" width="400" height="80" fill="#8fc97a"/>
-            <polygon points="60,180 90,110 120,180" fill="#5a9a52"/>
-            <polygon points="85,180 115,95 145,180" fill="#4f8d49"/>
-            <rect x="95" y="160" width="10" height="20" fill="#6b4a2f"/>
-            <polygon points="300,180 325,125 350,180" fill="#5a9a52"/>
-            <rect x="195" y="175" width="10" height="85" fill="#9a9a9a"/>
-            <rect x="140" y="178" width="120" height="8" fill="#b9b9b9"/>
-            <circle cx="205" cy="160" r="6" fill="#f2c94c"/>
-          </g>
-          <ellipse cx="130" cy="90" rx="55" ry="45" fill="#000" opacity="0.72"/>
-          <ellipse cx="290" cy="150" rx="48" ry="60" fill="#000" opacity="0.65"/>
-          <ellipse cx="220" cy="60" rx="30" ry="24" fill="#000" opacity="0.5"/>
-          <rect width="400" height="260" fill="url(#vignette)"/>
-        </svg>
+        <img src="eye-vision-retinopathy.jpg" alt="Simulated vision with advanced diabetic retinopathy, showing blurring and dark blind spots" loading="lazy">
         <div class="vcaption">Blurred edges, dark patches or blind spots, and reduced overall field of vision &mdash; the specific pattern varies a lot person to person.</div>
       </div>
     </div>
