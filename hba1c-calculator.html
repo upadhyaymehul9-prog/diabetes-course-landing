@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HbA1c to Average Blood Sugar Calculator (mg/dL and mmol/L)</title>
+<meta name="description" content="Free HbA1c calculator: convert HbA1c to estimated average blood sugar in mg/dL and mmol/L, or the other way round. See the normal, prediabetes and diabetes ranges.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Type 2 Diabetes Remission Protocol">
+<meta property="og:title" content="HbA1c to Average Blood Sugar Calculator (mg/dL and mmol/L)">
+<meta property="og:description" content="Free HbA1c calculator: convert HbA1c to estimated average blood sugar in mg/dL and mmol/L, or the other way round. See the normal, prediabetes and diabetes ranges.">
+<meta property="og:url" content="https://course.accredready.in/hba1c-calculator.html">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:image" content="https://course.accredready.in/logo-512.png">
+<link rel="stylesheet" href="theme-teal.css">
+<style>
+.prose{max-width:780px;margin:0 auto;}
+.prose h2{font-size:1.5rem;font-weight:800;color:var(--slate-900);margin:2.2rem 0 .8rem;line-height:1.25;}
+.prose h3{font-size:1.1rem;font-weight:800;color:var(--slate-900);margin:1.6rem 0 .5rem;}
+.prose p{font-size:1rem;line-height:1.75;color:var(--slate-700);margin:0 0 1rem;}
+.prose ul,.prose ol{margin:0 0 1.1rem 1.2rem;color:var(--slate-700);line-height:1.7;}
+.prose li{margin-bottom:.45rem;}
+.prose a{color:var(--primary-dark);font-weight:600;}
+.prose table{width:100%;border-collapse:collapse;margin:1.2rem 0 1.4rem;font-size:.92rem;background:#fff;border:1px solid var(--card-border);border-radius:var(--radius-md);overflow:hidden;}
+.prose th{background:var(--primary-light);color:var(--primary-dark);text-align:left;padding:.7rem .9rem;font-weight:800;}
+.prose td{padding:.65rem .9rem;border-top:1px solid var(--slate-200);color:var(--slate-700);vertical-align:top;}
+.callout{background:var(--primary-light);border:1px solid #99d5cf;border-radius:var(--radius-md);padding:1.1rem 1.3rem;margin:1.4rem 0;font-size:.97rem;line-height:1.65;color:var(--slate-800);}
+.callout b{color:var(--primary-dark);}
+.callout.warn{background:#fff7ed;border-color:#fdba74;}
+.callout.warn b{color:#9a3412;}
+.takeaway{background:var(--slate-900);color:#e2e8f0;border-radius:var(--radius-md);padding:1.3rem 1.5rem;margin:0 auto 0;max-width:780px;font-size:1rem;line-height:1.65;}
+.takeaway b{color:#fff;}
+.refs{max-width:780px;margin:2rem auto 0;font-size:.8rem;color:var(--slate-500);line-height:1.6;}
+.refs b{color:var(--slate-700);}
+.refs p{margin:.5rem 0;padding-left:1.4rem;text-indent:-1.4rem;}
+.refs a{color:var(--slate-500);word-break:break-all;}
+</style>
+<link rel="canonical" href="https://course.accredready.in/hba1c-calculator.html">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://course.accredready.in/hba1c-calculator.html",
+   "url": "https://course.accredready.in/hba1c-calculator.html",
+   "name": "HbA1c to Average Blood Sugar Calculator (mg/dL and mmol/L)",
+   "description": "Free HbA1c calculator: convert HbA1c to estimated average blood sugar in mg/dL and mmol/L, or the other way round. See the normal, prediabetes and diabetes ranges.",
+   "inLanguage": "en",
+   "isPartOf": {
+    "@type": "WebSite",
+    "name": "Type 2 Diabetes Remission Protocol",
+    "url": "https://course.accredready.in/"
+   },
+   "author": {
+    "@type": "Person",
+    "name": "Dr. Mehul Upadhyay"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://course.accredready.in/hba1c-calculator.html#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is the formula to convert HbA1c to average blood sugar?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Average glucose in mg/dL equals 28.7 times the HbA1c percentage, minus 46.7. For example, an HbA1c of 7% gives about 154 mg/dL. The formula comes from the A1C-Derived Average Glucose (ADAG) study."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What average blood sugar is an HbA1c of 6.5%?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "About 140 mg/dL, or 7.8 mmol/L, according to the American Diabetes Association's eAG table. 6.5% is also the lower edge of the diabetes range, but a diagnosis needs confirmation by your doctor."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is a normal HbA1c?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Below 5.7% is under the prediabetes range. 5.7% to 6.4% is the prediabetes range. 6.5% or higher is the diabetes range, according to the ADA."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is this calculator accurate for everyone?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is an estimate based on averages. Conditions that affect red blood cells, such as thalassemia or iron-deficiency anaemia, can make HbA1c misleading. Ask your doctor if this applies to you."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I use my meter readings to work out my HbA1c?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Only roughly. A few single readings are not an average over three months. A glucose monitor worn for weeks gives a better average. A lab HbA1c is still the standard test."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does this calculator store my numbers?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. The calculation happens on your device in your browser. Nothing is sent to us or saved."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html">Home</a>
+    <a href="prediabetes.html">Prediabetes / Borderline</a>
+    <a href="what-to-eat.html">What to Eat</a>
+    <a href="movement.html">How Much Exercise?</a>
+    <a href="busy-professional.html">Busy Professionals</a>
+    <a href="tracking-system.html">Tracking Your Numbers</a>
+    <a href="myths.html">Common Myths</a>
+  </div>
+</nav>
+
+<nav class="page-nav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Type 2 Diabetes Remission Protocol<small>Dr. Mehul Upadhyay</small></a>
+    <div class="nav-links">
+      <a href="#calc">Calculator</a>
+      <a href="#table">Quick Table</a>
+      <a href="#ranges">Ranges</a>
+      <a href="#limits">When It Misleads</a>
+      <a href="#next">What Next</a>
+      <a href="#faqs">FAQs</a>
+    </div>
+    <a class="nav-cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course &rarr;</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge-pill">Free Tool</span>
+    <h1 class="hero-title">HbA1c to Average Blood Sugar Calculator</h1>
+    <p class="hero-subtitle">Type your HbA1c to see your estimated average sugar. Or type your average sugar to see your estimated HbA1c. Free, private and simple.</p>
+    <a class="cta-btn" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy &rarr;</a>
+    <div class="hero-meta">12-week structured plan &middot; Lifetime access &middot; Certificate of completion</div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="takeaway"><b>Short answer:</b> an HbA1c of 6.5% is about 140 mg/dL average sugar, and 7% is about 154 mg/dL.<sup>1</sup> The formula is: average glucose (mg/dL) = 28.7 &times; HbA1c &minus; 46.7.<sup>2</sup> This is an estimate, not a diagnosis. Illnesses that affect red blood cells, such as thalassemia and iron-deficiency anaemia, can change HbA1c.<sup>4</sup></div>
+  </div>
+</section>
+
+<section id="calc">
+  <div class="wrap">
+    <div class="prose">
+<h2>Calculator</h2>
+
+<style>
+.calc{background:#fff;border:1px solid var(--card-border);border-radius:var(--radius-md);padding:1.3rem 1.4rem;margin:0 0 1.4rem;}
+.calc h3{margin-top:0!important;}
+.calc label{display:block;font-weight:700;color:var(--slate-900);margin:.2rem 0 .4rem;}
+.calc .row{display:flex;gap:.7rem;flex-wrap:wrap;align-items:flex-end;margin-bottom:.9rem;}
+.calc input[type=number]{font-size:1.15rem;padding:.65rem .8rem;border:2px solid var(--slate-200);border-radius:10px;width:11rem;max-width:100%;}
+.calc input[type=number]:focus{outline:none;border-color:var(--primary);}
+.calc .unit{color:var(--slate-500);font-weight:600;padding-bottom:.75rem;}
+.calc .result{background:var(--primary-light);border:1px solid #99d5cf;border-radius:var(--radius-md);padding:1rem 1.2rem;margin-top:.6rem;line-height:1.65;color:var(--slate-800);}
+.calc .result .big{font-size:1.5rem;font-weight:800;color:var(--primary-dark);}
+.calc .result.warn{background:#fff7ed;border-color:#fdba74;}
+.calc .result.err{background:#fef2f2;border-color:#fca5a5;}
+.calc .hint{font-size:.85rem;color:var(--slate-500);margin:.3rem 0 0;}
+</style>
+<div class="calc" id="calc-a1c">
+<h3>1. Your HbA1c &rarr; estimated average sugar</h3>
+<div class="row"><div><label for="a1c-in">HbA1c (%)</label><input type="number" id="a1c-in" inputmode="decimal" step="0.1" min="3" max="18" placeholder="e.g. 6.8"></div><span class="unit">%</span></div>
+<div class="result" id="a1c-out" aria-live="polite">Enter your HbA1c to see the result.</div>
+<p class="hint">Your numbers stay on this page. Nothing is sent or saved.</p>
+</div>
+<div class="calc" id="calc-eag">
+<h3>2. Your average sugar &rarr; estimated HbA1c</h3>
+<div class="row"><div><label for="eag-in">Average blood sugar (mg/dL)</label><input type="number" id="eag-in" inputmode="decimal" step="1" min="40" max="500" placeholder="e.g. 150"></div><span class="unit">mg/dL</span></div>
+<div class="result" id="eag-out" aria-live="polite">Enter your average sugar to see the result.</div>
+<p class="hint">Use an average over about 3 months, for example from a glucose monitor. A few single readings are not an average.</p>
+</div>
+<script>
+(function(){
+  function el(id){return document.getElementById(id);}
+  function band(a){
+    if(a<5.7) return {t:"Below the prediabetes range (under 5.7%)", c:""};
+    if(a<6.5) return {t:"In the prediabetes range (5.7% to 6.4%)", c:"warn"};
+    return {t:"In the diabetes range (6.5% or higher)", c:"warn"};
+  }
+  function showA1c(){
+    var out=el("a1c-out"); var a=parseFloat(el("a1c-in").value);
+    out.className="result";
+    if(isNaN(a)){out.textContent="Enter your HbA1c to see the result.";return;}
+    if(a<3||a>18){out.className="result err";out.textContent="Please enter a value between 3 and 18.";return;}
+    var mg=28.7*a-46.7; var mmol=mg/18.016; var b=band(a);
+    out.className="result "+b.c;
+    var extra="";
+    if(a>=10){extra="<br><b>This is a high value. Please see your doctor soon.</b>";}
+    out.innerHTML="<span class='big'>About "+Math.round(mg)+" mg/dL</span> ("+mmol.toFixed(1)+" mmol/L) average blood sugar<br>HbA1c "+a.toFixed(1)+"%: "+b.t+"."+extra+"<br><small>One result is not a diagnosis. Your doctor confirms it with repeat or other tests.</small>";
+  }
+  function showEag(){
+    var out=el("eag-out"); var g=parseFloat(el("eag-in").value);
+    out.className="result";
+    if(isNaN(g)){out.textContent="Enter your average sugar to see the result.";return;}
+    if(g<40||g>500){out.className="result err";out.textContent="Please enter a value between 40 and 500 mg/dL.";return;}
+    var a=(g+46.7)/28.7; var b=band(a);
+    out.className="result "+b.c;
+    out.innerHTML="<span class='big'>About "+a.toFixed(1)+"% HbA1c</span><br>An average of "+Math.round(g)+" mg/dL points to an HbA1c "+b.t.charAt(0).toLowerCase()+b.t.slice(1)+".<br><small>This is an estimate. A lab HbA1c can differ from your meter average.</small>";
+  }
+  el("a1c-in").addEventListener("input",showA1c);
+  el("eag-in").addEventListener("input",showEag);
+})();
+</script>
+
+    </div>
+  </div>
+</section>
+
+<section id="table">
+  <div class="wrap">
+    <div class="prose">
+<h2>Quick conversion table</h2>
+
+<p>These are the values from the American Diabetes Association's estimated average glucose (eAG) table.<sup>1</sup></p>
+<table>
+<tr><th>HbA1c (%)</th><th>Average sugar (mg/dL)</th><th>Average sugar (mmol/L)</th></tr>
+<tr><td>6</td><td>126</td><td>7.0</td></tr>
+<tr><td>6.5</td><td>140</td><td>7.8</td></tr>
+<tr><td>7</td><td>154</td><td>8.6</td></tr>
+<tr><td>7.5</td><td>169</td><td>9.4</td></tr>
+<tr><td>8</td><td>183</td><td>10.1</td></tr>
+<tr><td>8.5</td><td>197</td><td>10.9</td></tr>
+<tr><td>9</td><td>212</td><td>11.8</td></tr>
+<tr><td>9.5</td><td>226</td><td>12.6</td></tr>
+<tr><td>10</td><td>240</td><td>13.4</td></tr>
+</table>
+
+    </div>
+  </div>
+</section>
+
+<section id="ranges">
+  <div class="wrap">
+    <div class="prose">
+<h2>What the ranges mean</h2>
+
+<p>The ADA uses these HbA1c ranges for adults who are not pregnant:<sup>3</sup></p>
+<ul>
+<li><b>Below 5.7%:</b> below the prediabetes range.</li>
+<li><b>5.7% to 6.4%:</b> the prediabetes range. See <a href="prediabetes.html">borderline diabetes: what to do</a>.</li>
+<li><b>6.5% or higher:</b> the diabetes range.</li>
+</ul>
+<p>One abnormal result is usually not enough. Unless there are clear signs of very high sugar, the ADA says diagnosis needs two abnormal results, either from different tests or from the same test at two different times.<sup>3</sup> Your doctor makes the diagnosis.</p>
+<p>For a plain explanation of each number, read <a href="hba1c-numbers.html">HbA1c numbers explained</a>.</p>
+
+    </div>
+  </div>
+</section>
+
+<section id="limits">
+  <div class="wrap">
+    <div class="prose">
+<h2>When HbA1c can mislead</h2>
+
+<p>Estimates like this are made for most people with type 1 and type 2 diabetes.<sup>2</sup> They come from a study of 507 people, including 268 with type 1 diabetes, 159 with type 2 diabetes and 80 without diabetes.<sup>2</sup> They are averages, and your own result can differ.</p>
+<div class="callout warn"><b>Ask your doctor if any of these apply to you.</b> Conditions that change how long red blood cells live can alter HbA1c. Examples are thalassemia, other hemoglobin variants and iron-deficiency anaemia.<sup>4</sup> In these cases HbA1c can read higher or lower than your true average sugar. Your doctor may use fasting or after-meal sugar tests instead.</div>
+<p>Also, your meter readings and your lab HbA1c may not match exactly. A lab test is the one used for diagnosis.</p>
+
+    </div>
+  </div>
+</section>
+
+<section id="next">
+  <div class="wrap">
+    <div class="prose">
+<h2>What to do with your result</h2>
+
+<ol>
+<li><b>Write it down</b> with the date, and compare it next time. See <a href="tracking-system.html">tracking your numbers</a>.</li>
+<li><b>If you are in the prediabetes range,</b> small changes now work best. Start with <a href="prediabetes.html">borderline diabetes: what to do</a> and the <a href="post-meal-walk.html">post-meal walk</a>.</li>
+<li><b>If you already have diabetes,</b> see how people in a large Indian study did: <a href="india-diabetes-remission-study.html">the Indian remission study</a>.</li>
+<li><b>Do not change medicine because of a calculator.</b> Take the number to your doctor.</li>
+</ol>
+
+    </div>
+  </div>
+</section>
+
+<section id="faqs">
+  <div class="wrap">
+    <div class="section-header"><span class="section-tag">Before You Ask</span><h2 class="section-title">Frequently asked questions</h2></div>
+    <details class="faq-item"><summary>What is the formula to convert HbA1c to average blood sugar?</summary><p>Average glucose in mg/dL equals 28.7 times the HbA1c percentage, minus 46.7. For example, an HbA1c of 7% gives about 154 mg/dL. The formula comes from the A1C-Derived Average Glucose (ADAG) study.</p></details>
+    <details class="faq-item"><summary>What average blood sugar is an HbA1c of 6.5%?</summary><p>About 140 mg/dL, or 7.8 mmol/L, according to the American Diabetes Association's eAG table. 6.5% is also the lower edge of the diabetes range, but a diagnosis needs confirmation by your doctor.</p></details>
+    <details class="faq-item"><summary>What is a normal HbA1c?</summary><p>Below 5.7% is under the prediabetes range. 5.7% to 6.4% is the prediabetes range. 6.5% or higher is the diabetes range, according to the ADA.</p></details>
+    <details class="faq-item"><summary>Is this calculator accurate for everyone?</summary><p>It is an estimate based on averages. Conditions that affect red blood cells, such as thalassemia or iron-deficiency anaemia, can make HbA1c misleading. Ask your doctor if this applies to you.</p></details>
+    <details class="faq-item"><summary>Can I use my meter readings to work out my HbA1c?</summary><p>Only roughly. A few single readings are not an average over three months. A glucose monitor worn for weeks gives a better average. A lab HbA1c is still the standard test.</p></details>
+    <details class="faq-item"><summary>Does this calculator store my numbers?</summary><p>No. The calculation happens on your device in your browser. Nothing is sent to us or saved.</p></details>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="final-cta">
+      <h2>Lose the weight. Control the sugar. One 12-week system.</h2>
+      <p>12-week plan &middot; Lifetime access &middot; Learn at your own pace</p>
+      <a class="cta-btn" style="background:#fff;color:var(--primary-dark);" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">Start the Course on Udemy &rarr;</a>
+    </div>
+    <div class="disclaimer">
+      This course is educational content and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for professional medical care. Always consult your doctor before making changes to your medication, diet, or exercise routine.
+    </div>
+    <div class="refs" id="references"><b>References</b>
+<p>American Diabetes Association. (n.d.). <i>eAG/A1C conversion calculator</i>. <a href="https://professional.diabetes.org/eag" target="_blank" rel="noopener">https://professional.diabetes.org/eag</a></p>
+<p>Nathan, D. M., Kuenen, J., Borg, R., Zheng, H., Schoenfeld, D., &amp; Heine, R. J. (2008). Translating the A1C assay into estimated average glucose values. <i>Diabetes Care, 31</i>(8), 1473&ndash;1478. <a href="https://doi.org/10.2337/dc08-0545" target="_blank" rel="noopener">https://doi.org/10.2337/dc08-0545</a></p>
+<p>American Diabetes Association Professional Practice Committee for Diabetes. (2026). 2. Diagnosis and classification of diabetes: Standards of Care in Diabetes&mdash;2026. <i>Diabetes Care, 49</i>(Suppl. 1). <a href="https://doi.org/10.2337/dc26-S002" target="_blank" rel="noopener">https://doi.org/10.2337/dc26-S002</a></p>
+<p>National Institute of Diabetes and Digestive and Kidney Diseases. (n.d.). <i>Interpreting A1C: Variability across populations</i>. <a href="https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/interpreting-a1c-variability-across-populations" target="_blank" rel="noopener">https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/interpreting-a1c-variability-across-populations</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+<div class="wrap">
+  <span class="footer-label">More on diabetes &amp; weight loss</span>
+  <div class="footer-links"><a href="index.html">Home</a><span class="sep">&middot;</span><a href="12-week-plan.html">The 12-Week Plan</a><span class="sep">&middot;</span><a href="weight-loss.html">Weight Loss &amp; Diabetes Link</a><span class="sep">&middot;</span><a href="belly-fat.html">Belly Fat &amp; Diabetes</a><span class="sep">&middot;</span><a href="busy-professional.html">Busy Professionals</a><span class="sep">&middot;</span><a href="for-family.html">Helping a Parent</a><span class="sep">&middot;</span><a href="newly-diagnosed.html">Newly Diagnosed</a><span class="sep">&middot;</span><a href="prediabetes.html">Prediabetes / Borderline</a><span class="sep">&middot;</span><a href="young-onset.html">Diagnosed in Your 20s-30s</a><span class="sep">&middot;</span><a href="seniors.html">Diabetes After 60</a><span class="sep">&middot;</span><a href="pcos-insulin-resistance.html">PCOS &amp; Insulin Resistance</a><span class="sep">&middot;</span><a href="what-to-eat.html">What to Eat</a><span class="sep">&middot;</span><a href="fruit.html">Can You Eat Fruit?</a><span class="sep">&middot;</span><a href="indian-diet.html">Indian Diet</a><span class="sep">&middot;</span><a href="vegetarian-diet.html">Vegetarian Diet</a><span class="sep">&middot;</span><a href="food-order.html">Does Food Order Matter?</a><span class="sep">&middot;</span><a href="sugar-cravings.html">Sugar Cravings</a><span class="sep">&middot;</span><a href="festival-season.html">Festival Season Eating</a><span class="sep">&middot;</span><a href="movement.html">How Much Exercise?</a><span class="sep">&middot;</span><a href="post-meal-walk.html">Post-Meal Walks</a><span class="sep">&middot;</span><a href="tracking-system.html">Tracking Your Numbers</a><span class="sep">&middot;</span><a href="dawn-phenomenon.html">Why Mornings Are Worse</a><span class="sep">&middot;</span><a href="hypoglycemia.html">Low Blood Sugar &mdash; What To Do</a><span class="sep">&middot;</span><a href="stress-sleep-blood-sugar.html">Stress, Sleep &amp; Sugar</a><span class="sep">&middot;</span><a href="diabetes-fatigue.html">Why Diabetes Causes Fatigue</a><span class="sep">&middot;</span><a href="complications.html">Diabetes Complications</a><span class="sep">&middot;</span><a href="eye-health.html">Diabetic Eye Health</a><span class="sep">&middot;</span><a href="diabetes-blood-pressure.html">Diabetes &amp; Blood Pressure</a><span class="sep">&middot;</span><a href="fatty-liver.html">Fatty Liver &amp; Diabetes</a><span class="sep">&middot;</span><a href="without-medicine.html">Control Without Medicine?</a><span class="sep">&middot;</span><a href="still-struggling.html">Still Struggling?</a><span class="sep">&middot;</span><a href="is-reversal-real.html">Is Reversal Real?</a><span class="sep">&middot;</span><a href="realistic-results.html">Realistic Results</a><span class="sep">&middot;</span><a href="long-term-maintenance.html">Long-Term Maintenance</a><span class="sep">&middot;</span><a href="diabetes-travel.html">Traveling With Diabetes</a><span class="sep">&middot;</span><a href="myths.html">Common Myths</a><span class="sep">&middot;</span><a href="is-it-worth-it.html">Why Pay For This?</a><span class="sep">&middot;</span><a href="intermittent-fasting.html">Intermittent Fasting &mdash; Is It Safe?</a><span class="sep">&middot;</span><a href="diet-chart.html">Diabetes Diet Chart (Plate Model)</a><span class="sep">&middot;</span><a href="metformin.html">On Metformin? Read This</a><span class="sep">&middot;</span><a href="foot-care.html">Foot Care Before You Start Walking</a><span class="sep">&middot;</span><a href="glp1-vs-lifestyle.html">GLP-1 Drugs vs Lifestyle-First</a><span class="sep">&middot;</span><a href="hba1c-numbers.html">Understanding HbA1c</a><span class="sep">&middot;</span><a href="rice-vs-roti-millets.html">Rice, Roti or Millets?</a><span class="sep">&middot;</span><a href="early-symptoms-type-2-diabetes.html">Early Signs of Type 2 Diabetes</a><span class="sep">&middot;</span><a href="diabetes-and-kidneys.html">Diabetes &amp; Your Kidneys</a><span class="sep">&middot;</span><a href="chai-coffee-sweeteners-diabetes.html">Chai, Coffee &amp; Sweeteners</a><span class="sep">&middot;</span><a href="vrat-fasting-diabetes.html">Fasting (Vrat) With Diabetes</a><span class="sep">&middot;</span><a href="herbal-remedies-diabetes.html">Home Remedies: Do They Work?</a><span class="sep">&middot;</span><a href="diabetes-and-cholesterol.html">Diabetes &amp; Cholesterol</a><span class="sep">&middot;</span><a href="sugar-jaggery-honey-diabetes.html">Sugar, Jaggery or Honey?</a><span class="sep">&middot;</span><a href="alcohol-and-diabetes.html">Alcohol &amp; Diabetes</a><span class="sep">&middot;</span><a href="diabetes-and-sexual-health.html">Diabetes &amp; Sexual Health</a><span class="sep">&middot;</span><a href="india-diabetes-remission-study.html">Indian Remission Study</a><span class="sep">&middot;</span><a href="hba1c-calculator.html">HbA1c Calculator</a></div>
+  <p>Type 2 Diabetes Remission Protocol (12-Week System) &middot; Built by Dr. Mehul Upadhyay</p>
+</div>
+</footer>
+
+</body>
+</html>
