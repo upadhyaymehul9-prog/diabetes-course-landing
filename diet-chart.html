@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Diabetes Reversal Diet Plan — A Diet Chart Using the Plate Model</title>
-<meta name="description" content="A simple, visual diabetes diet chart you don't need to weigh or calculate — the plate model used throughout this 12-week course, with real North Indian, South Indian, and Gujarati meal guidance.">
+<title>Diabetes Reversal Diet Plan: An Indian Diet Chart Using the Plate Method</title>
+<meta name="description" content="A simple Indian diabetes diet chart: what to eat more and less of, how to build your plate, a sample day with dal, roti, sabzi and curd, and what the ADA and ICMR-NIN advise.">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Type 2 Diabetes Remission Protocol">
-<meta property="og:title" content="Diabetes Reversal Diet Plan — A Diet Chart Using the Plate Model">
-<meta property="og:description" content="A simple, visual diabetes diet chart you don't need to weigh or calculate — the plate model used throughout this 12-week course, with real North Indian, South Indian, and Gujarati meal guidance.">
+<meta property="og:title" content="Diabetes Reversal Diet Plan: An Indian Diet Chart Using the Plate Method">
+<meta property="og:description" content="A simple Indian diabetes diet chart: what to eat more and less of, how to build your plate, a sample day with dal, roti, sabzi and curd, and what the ADA and ICMR-NIN advise.">
 <meta property="og:url" content="https://course.accredready.in/diet-chart.html">
 <meta property="og:locale" content="en_IN">
 <meta name="twitter:card" content="summary">
@@ -17,46 +17,26 @@
 <meta property="og:image" content="https://course.accredready.in/logo-512.png">
 <link rel="stylesheet" href="theme-teal.css">
 <style>
-/* plate showcase (page-specific — generic rules live in theme-teal.css) */
-.plate-showcase{background:#fff;border-radius:var(--radius-lg);border:1px solid var(--card-border);box-shadow:var(--shadow-md);padding:2.2rem;}
-.plate-wrap{display:flex;flex-direction:column;align-items:center;gap:22px;}
-.plate-layout{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center;}
-@media(max-width:860px){.plate-layout{grid-template-columns:1fr;gap:1.6rem;}.plate-showcase{padding:1.4rem;}}
-.plate-svg{width:100%;max-width:340px;}
-.plate-slice{cursor:pointer;transition:filter .2s ease,transform .2s ease;transform-origin:200px 200px;}
-.plate-slice:hover{filter:brightness(1.1);}
-.plate-slice.active{filter:brightness(1.15) drop-shadow(0 4px 10px rgba(0,0,0,.3));}
-.plate-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;}
-.plate-chip{border:1px solid var(--slate-200);background:#fff;border-radius:999px;padding:8px 16px;font-size:13px;font-weight:700;cursor:pointer;color:var(--slate-600);}
-.plate-chip.active{background:var(--primary);color:#fff;border-color:var(--primary);}
-.plate-detail{background:var(--slate-50);border:1px solid var(--slate-200);border-radius:var(--radius-md);padding:20px 22px;max-width:620px;margin:0 auto;width:100%;}
-.plate-detail .ptag{display:inline-block;font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--primary-dark);background:var(--primary-light);border:1px solid #99d8cf;border-radius:999px;padding:4px 12px;margin-bottom:10px;}
-.plate-detail h3{margin:0 0 8px;color:var(--slate-900);font-size:1.15rem;}
-.plate-detail p{margin:0 0 12px;color:var(--slate-700);font-size:14.5px;line-height:1.55;}
-.plate-foods{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
-.plate-foods span{background:#fff;border:1px solid var(--slate-200);border-radius:8px;padding:4px 10px;font-size:12.5px;color:var(--slate-700);}
-.plate-tip{font-size:12.5px;color:var(--slate-700);background:var(--primary-light);border-left:3px solid var(--accent);border-radius:8px;padding:10px 14px;}
-.plate-note{margin-top:1.4rem;text-align:center;color:var(--slate-600);font-size:.92rem;max-width:620px;margin-left:auto;margin-right:auto;}
-
-/* meal sequencing */
-.sequencing-section{background:linear-gradient(135deg,#042f2e 0%,#0f172a 100%);color:#fff;border-radius:var(--radius-lg);padding:3rem 2.2rem;box-shadow:var(--shadow-lg);}
-.sequencing-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center;margin-top:1.8rem;}
-@media(max-width:860px){.sequencing-grid{grid-template-columns:1fr;gap:1.6rem;}.sequencing-section{padding:1.8rem 1.4rem;}}
-
-/* regions */
-.region-tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 1.8rem;}
-.region-tab{padding:.6rem 1.4rem;border-radius:999px;border:1px solid var(--slate-200);background:#fff;font-weight:700;font-size:.85rem;color:var(--slate-600);cursor:pointer;}
-.region-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);box-shadow:0 4px 12px rgba(15,118,110,.25);}
-.region-panel{display:none;background:#fff;border-radius:var(--radius-lg);border:1px solid var(--card-border);padding:1.8rem;box-shadow:var(--shadow-md);}
-.region-panel.active{display:block;}
-.region-grid{display:grid;grid-template-columns:1fr;gap:14px;}
-@media(min-width:640px){.region-grid{grid-template-columns:1fr 1fr;}}
-.region-card{padding:1.1rem 1.3rem;border-radius:var(--radius-md);background:var(--slate-50);border:1px solid var(--slate-200);border-top:4px solid var(--primary);}
-.region-card.alt-top{border-top-color:var(--carb-color);}
-.region-card b{color:var(--slate-900);display:block;margin-bottom:.3rem;font-size:.95rem;}
-.region-card{font-size:.88rem;color:var(--slate-600);line-height:1.55;}
-.region-swap{margin-top:1.2rem;font-size:.88rem;background:var(--primary-light);border:1px solid #99d8cf;border-radius:var(--radius-md);padding:.9rem 1.2rem;color:var(--slate-700);}
-.region-swap b{color:var(--primary-dark);}
+.prose{max-width:780px;margin:0 auto;}
+.prose h2{font-size:1.5rem;font-weight:800;color:var(--slate-900);margin:2.2rem 0 .8rem;line-height:1.25;}
+.prose h3{font-size:1.1rem;font-weight:800;color:var(--slate-900);margin:1.6rem 0 .5rem;}
+.prose p{font-size:1rem;line-height:1.75;color:var(--slate-700);margin:0 0 1rem;}
+.prose ul,.prose ol{margin:0 0 1.1rem 1.2rem;color:var(--slate-700);line-height:1.7;}
+.prose li{margin-bottom:.45rem;}
+.prose a{color:var(--primary-dark);font-weight:600;}
+.prose table{width:100%;border-collapse:collapse;margin:1.2rem 0 1.4rem;font-size:.92rem;background:#fff;border:1px solid var(--card-border);border-radius:var(--radius-md);overflow:hidden;}
+.prose th{background:var(--primary-light);color:var(--primary-dark);text-align:left;padding:.7rem .9rem;font-weight:800;}
+.prose td{padding:.65rem .9rem;border-top:1px solid var(--slate-200);color:var(--slate-700);vertical-align:top;}
+.callout{background:var(--primary-light);border:1px solid #99d5cf;border-radius:var(--radius-md);padding:1.1rem 1.3rem;margin:1.4rem 0;font-size:.97rem;line-height:1.65;color:var(--slate-800);}
+.callout b{color:var(--primary-dark);}
+.callout.warn{background:#fff7ed;border-color:#fdba74;}
+.callout.warn b{color:#9a3412;}
+.takeaway{background:var(--slate-900);color:#e2e8f0;border-radius:var(--radius-md);padding:1.3rem 1.5rem;margin:0 auto 0;max-width:780px;font-size:1rem;line-height:1.65;}
+.takeaway b{color:#fff;}
+.refs{max-width:780px;margin:2rem auto 0;font-size:.8rem;color:var(--slate-500);line-height:1.6;}
+.refs b{color:var(--slate-700);}
+.refs p{margin:.5rem 0;padding-left:1.4rem;text-indent:-1.4rem;}
+.refs a{color:var(--slate-500);word-break:break-all;}
 </style>
 <link rel="canonical" href="https://course.accredready.in/diet-chart.html">
 <script type="application/ld+json">
@@ -67,8 +47,8 @@
    "@type": "WebPage",
    "@id": "https://course.accredready.in/diet-chart.html",
    "url": "https://course.accredready.in/diet-chart.html",
-   "name": "Diabetes Reversal Diet Plan — A Diet Chart Using the Plate Model",
-   "description": "A simple, visual diabetes diet chart you don't need to weigh or calculate — the plate model used throughout this 12-week course, with real North Indian, South Indian, and Gujarati meal guidance.",
+   "name": "Diabetes Reversal Diet Plan: An Indian Diet Chart Using the Plate Method",
+   "description": "A simple Indian diabetes diet chart: what to eat more and less of, how to build your plate, a sample day with dal, roti, sabzi and curd, and what the ADA and ICMR-NIN advise.",
    "inLanguage": "en",
    "isPartOf": {
     "@type": "WebSite",
@@ -86,50 +66,50 @@
    "mainEntity": [
     {
      "@type": "Question",
-     "name": "Do I need to weigh my food to follow this?",
+     "name": "What is a good diet chart for diabetes in India?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "No. You don't need to weigh or calculate anything — just notice the rough proportions on your plate and adjust gradually. Small, repeated adjustments beat one perfect plate you never repeat."
+      "text": "Build each plate from half non-starchy vegetables, a quarter protein such as dal, paneer, curd, eggs or fish, and a quarter whole grain or millet. This matches the ADA's advice on food quality, adapted to Indian foods."
      }
     },
     {
      "@type": "Question",
-     "name": "Do I need to give up roti, rice, and dal?",
+     "name": "Can I eat rice and roti with diabetes?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "No. Nothing in this course asks you to give up the food you grew up eating. What actually matters is portion and pairing, not elimination — diet programs that ask people to eat food that feels foreign to them rarely get followed for twelve weeks, let alone for life."
+      "text": "Yes, in measured portions, with vegetables and protein first. Whole grains and millets are better choices than refined ones."
      }
     },
     {
      "@type": "Question",
-     "name": "My dal is usually thin and watery — does it still count as protein?",
+     "name": "How much fibre should I aim for?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Dal is high in both fiber and protein, but a thin, watery dal treated as a flavoring liquid gives you less of both than it could. Consider making it slightly thicker, with more actual lentils per serving, and treat it as a genuine, substantial part of your meal."
+      "text": "The ADA advises at least 14 g of fibre for every 1,000 calories, from minimally processed carbohydrates."
      }
     },
     {
      "@type": "Question",
-     "name": "Can I still eat white rice?",
+     "name": "Are sugar-free products safe for diabetes?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "The fix isn't necessarily eliminating rice — for many households that's not realistic, and it doesn't need to be. The fix is portion and pairing: a smaller mound, roughly the size of your cupped palm, alongside a generous portion of dal and vegetable sabzi, produces a very different blood sugar response than a large plate of rice with a thin curry poured over it."
+      "text": "Not automatically. The ICMR-NIN guidelines warn that some sugar-free foods contain fat, refined flour and hidden sugars. Read the label."
      }
     },
     {
      "@type": "Question",
-     "name": "How much ghee or oil is actually allowed?",
+     "name": "Is this diet plan enough to reverse diabetes?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Roughly a teaspoon, used in cooking rather than piled on separately. Watch specifically for dishes where fat is layered on top of an already carbohydrate-heavy meal — rich gravies finished with cream or a generous pour of ghee add up quickly without adding much fullness."
+      "text": "Diet is one part. Remission studies also involved weight loss, activity and medical supervision. See our page on whether reversal is real."
      }
     },
     {
      "@type": "Question",
-     "name": "Does this work for vegetarians?",
+     "name": "Do I need a dietitian?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Completely. The plate model needs protein, not meat specifically — dal, paneer, curd, tofu, chickpeas, and rajma all work. Swap the protein source, keep the same proportions."
+      "text": "The ADA advises referral to a registered dietitian for everyone with prediabetes or diabetes. They can set calories and portions for you."
      }
     }
    ]
@@ -155,9 +135,12 @@
   <div class="nav-container">
     <a href="index.html" class="nav-brand">Type 2 Diabetes Remission Protocol<small>Dr. Mehul Upadhyay</small></a>
     <div class="nav-links">
-      <a href="#plate">Plate Model</a>
-      <a href="#sequencing">Meal Sequencing</a>
-      <a href="#thalis">Regional Thalis</a>
+      <a href="#advice">What Experts Advise</a>
+      <a href="#plate">Build Your Plate</a>
+      <a href="#chart">Sample Day</a>
+      <a href="#swap">Easy Swaps</a>
+      <a href="#avoid">Watch Out For</a>
+      <a href="#adjust">Make It Yours</a>
       <a href="#faqs">FAQs</a>
     </div>
     <a class="nav-cta" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course &rarr;</a>
@@ -166,9 +149,9 @@
 
 <header class="hero">
   <div class="wrap">
-    <span class="badge-pill">Interactive Plate Guide</span>
-    <h1 class="hero-title">A Diabetes Diet Plan and Chart You Can Actually Use at Every Meal</h1>
-    <p class="hero-subtitle">Half your plate vegetables, a quarter protein, a quarter carbs, a teaspoon of fat. Tap each section below to see exactly what it means for your kitchen.</p>
+    <span class="badge-pill">Diet Chart</span>
+    <h1 class="hero-title">Diabetes Reversal Diet Plan: An Indian Diet Chart Using the Plate Method</h1>
+    <p class="hero-subtitle">No weighing, no calorie maths. Build each plate from the same simple groups, using foods you already eat.</p>
     <a class="cta-btn" href="https://www.udemy.com/course/type-2-diabetes-remission-protocol-12-week-system/?referralCode=ED03F1542832A3E4A9B4">See the Course on Udemy &rarr;</a>
     <div class="hero-meta">12-week structured plan &middot; Lifetime access &middot; Certificate of completion</div>
   </div>
@@ -176,134 +159,121 @@
 
 <section>
   <div class="wrap">
-    <div class="section-header"><span class="section-tag">Sound familiar?</span><h2 class="section-title">The problem with every chart you've found so far</h2></div>
-    <div class="frustration-grid">
-      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You've searched "diabetes diet chart" and found conflicting PDFs with different numbers</p></div>
-      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You don't want to weigh food or count calories for the rest of your life</p></div>
-      <div class="frustration-card"><span class="icon-cross">&times;</span><p>Every chart you find is generic and doesn't fit Indian meals specifically</p></div>
-      <div class="frustration-card"><span class="icon-cross">&times;</span><p>You don't know why a particular ratio of food matters, just that it's supposed to</p></div>
+    <div class="takeaway"><b>Short answer:</b> fill most of your plate with <b>non-starchy vegetables,</b> add <b>protein</b> (dal, paneer, curd, eggs, fish, chicken), and keep <b>whole grains or millets</b> to a measured share. The American Diabetes Association advises more vegetables, whole fruit, legumes, lean protein, whole grains, nuts and seeds, and less sugary drinks, sweets, refined grains and ultra-processed food.<sup>1</sup> Get personal advice from a registered dietitian.<sup>1</sup></div>
+  </div>
+</section>
+
+<section id="advice">
+  <div class="wrap">
+    <div class="prose">
+<h2>What the experts advise</h2>
+
+<p>The ADA's 2026 nutrition advice is not a single diet. It says to build individual meal plans around food quality, total calories and your goals.<sup>1</sup> In general it asks you to:<sup>1</sup></p>
+<ul>
+<li><b>Emphasise</b> non-starchy vegetables, whole fruits, legumes, lean proteins, whole grains, nuts and seeds.</li>
+<li><b>Minimise</b> red meat, sugary drinks, sweets, refined grains and ultra-processed foods.</li>
+<li><b>Choose high-fibre carbohydrates,</b> at least 14 g of fibre for every 1,000 calories.</li>
+<li><b>Consider cutting carbohydrate</b> for some adults, mainly by limiting processed foods.</li>
+</ul>
+<p>India's national guidelines point the same way. ICMR-NIN's Dietary Guidelines for Indians advise a varied diet with pulses, nuts, milk and eggs or fish, and say to avoid high-fat, high-sugar, high-salt foods and added-sugar items such as biscuits, cakes, fruit juices and cold drinks.<sup>2</sup></p>
+
     </div>
   </div>
 </section>
 
 <section id="plate">
   <div class="wrap">
-    <div class="section-header"><span class="section-tag">The Plate Model</span><h2 class="section-title">Tap the plate to explore each part</h2></div>
-    <div class="plate-showcase">
-      <div class="plate-layout">
-        <div class="plate-wrap">
-          <svg id="plateSvg" class="plate-svg" viewBox="0 0 400 400" style="filter:drop-shadow(0 15px 25px rgba(0,0,0,.08));">
-            <circle cx="200" cy="200" r="190" fill="#f8fafc" stroke="#cbd5e1" stroke-width="6"></circle>
-            <path id="slice-veg" class="plate-slice active" fill="#16a34a" stroke="#fff" stroke-width="4"
-                  d="M 200,200 L 200,30 A 170,170 0 0,0 200,370 Z" onclick="selectSlice('veg')"></path>
-            <path id="slice-protein" class="plate-slice" fill="#2563eb" stroke="#fff" stroke-width="4"
-                  d="M 200,200 L 370,200 A 170,170 0 0,0 200,30 Z" onclick="selectSlice('protein')"></path>
-            <path id="slice-carbs" class="plate-slice" fill="#d97706" stroke="#fff" stroke-width="4"
-                  d="M 200,200 L 200,370 A 170,170 0 0,0 370,200 Z" onclick="selectSlice('carbs')"></path>
-            <g font-family="inherit" font-weight="700" fill="#ffffff" text-anchor="middle" pointer-events="none">
-              <text x="110" y="200" font-size="15">50%</text>
-              <text x="110" y="218" font-size="10">Vegetables</text>
-              <text x="278" y="128" font-size="13">25%</text>
-              <text x="278" y="144" font-size="9.5">Protein</text>
-              <text x="278" y="272" font-size="13">25%</text>
-              <text x="278" y="288" font-size="9.5">Carbs</text>
-            </g>
-            <circle id="slice-fats" cx="200" cy="200" r="42" fill="#9333ea" stroke="#fff" stroke-width="3.5" class="plate-slice" onclick="selectSlice('fats')"></circle>
-            <g font-family="inherit" text-anchor="middle" pointer-events="none">
-              <text x="200" y="197" font-size="10" font-weight="700" fill="#fff">1 TSP</text>
-              <text x="200" y="210" font-size="8" fill="#f3e8ff">FAT</text>
-            </g>
-          </svg>
-          <div class="plate-chips">
-            <button class="plate-chip active" id="chip-veg" onclick="selectSlice('veg')">Vegetables (50%)</button>
-            <button class="plate-chip" id="chip-protein" onclick="selectSlice('protein')">Protein (25%)</button>
-            <button class="plate-chip" id="chip-carbs" onclick="selectSlice('carbs')">Carbs (25%)</button>
-            <button class="plate-chip" id="chip-fats" onclick="selectSlice('fats')">Fat (1 tsp)</button>
-          </div>
-        </div>
-        <div class="plate-detail" id="plateDetail"></div>
-      </div>
-      <p class="plate-note">This isn't a diet brand and it's not a rigid meal plan you follow exactly every day. It's a structure you apply to almost any meal you already eat — including your own regional cuisine.</p>
+    <div class="prose">
+<h2>Build your plate</h2>
+
+<p>This is our simple way to apply that advice, not an official chart. Look at your plate at lunch and dinner:</p>
+<table>
+<tr><th>Part of the plate</th><th>What goes there</th></tr>
+<tr><td><b>Half</b></td><td>Non-starchy vegetables: palak, lauki, tinda, bhindi, cabbage, cauliflower, beans, salad.</td></tr>
+<tr><td><b>A quarter</b></td><td>Protein: dal, rajma, chana, sprouts, paneer, curd, egg, fish or chicken.</td></tr>
+<tr><td><b>A quarter</b></td><td>Whole grain or millet: 1 to 2 rotis of whole wheat, jowar or bajra, or a small portion of rice.</td></tr>
+</table>
+<p>Eat vegetables and protein first, then the grain. See <a href="food-order.html">food order</a> for why this helps after-meal sugar. For rice versus roti, read <a href="rice-vs-roti-millets.html">rice, roti or millets</a>.</p>
+
     </div>
   </div>
 </section>
 
-<section id="sequencing">
+<section id="chart">
   <div class="wrap">
-    <div class="sequencing-section">
-      <div class="section-header"><span class="section-tag" style="color:#5eead4;">Does order matter?</span><h2 class="section-title light">How you eat matters almost as much as what you eat</h2><p class="section-sub light">Eating your vegetables and protein first, and your rice or roti last, has generally been shown in meal-sequencing research to produce a smaller blood sugar spike than eating everything mixed together, or eating carbohydrates first.</p></div>
-      <div class="sequencing-grid">
-        <div>
-          <div class="step-item"><div class="step-num">1</div><div class="step-content"><h4>Vegetables &amp; salad first</h4><p>Fiber-rich, non-starchy vegetables line the stomach first and slow down how fast everything after them digests.</p></div></div>
-          <div class="step-item"><div class="step-num">2</div><div class="step-content"><h4>Dal &amp; protein next</h4><p>Protein and a small amount of fat support fullness and further slow digestion before any carbohydrate arrives.</p></div></div>
-          <div class="step-item"><div class="step-num">3</div><div class="step-content"><h4>Roti or rice last</h4><p>By arriving last instead of first, the same portion of carbohydrate tends to raise blood sugar more gently.</p></div></div>
-        </div>
-        <div class="curve-card">
-          <div class="curve-title">Post-Meal Glucose — Same Food, Different Order</div>
-          <svg viewBox="0 0 300 160" width="100%" height="auto">
-            <line x1="20" y1="120" x2="290" y2="120" stroke="rgba(255,255,255,.2)" stroke-width="1"></line>
-            <path d="M 20,100 C 70,30 110,25 150,55 C 190,85 230,105 290,112" fill="none" stroke="#f87171" stroke-width="3"></path>
-            <path d="M 20,100 C 70,80 110,65 150,70 C 190,78 230,90 290,100" fill="none" stroke="#5eead4" stroke-width="3"></path>
-            <text x="20" y="136" fill="rgba(255,255,255,.55)" font-size="9" text-anchor="start">0 min (meal start)</text>
-            <text x="150" y="136" fill="rgba(255,255,255,.55)" font-size="9" text-anchor="middle">~60 min</text>
-            <text x="290" y="136" fill="rgba(255,255,255,.55)" font-size="9" text-anchor="end">~120 min</text>
-          </svg>
-          <div class="curve-legend">
-            <span><i class="dot" style="background:#f87171;"></i>Carbs first</span>
-            <span><i class="dot" style="background:#5eead4;"></i>Veg &amp; protein first</span>
-          </div>
-          <div class="curve-caption">Illustrative shape, not measured values. Try it yourself and watch your own post-meal readings once you reach the tracking module — individual results vary.</div>
-        </div>
-      </div>
+    <div class="prose">
+<h2>A sample day</h2>
+
+<p>This is an <b>illustration of the plate idea</b>, not a prescription. We give no calorie target, because that depends on your weight, activity and medicines. Ask your dietitian to set one.</p>
+<table>
+<tr><th>Meal</th><th>Example</th></tr>
+<tr><td><b>Early morning</b></td><td>Water, or unsweetened tea or coffee. See <a href="chai-coffee-sweeteners-diabetes.html">chai, coffee and sweeteners</a>.</td></tr>
+<tr><td><b>Breakfast</b></td><td>Besan chilla or moong dal cheela with vegetables and curd. Or vegetable upma or poha with extra vegetables and a boiled egg or sprouts.</td></tr>
+<tr><td><b>Mid-morning</b></td><td>A small portion of whole fruit, or a handful of nuts. See <a href="fruit.html">fruit and diabetes</a>.</td></tr>
+<tr><td><b>Lunch</b></td><td>Large salad, dal or kadhi-style protein, sabzi, 1 to 2 rotis (whole wheat, jowar or bajra) and curd.</td></tr>
+<tr><td><b>Evening</b></td><td>Roasted chana, sprouts, or buttermilk. Avoid biscuits and fried snacks.</td></tr>
+<tr><td><b>Dinner</b></td><td>Vegetable soup or sabzi, paneer, fish, chicken or dal, and a small grain portion. Eat earlier if you can, and walk afterwards. See <a href="post-meal-walk.html">the post-meal walk</a>.</td></tr>
+</table>
+<p>Vegetarian? See <a href="vegetarian-diet.html">the vegetarian diet guide</a>. For a longer food list see <a href="indian-diet.html">Indian diet plan</a> and <a href="what-to-eat.html">what to eat</a>.</p>
+
     </div>
   </div>
 </section>
 
-<section id="thalis">
+<section id="swap">
   <div class="wrap">
-    <div class="section-header"><span class="section-tag">Regional Thalis</span><h2 class="section-title">Real Indian meal guidance, by region</h2><p class="section-sub">India isn't one cuisine, so here's region-specific guidance rather than generic advice that doesn't match your actual kitchen. Roti, rice, and dal are not the enemy — what matters is portion and pairing, not elimination.</p></div>
-    <div class="region-tabs">
-      <button class="region-tab active" id="tab-north" onclick="selectRegion('north')">North Indian</button>
-      <button class="region-tab" id="tab-south" onclick="selectRegion('south')">South Indian</button>
-      <button class="region-tab" id="tab-gujarati" onclick="selectRegion('gujarati')">Gujarati</button>
-    </div>
+    <div class="prose">
+<h2>Easy swaps</h2>
 
-    <div class="region-panel active" id="panel-north">
-      <div class="region-grid">
-        <div class="region-card"><b>The structure</b>Roti, a vegetable sabzi, dal, often a side of salad or raita. Keep your roti portion moderate — ideally whole wheat or a millet blend. Make your sabzi genuinely vegetable-heavy, not swimming in oil with just a couple of pieces floating in it. Treat dal as a real portion, not an afterthought.</div>
-        <div class="region-card alt-top"><b>Watch for</b>Ghee and oil add up quickly in tadka, layered parathas, and rich gravies like paneer butter masala or dal makhani — often finished with a generous pour of cream or ghee. A small amount of fat is part of the plate model on purpose, but watch for fat layered on top of an already carb-heavy meal.</div>
-      </div>
-      <div class="region-swap"><b>Practical swap:</b> Shift from refined-flour (maida) roti to whole wheat first — usually the easiest transition, taking most people about a week or two to feel normal. Then experiment with a millet blend, starting at roughly one part bajra flour to three parts wheat atta.</div>
-    </div>
+<ul>
+<li>White rice &rarr; smaller portion, or brown rice, or millets, with more dal and vegetables.</li>
+<li>Maida roti, naan or paratha &rarr; whole-wheat, jowar or bajra roti.</li>
+<li>Fruit juice or cold drink &rarr; water, nimbu pani without sugar, or buttermilk.</li>
+<li>Biscuits or namkeen &rarr; roasted chana, nuts or sprouts.</li>
+<li>Sweets &rarr; keep them for rare occasions, in small portions. See <a href="sugar-jaggery-honey-diabetes.html">sugar, jaggery or honey?</a> and <a href="festival-season.html">festival season</a>.</li>
+</ul>
 
-    <div class="region-panel" id="panel-south">
-      <div class="region-grid">
-        <div class="region-card"><b>The structure</b>Idli, dosa, sambar, and chutney are structured differently from North Indian meals. Idli, being steamed rather than fried, is a reasonably good option, especially paired generously with sambar — which contains dal and vegetables, giving built-in protein and fiber.</div>
-        <div class="region-card alt-top"><b>Watch for</b>A large, thin, crisp dosa is primarily refined-rice-batter — a fast carbohydrate, so portion matters more here than with idli. Pair dosa or idli with extra sambar and a vegetable-based chutney rather than coconut chutney alone.</div>
-      </div>
-      <div class="region-swap"><b>Practical swap:</b> If you make dosa batter at home, increase the lentil-to-rice ratio slightly — something like one part urad dal to two parts rice instead of a more rice-heavy ratio — to meaningfully improve the fiber and protein content.</div>
-    </div>
-
-    <div class="region-panel" id="panel-gujarati">
-      <div class="region-grid">
-        <div class="region-card"><b>The structure</b>Typically roti or bajra rotla, a vegetable sabzi, kadhi, and dal, often with a distinctive touch of sweetness characteristic of the cuisine. Gujarati cooking often includes jaggery or sugar in dishes you might not immediately expect — in kadhi, in certain dals, even in some sabzis like undhiyu.</div>
-        <div class="region-card alt-top"><b>What to do</b>None of this needs to disappear completely, and you don't need to cook food that no longer tastes like home. But being aware of where sugar hides matters, so you can moderate it deliberately rather than by accident.</div>
-      </div>
-      <div class="region-swap"><b>Practical swap:</b> When cooking at home, try moderating the added jaggery in kadhi and dal by roughly half of what you'd normally use, and genuinely taste the dish afterward. Most people's palates adjust within two to three weeks of consistent reduction.</div>
     </div>
   </div>
 </section>
 
+<section id="avoid">
+  <div class="wrap">
+    <div class="prose">
+<h2>Watch out for these traps</h2>
+
+<ul>
+<li><b>"Sugar-free" packaged foods.</b> The ICMR-NIN guidelines warn that they can still contain fat, refined flour and hidden sugars, so read the label.<sup>3</sup></li>
+<li><b>Too little protein.</b> If you are losing weight, the ADA advises making sure you still get enough protein and micronutrients.<sup>1</sup></li>
+<li><b>Skipping meals if you take insulin or a sulfonylurea.</b> This can cause low sugar. See <a href="hypoglycemia.html">low blood sugar</a>.</li>
+<li><b>"Cure" diets and powders.</b> Be cautious of any single-food or supplement claim. See <a href="myths.html">common myths</a>.</li>
+</ul>
+
+    </div>
+  </div>
+</section>
+
+<section id="adjust">
+  <div class="wrap">
+    <div class="prose">
+<h2>Make it yours</h2>
+
+<p>The ADA advises everyone with prediabetes or diabetes to be referred to a registered dietitian.<sup>1</sup> Ask for one. Then check what works for <b>your</b> body with a meter, comparing your sugar 2 hours after meals. See <a href="tracking-system.html">tracking your numbers</a> and <a href="fasting-vs-post-meal.html">fasting vs after-meal sugar</a>.</p>
+<p>Our <a href="https://dmremission.accredready.in" target="_blank" rel="noopener">free tracker</a> logs your food, glucose and weight in one place, with no account cost and no course purchase needed. If you want to lose weight, read <a href="weight-loss.html">weight loss with diabetes</a>.</p>
+
+    </div>
+  </div>
+</section>
 
 <section id="faqs">
   <div class="wrap">
     <div class="section-header"><span class="section-tag">Before You Ask</span><h2 class="section-title">Frequently asked questions</h2></div>
-    <details class="faq-item"><summary>Do I need to weigh my food to follow this?</summary><p>No. You don't need to weigh or calculate anything — just notice the rough proportions on your plate and adjust gradually. Small, repeated adjustments beat one perfect plate you never repeat.</p></details>
-    <details class="faq-item"><summary>Do I need to give up roti, rice, and dal?</summary><p>No. Nothing in this course asks you to give up the food you grew up eating. What actually matters is portion and pairing, not elimination — diet programs that ask people to eat food that feels foreign to them rarely get followed for twelve weeks, let alone for life.</p></details>
-    <details class="faq-item"><summary>My dal is usually thin and watery — does it still count as protein?</summary><p>Dal is high in both fiber and protein, but a thin, watery dal treated as a flavoring liquid gives you less of both than it could. Consider making it slightly thicker, with more actual lentils per serving, and treat it as a genuine, substantial part of your meal.</p></details>
-    <details class="faq-item"><summary>Can I still eat white rice?</summary><p>The fix isn't necessarily eliminating rice — for many households that's not realistic, and it doesn't need to be. The fix is portion and pairing: a smaller mound, roughly the size of your cupped palm, alongside a generous portion of dal and vegetable sabzi, produces a very different blood sugar response than a large plate of rice with a thin curry poured over it.</p></details>
-    <details class="faq-item"><summary>How much ghee or oil is actually allowed?</summary><p>Roughly a teaspoon, used in cooking rather than piled on separately. Watch specifically for dishes where fat is layered on top of an already carbohydrate-heavy meal — rich gravies finished with cream or a generous pour of ghee add up quickly without adding much fullness.</p></details>
-    <details class="faq-item"><summary>Does this work for vegetarians?</summary><p>Completely. The plate model needs protein, not meat specifically — dal, paneer, curd, tofu, chickpeas, and rajma all work. Swap the protein source, keep the same proportions.</p></details>
+    <details class="faq-item"><summary>What is a good diet chart for diabetes in India?</summary><p>Build each plate from half non-starchy vegetables, a quarter protein such as dal, paneer, curd, eggs or fish, and a quarter whole grain or millet. This matches the ADA's advice on food quality, adapted to Indian foods.</p></details>
+    <details class="faq-item"><summary>Can I eat rice and roti with diabetes?</summary><p>Yes, in measured portions, with vegetables and protein first. Whole grains and millets are better choices than refined ones.</p></details>
+    <details class="faq-item"><summary>How much fibre should I aim for?</summary><p>The ADA advises at least 14 g of fibre for every 1,000 calories, from minimally processed carbohydrates.</p></details>
+    <details class="faq-item"><summary>Are sugar-free products safe for diabetes?</summary><p>Not automatically. The ICMR-NIN guidelines warn that some sugar-free foods contain fat, refined flour and hidden sugars. Read the label.</p></details>
+    <details class="faq-item"><summary>Is this diet plan enough to reverse diabetes?</summary><p>Diet is one part. Remission studies also involved weight loss, activity and medical supervision. See our page on whether reversal is real.</p></details>
+    <details class="faq-item"><summary>Do I need a dietitian?</summary><p>The ADA advises referral to a registered dietitian for everyone with prediabetes or diabetes. They can set calories and portions for you.</p></details>
   </div>
 </section>
 
@@ -317,73 +287,21 @@
     <div class="disclaimer">
       This course is educational content and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for professional medical care. Always consult your doctor before making changes to your medication, diet, or exercise routine.
     </div>
+    <div class="refs" id="references"><b>References</b>
+<p>American Diabetes Association Professional Practice Committee for Diabetes. (2026). 5. Facilitating positive health behaviors and well-being to improve health outcomes: Standards of Care in Diabetes&mdash;2026. <i>Diabetes Care, 49</i>(Suppl. 1), S89&ndash;S131. <a href="https://doi.org/10.2337/dc26-S005" target="_blank" rel="noopener">https://doi.org/10.2337/dc26-S005</a></p>
+<p>Indian Council of Medical Research&ndash;National Institute of Nutrition. (n.d.). <i>Dietary guidelines for Indians</i> [Booklet]. <a href="https://nin.res.in/downloads/DGI_Booklet_English_CMYK.pdf" target="_blank" rel="noopener">https://nin.res.in/downloads/DGI_Booklet_English_CMYK.pdf</a></p>
+<p>Down To Earth. (2024). <i>Food labels misleading, India's new dietary guidelines warn</i>. <a href="https://www.downtoearth.org.in/news/food/food-labels-misleading-india-s-new-dietary-guidelines-warn-96069" target="_blank" rel="noopener">https://www.downtoearth.org.in/news/food/food-labels-misleading-india-s-new-dietary-guidelines-warn-96069</a></p>
+    </div>
   </div>
 </section>
 
 <footer>
 <div class="wrap">
   <span class="footer-label">More on diabetes &amp; weight loss</span>
-  <div class="footer-links"><a href="index.html">Home</a><span class="sep">&middot;</span><a href="12-week-plan.html">The 12-Week Plan</a><span class="sep">&middot;</span><a href="weight-loss.html">Weight Loss &amp; Diabetes Link</a><span class="sep">&middot;</span><a href="belly-fat.html">Belly Fat &amp; Diabetes</a><span class="sep">&middot;</span><a href="busy-professional.html">Busy Professionals</a><span class="sep">&middot;</span><a href="for-family.html">Helping a Parent</a><span class="sep">&middot;</span><a href="newly-diagnosed.html">Newly Diagnosed</a><span class="sep">&middot;</span><a href="prediabetes.html">Prediabetes / Borderline</a><span class="sep">&middot;</span><a href="young-onset.html">Diagnosed in Your 20s-30s</a><span class="sep">&middot;</span><a href="seniors.html">Diabetes After 60</a><span class="sep">&middot;</span><a href="pcos-insulin-resistance.html">PCOS &amp; Insulin Resistance</a><span class="sep">&middot;</span><a href="what-to-eat.html">What to Eat</a><span class="sep">&middot;</span><a href="fruit.html">Can You Eat Fruit?</a><span class="sep">&middot;</span><a href="indian-diet.html">Indian Diet</a><span class="sep">&middot;</span><a href="vegetarian-diet.html">Vegetarian Diet</a><span class="sep">&middot;</span><a href="food-order.html">Does Food Order Matter?</a><span class="sep">&middot;</span><a href="sugar-cravings.html">Sugar Cravings</a><span class="sep">&middot;</span><a href="festival-season.html">Festival Season Eating</a><span class="sep">&middot;</span><a href="movement.html">How Much Exercise?</a><span class="sep">&middot;</span><a href="post-meal-walk.html">Post-Meal Walks</a><span class="sep">&middot;</span><a href="tracking-system.html">Tracking Your Numbers</a><span class="sep">&middot;</span><a href="dawn-phenomenon.html">Why Mornings Are Worse</a><span class="sep">&middot;</span><a href="hypoglycemia.html">Low Blood Sugar &mdash; What To Do</a><span class="sep">&middot;</span><a href="stress-sleep-blood-sugar.html">Stress, Sleep &amp; Sugar</a><span class="sep">&middot;</span><a href="diabetes-fatigue.html">Why Diabetes Causes Fatigue</a><span class="sep">&middot;</span><a href="complications.html">Diabetes Complications</a><span class="sep">&middot;</span><a href="eye-health.html">Diabetic Eye Health</a><span class="sep">&middot;</span><a href="diabetes-blood-pressure.html">Diabetes &amp; Blood Pressure</a><span class="sep">&middot;</span><a href="fatty-liver.html">Fatty Liver &amp; Diabetes</a><span class="sep">&middot;</span><a href="without-medicine.html">Control Without Medicine?</a><span class="sep">&middot;</span><a href="still-struggling.html">Still Struggling?</a><span class="sep">&middot;</span><a href="is-reversal-real.html">Is Reversal Real?</a><span class="sep">&middot;</span><a href="realistic-results.html">Realistic Results</a><span class="sep">&middot;</span><a href="long-term-maintenance.html">Long-Term Maintenance</a><span class="sep">&middot;</span><a href="diabetes-travel.html">Traveling With Diabetes</a><span class="sep">&middot;</span><a href="myths.html">Common Myths</a><span class="sep">&middot;</span><a href="is-it-worth-it.html">Why Pay For This?</a><span class="sep">&middot;</span><a href="intermittent-fasting.html">Intermittent Fasting &mdash; Is It Safe?</a><span class="sep">&middot;</span><a href="metformin.html">On Metformin? Read This</a><span class="sep">&middot;</span><a href="fasting-vs-post-meal.html">Fasting vs After-Meal Sugar</a><span class="sep">&middot;</span><a href="foot-care.html">Foot Care Before You Start Walking</a><span class="sep">&middot;</span><a href="glp1-vs-lifestyle.html">GLP-1 Drugs vs Lifestyle-First</a><span class="sep">&middot;</span><a href="hba1c-numbers.html">Understanding HbA1c</a><span class="sep">&middot;</span><a href="rice-vs-roti-millets.html">Rice, Roti or Millets?</a><span class="sep">&middot;</span><a href="early-symptoms-type-2-diabetes.html">Early Signs of Type 2 Diabetes</a><span class="sep">&middot;</span><a href="diabetes-and-kidneys.html">Diabetes &amp; Your Kidneys</a><span class="sep">&middot;</span><a href="chai-coffee-sweeteners-diabetes.html">Chai, Coffee &amp; Sweeteners</a><span class="sep">&middot;</span><a href="vrat-fasting-diabetes.html">Fasting (Vrat) With Diabetes</a><span class="sep">&middot;</span><a href="herbal-remedies-diabetes.html">Home Remedies: Do They Work?</a><span class="sep">&middot;</span><a href="diabetes-and-cholesterol.html">Diabetes &amp; Cholesterol</a><span class="sep">&middot;</span><a href="sugar-jaggery-honey-diabetes.html">Sugar, Jaggery or Honey?</a><span class="sep">&middot;</span><a href="alcohol-and-diabetes.html">Alcohol &amp; Diabetes</a><span class="sep">&middot;</span><a href="diabetes-and-sexual-health.html">Diabetes &amp; Sexual Health</a><span class="sep">&middot;</span><a href="india-diabetes-remission-study.html">Indian Remission Study</a><span class="sep">&middot;</span><a href="hba1c-calculator.html">HbA1c Calculator</a></div>
+  <div class="footer-links"><a href="index.html">Home</a><span class="sep">&middot;</span><a href="12-week-plan.html">The 12-Week Plan</a><span class="sep">&middot;</span><a href="weight-loss.html">Weight Loss &amp; Diabetes Link</a><span class="sep">&middot;</span><a href="belly-fat.html">Belly Fat &amp; Diabetes</a><span class="sep">&middot;</span><a href="busy-professional.html">Busy Professionals</a><span class="sep">&middot;</span><a href="for-family.html">Helping a Parent</a><span class="sep">&middot;</span><a href="newly-diagnosed.html">Newly Diagnosed</a><span class="sep">&middot;</span><a href="prediabetes.html">Prediabetes / Borderline</a><span class="sep">&middot;</span><a href="young-onset.html">Diagnosed in Your 20s-30s</a><span class="sep">&middot;</span><a href="seniors.html">Diabetes After 60</a><span class="sep">&middot;</span><a href="pcos-insulin-resistance.html">PCOS &amp; Insulin Resistance</a><span class="sep">&middot;</span><a href="what-to-eat.html">What to Eat</a><span class="sep">&middot;</span><a href="fruit.html">Can You Eat Fruit?</a><span class="sep">&middot;</span><a href="indian-diet.html">Indian Diet</a><span class="sep">&middot;</span><a href="vegetarian-diet.html">Vegetarian Diet</a><span class="sep">&middot;</span><a href="food-order.html">Does Food Order Matter?</a><span class="sep">&middot;</span><a href="sugar-cravings.html">Sugar Cravings</a><span class="sep">&middot;</span><a href="festival-season.html">Festival Season Eating</a><span class="sep">&middot;</span><a href="movement.html">How Much Exercise?</a><span class="sep">&middot;</span><a href="post-meal-walk.html">Post-Meal Walks</a><span class="sep">&middot;</span><a href="tracking-system.html">Tracking Your Numbers</a><span class="sep">&middot;</span><a href="dawn-phenomenon.html">Why Mornings Are Worse</a><span class="sep">&middot;</span><a href="hypoglycemia.html">Low Blood Sugar &mdash; What To Do</a><span class="sep">&middot;</span><a href="stress-sleep-blood-sugar.html">Stress, Sleep &amp; Sugar</a><span class="sep">&middot;</span><a href="diabetes-fatigue.html">Why Diabetes Causes Fatigue</a><span class="sep">&middot;</span><a href="complications.html">Diabetes Complications</a><span class="sep">&middot;</span><a href="eye-health.html">Diabetic Eye Health</a><span class="sep">&middot;</span><a href="diabetes-blood-pressure.html">Diabetes &amp; Blood Pressure</a><span class="sep">&middot;</span><a href="fatty-liver.html">Fatty Liver &amp; Diabetes</a><span class="sep">&middot;</span><a href="without-medicine.html">Control Without Medicine?</a><span class="sep">&middot;</span><a href="still-struggling.html">Still Struggling?</a><span class="sep">&middot;</span><a href="is-reversal-real.html">Is Reversal Real?</a><span class="sep">&middot;</span><a href="realistic-results.html">Realistic Results</a><span class="sep">&middot;</span><a href="long-term-maintenance.html">Long-Term Maintenance</a><span class="sep">&middot;</span><a href="diabetes-travel.html">Traveling With Diabetes</a><span class="sep">&middot;</span><a href="myths.html">Common Myths</a><span class="sep">&middot;</span><a href="is-it-worth-it.html">Why Pay For This?</a><span class="sep">&middot;</span><a href="intermittent-fasting.html">Intermittent Fasting &mdash; Is It Safe?</a><span class="sep">&middot;</span><a href="diet-chart.html">Diabetes Diet Chart (Plate Model)</a><span class="sep">&middot;</span><a href="metformin.html">On Metformin? Read This</a><span class="sep">&middot;</span><a href="foot-care.html">Foot Care Before You Start Walking</a><span class="sep">&middot;</span><a href="glp1-vs-lifestyle.html">GLP-1 Drugs vs Lifestyle-First</a><span class="sep">&middot;</span><a href="hba1c-numbers.html">Understanding HbA1c</a><span class="sep">&middot;</span><a href="rice-vs-roti-millets.html">Rice, Roti or Millets?</a><span class="sep">&middot;</span><a href="early-symptoms-type-2-diabetes.html">Early Signs of Type 2 Diabetes</a><span class="sep">&middot;</span><a href="diabetes-and-kidneys.html">Diabetes &amp; Your Kidneys</a><span class="sep">&middot;</span><a href="chai-coffee-sweeteners-diabetes.html">Chai, Coffee &amp; Sweeteners</a><span class="sep">&middot;</span><a href="vrat-fasting-diabetes.html">Fasting (Vrat) With Diabetes</a><span class="sep">&middot;</span><a href="herbal-remedies-diabetes.html">Home Remedies: Do They Work?</a><span class="sep">&middot;</span><a href="diabetes-and-cholesterol.html">Diabetes &amp; Cholesterol</a><span class="sep">&middot;</span><a href="sugar-jaggery-honey-diabetes.html">Sugar, Jaggery or Honey?</a><span class="sep">&middot;</span><a href="alcohol-and-diabetes.html">Alcohol &amp; Diabetes</a><span class="sep">&middot;</span><a href="diabetes-and-sexual-health.html">Diabetes &amp; Sexual Health</a><span class="sep">&middot;</span><a href="india-diabetes-remission-study.html">Indian Remission Study</a><span class="sep">&middot;</span><a href="hba1c-calculator.html">HbA1c Calculator</a></div>
   <p>Type 2 Diabetes Remission Protocol (12-Week System) &middot; Built by Dr. Mehul Upadhyay</p>
 </div>
 </footer>
-
-<script>
-var plateData = {
-  veg: {
-    tag: "Half the plate (50%)",
-    title: "Non-starchy vegetables",
-    desc: "Leafy greens, cucumber, tomato, cauliflower, bottle gourd, okra — anything except potato or corn. The vegetables provide fiber and volume without meaningfully spiking glucose, and they physically fill your stomach, which matters for satisfaction.",
-    foods: ["Palak (spinach)", "Bhindi (okra)", "Gobi (cauliflower)", "Lauki (bottle gourd)", "Cucumber & tomato", "Methi & karela", "Cabbage"],
-    tip: "Eat these first, before your roti or rice — that order alone can lower your post-meal blood sugar spike."
-  },
-  protein: {
-    tag: "A quarter of the plate (25%)",
-    title: "Lean protein",
-    desc: "Dal, paneer in moderate amounts, eggs, fish, chicken, or whichever protein source fits your regular diet. Protein slows digestion and is one of the most effective things you can eat for feeling genuinely full, not just full for twenty minutes.",
-    foods: ["Dal (thick, not watery)", "Paneer", "Curd", "Eggs", "Fish or chicken", "Chickpeas / rajma"],
-    tip: "If your usual dal is thin and watery, make it thicker with more actual lentils per serving — it's one of your best tools here."
-  },
-  carbs: {
-    tag: "The final quarter (25%)",
-    title: "Complex carbohydrate",
-    desc: "A portion of roti, rice, or another grain. Gives you real energy without being the dominant part of the meal the way it often is on a typical rice-heavy or roti-heavy plate.",
-    foods: ["Whole wheat roti", "Bajra / jowar rotla", "Brown rice", "Rice + quinoa or moong dal blend"],
-    tip: "Try shifting from refined flour to whole wheat first, then experiment with a millet blend — start at roughly one part bajra flour to three parts wheat atta."
-  },
-  fats: {
-    tag: "Alongside the plate (1 tsp)",
-    title: "A small amount of healthy fat",
-    desc: "Roughly a teaspoon of ghee or oil, used in cooking, not piled on separately. In moderate amounts this slows how quickly your stomach empties, which smooths out the glucose response even further.",
-    foods: ["Ghee (in cooking)", "Mustard or groundnut oil", "Nuts in small amounts"],
-    tip: "Watch for fat layered on top of an already carb-heavy meal — rich gravies finished with cream or a heavy pour of ghee add up quickly."
-  }
-};
-
-function selectSlice(key){
-  ["veg","protein","carbs","fats"].forEach(function(k){
-    document.getElementById("slice-"+k).classList.toggle("active", k===key);
-    document.getElementById("chip-"+k).classList.toggle("active", k===key);
-  });
-  var d = plateData[key];
-  var foods = d.foods.map(function(f){ return "<span>"+f+"</span>"; }).join("");
-  document.getElementById("plateDetail").innerHTML =
-    '<span class="ptag">'+d.tag+'</span>' +
-    '<h3>'+d.title+'</h3>' +
-    '<p>'+d.desc+'</p>' +
-    '<div class="plate-foods">'+foods+'</div>' +
-    '<div class="plate-tip">'+d.tip+'</div>';
-}
-
-function selectRegion(key){
-  ["north","south","gujarati"].forEach(function(k){
-    document.getElementById("tab-"+k).classList.toggle("active", k===key);
-    document.getElementById("panel-"+k).classList.toggle("active", k===key);
-  });
-}
-
-selectSlice("veg");
-</script>
 
 </body>
 </html>
